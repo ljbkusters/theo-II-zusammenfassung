@@ -1,0 +1,49 @@
+Die Ursprung der EM-Kraft und EM-Felder ist die \textbf{Ladung}. Mathematisch wird die
+Ladungsverteilung eines Systems in Raum durch die \textbf{Ladungsdichte} 
+gegeben. Ganz algemein
+kann eine Ladungsverteilung von N Punktladungen am Zeit t an den Orten $\vb*x_i$ wie folgt beschrieben werden
+
+\begin{equation}
+  \rho(\vb*r, t)= \sum_{i=1}^N q_i \delta(\vb*r - \vb*x_i(t))
+\end{equation}
+Wobei $q_i$ sowohl positiv oder negativ sein kann.
+
+Prinzipiell ist die Ladung in der Natur eine Eigenschaft von Punktteilchen,
+sodass es eigentlich keine kontinuierliche Ladungsverteilungen gibt. Auf
+makroskopische Skala ist diese Beschreibung jedoch sehr unhandlich, und ist
+eine Mittelung der Ladungsdichte eine wesentlich einfachere Beschreibung.
+Eine mögliche Definition für eine kontinuierliche Ladungsverteilung aus einer
+diskreten Ladungsverteilung sieht wie folgt aus
+
+\begin{equation}
+  \rho_{\textrm{knt.}}(\vb*r, t) 
+  = 
+  \lim_{\Delta V \to 0} 
+  \frac{1}{\Delta V(\vb*r)} 
+  \int_{\Delta V(\vb*r)} \rho_{\textrm{dskr.}}(\vb*r, t)d^3r 
+  =
+  \lim_{\Delta V \to 0} \frac{Q_{\Delta V, \textrm{ges}}(t)}{\Delta V(\vb*r)} 
+\end{equation}
+
+Für Physikalische Systeme betrachtet man in der Regel immer nur beschränkte 
+Ladungsverteilungen, das will sagen, die Ladungsdichte soll nur auf 
+ein beschränktes Raumbereich von 0 verschieden sein. 
+Dazu dürfen Ladungsverteilungen auch keine Pollstellen haben, 
+d.h.\ nie divergieren. 
+In manche theoretische Fälle, gibt es auch Ladungsverteilungen die 
+nicht beschränkt sind, sondern hinreichend schnell im Unendlichen 
+verschwinden (z.B.\ exponentiell unterdrückt), sodass zumindest
+\begin{equation*}
+  \int d^3r \rho(\vb*r, t) = Q_\textrm{ges} < \infty
+\end{equation*}
+gilt.
+
+In der Elektrostatik betrachtet man erstmal ruhende Ladungsverteilungen, 
+d.h.
+\begin{equation}
+  \rho(\vb*r, t) = \rho(\vb*r)
+\end{equation}
+Es gibt also keine Ströme. Manchmal werden in der Elektrostatik auch 
+quasi statische Prozeße betrachtet, wo die Effekte von bewegte Ladungen 
+erstmal vernachlässicht werden. Die Elektrostatik ist somit ein Spezialfall
+der Elektrodynamik.

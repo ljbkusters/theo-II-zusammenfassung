@@ -1,0 +1,62 @@
+\documentclass{scrartcl}
+% import packages
+\input{preamble/packages.tex}
+% import commands
+\input{preamble/commands.tex}
+% import variables
+\input{preamble/variables.tex}
+% make sure to count figures within sections
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\counterwithin{equation}{section}
+
+\font\myfont=cmr12 at 30pt
+% use mathrm as standard math font
+% \DeclareSymbolFont{letters}{OT1}{cmr}{m}{n}
+\begin{document}
+  \begin{titlepage}
+     \begin{center}
+        \vspace*{1cm}
+        
+        \textbf{\myfont\thetitle}\\
+        \vspace{1.5cm}
+        \large
+        durch
+        \vspace{1.5cm}
+        
+        \Large
+          \textbf{\theAuthor}
+        
+        \vspace{1.5cm}
+    \end{center}
+  \end{titlepage}
+  
+  % back titlepage
+  \vfill
+  \textbf{\author}\\
+  
+  \normalsize
+
+  \tableofcontents
+  
+  \newpage
+  \section{Einleitung}\label{sec:Einleitung}
+    \input{\subtexdir/einleitung.tex}
+  
+  \newpage
+  \section{Elektrostatik}\label{sec:Elektrostatik}
+    \input{\subtexdir/elektrostatik.tex}
+  
+  %\newpage
+  %\section{Magnetostatik}\label{sec:Magnetostatic}
+  %  \input{\subtexdir/magnetostatik.tex}
+  
+  %\newpage
+  %\section{Elektrodynamik}\label{sec:Elektrodynamik}
+  %  \input{\subtexdir/elektrodynamik.tex}
+  
+  %\newpage
+  %\section{Relativisitische Elektrodynamik}\label{sec:Elektrodynamik}
+  %  \input{\subtexdir/elektrodynamik.tex}
+
+\end{document}

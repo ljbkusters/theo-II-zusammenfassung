@@ -1,0 +1,146 @@
+\subsubsection{Coulombkraft}%
+\label{ssub:Coulombkraft}
+Schon in 1785 gelang Charles Augustin de Coulomb eine Beschreibung der
+Elektrische Kraft, welche man heutzutage dann auch die 
+\textbf{Coulombkraft} 
+nennt. Sie ist sehr ähnlich zum Newtons Schwerkraftsgesetz und lautet für 
+zwei Punktladungen $q_1$ und $q_2$ an den Orten $\vb*r_1$ und $\vb*r_2$ wie 
+folgt (im Vakuum)
+
+\begin{equation}
+  \vb F_{1\to2}(\vb*r_1, \vb*r_2, q_1, q_2)= k q_1 q_2 \frac{\vb*r_2-\vb*r_1}{\abs{\vb*r_2-\vb*r_1}^3} 
+\end{equation}
+
+\noindent
+\begin{center}
+Oder in bekanntere Form (nicht vektoriell, Punktladungen auf Abstand r)
+\end{center}
+\begin{equation*}
+  F_c = k \frac{q_1 q_2}{r^2} 
+\end{equation*}
+wobei $\vb F_{1\to2}$ die Kraft ist, die Teilchen 1 auf Teilchen 2 ausübt. 
+Sei $q_1q_2>0$ so wirkt die Kraft abstoßend, 
+und sei $q_1q_2<0$, so wirkt sie natürlich anziehend.
+
+\noindent
+Die Elektrische Kraft ist eine Zentralkraft und deswegen 
+\textbf{konservativ}, d.h. 
+\begin{equation}
+  \oint \vb F(\vb* r) \cdot d\vb*s = 0 \stackrel{*}{\Leftrightarrow} \curl \vb F =0
+\end{equation}
+\begin{center}
+(*Satz von Stokes)
+\end{center}
+Dies heißt auch, dass die Coulombkraft ein skalares Potential $V(\vb*r)$ besitzt, mit
+$\vb F(\vb*r)=-\grad V(\vb*r)$
+
+\subsubsection{Das Elekrtische Feld}%
+\label{ssub:E-feld}
+Neben die Kraft, die nur über die Wechselwirkung zweier Teilchen definiert
+ist, ist es Sinnvoll das \textbf{Elektrische Feld} zu definieren. Man 
+definiert das Elektrische Feld aus ersten Prinzipien aus der Coulombkraft.
+
+\begin{equation*}
+  \vb F(q_1, q_2, \vb*r_1, \vb*r_2) 
+  = 
+  q_1 
+  \qty(k q_2 \frac{\vb*r_2 - \vb*r_1}{\abs{\vb*r_2 - \vb*r_1}^3})
+  = q_1 \vb E_2(\vb*r_1)
+\end{equation*}
+Man verstehe dies so, dass Teilchen 1 mit Ladung $q_1$ 
+sich am Ort $\vb*r_1$ im äußeren Elektrisches Feld $\vb E_2$, 
+erzeugt von Teilchen 2 mit 
+Ladung $q_2$ das am ort $r_2$ liegt, befindet und daher eine Kraft spürt.
+
+Eine Probeladung $q$ im externen elektrischen Feld $\vb E$ spürt also die Kraft
+
+\begin{equation}
+  \vb F(\vb*r) = q \vb E(\vb*r)
+\end{equation}
+
+Das Elektrische Feld einer Ladungsverteilung $\rho_1$ ist dann ein 
+maß für die Kraft, die eine andere, äußere Ladungsverteilung $\rho_2$ 
+wegen der Anwesendheid von $\rho_1$ spüren würde. 
+
+\subsubsection{Das Elekrtische Potential}%
+\label{ssub:E-pot}
+Weil die Coulombkraft ein
+Skalares Potential $V(\vb*r)$ besitzt, 
+besitzt das Elektrische Feld auch ein skalares \textbf{Elektrisches Potential}
+$\phi(\vb*r)$ mit
+\begin{equation}
+  \vb E(\vb*r)=-\grad \phi(\vb*r)
+\end{equation}
+
+Dabei ist $k$ die gleiche Konstante die auch im Coulombkraft auftauchte. Diese
+konstate ist abhängig vom gewählten Einheitssystem. In SI gilt z.B. 
+$k=\frac{1}{4\pi\epsilon_0}$ mit $\epsilon_0$ die elekrische Permitivität des
+Vakuums, und in Gauß-Einheiten gilt $k=1$
+
+Nun wollen wir wissen, wie man aus eine beliebige 
+Ladungsverteilung $\rho(\vb*r)$ das zugehörige
+elekrische Potential $\phi(\vb*r)$ bzw.\ elektrische Feld $\vb E(\vb*r)$ 
+findet. Aus der Coulombkraft kann man herleiten, dass das Potential
+einer Punktladung $Q$ welches im Ursprung liegt gegeben ist durch
+\begin{equation*}
+  \phi(\vb*r) = k  \frac{Q}{r} \quad r=\abs{\vb*r}
+\end{equation*}
+Denn $\vb E(\vb*r)=-\grad\phi(\vb*r)=k \frac{Q}{r^2}\vu e_r $ 
+woraus die Coulombkraft $F_c(\vb*r)=k \frac{qQ}{r^2}$ wieder folgt.
+Liegt das Teilchen nicht im Ursprung, sondern am beliebigen Ort, $\vb*r_0$
+so findet man den Zusammenhang (durch eine einfache Translation)
+\begin{equation*}
+  \phi(\vb*r) = k \frac{Q}{\abs{\vb*r - \vb*r_0}}
+\end{equation*}
+Das Potential mehrere Punktteilchen ergibt sich aus der addition für die 
+Potenziale der einzelnen Teilchen.
+\begin{equation*}
+  \phi(\vb*r) = \sum_i \phi_i(\vb*r) = k\sum_i \frac{q_i}{\abs{\vb*r-\vb*r_i}}
+\end{equation*}
+Daraus lässt sich dann über das Limesprozeß einer Riemannsche Summe das 
+Potential einer kontinuierliche Ladungsverteilung $\rho(\vb*r)$ definieren
+\begin{equation}
+  \phi(\vb*r) = k \int d^3 r' \frac{\rho(\vb*r')}{\abs{\vb*r-\vb*r'}} 
+\end{equation}
+Man kann auch direkt das E-Feld aus die Ladungsverteilung berechnen, falls 
+man den Gradient (nach $\vb*r$, nicht $\vb*r'$) von der obere Formel nimmt, 
+und findet
+\begin{equation}
+  \vb E(\vb*r) = k \int d^3r' 
+  \rho(\vb*r')\frac{(\vb*r-\vb*r')}{\abs{\vb*r-\vb*r'}^3} 
+\end{equation}
+
+\subsubsection{Die Feldgleichungen der Elektrostatik}%
+\label{ssub:Die-Feldgleichungen}
+Die Divergenz des elektrischen Feldes gibt nun die Quellendichte des Feldes.
+Wir wissen schon aus Erfahrung, dass die elektrische Ladung die Quelle der 
+Coulombkraft ist und deswegen auch des elektrischen Feldes. Zusammen mit die
+Rotationsfreiheit der Coulombkraft, und somit auch die Rotationsfreiheit des
+E-Feldes folgen die beiden \textbf{Feldgleichungen der Elektrostatik}.
+\begin{equation}
+  \begin{aligned}
+    \div \vb E &= 4\pi k \rho(\vb*r)\\
+    \curl \vb E &= 0
+  \end{aligned}
+\end{equation}
+Diese Feldgleichungen sind allgemeingültig für alle elektrostatische Felder.
+
+Weiter folgt aus den Zusammenhänge $\vb E = -\grad \phi$ und 
+$\div E = 4\pi k \rho(\vb*r)$ die \textbf{Poisson-Gleichung} 
+\begin{equation}
+  \Delta \phi(\vb*r) = - 4\pi k \rho(\vb*r)
+\end{equation}
+Die Poisson-Gleichung ist eine Differentialgleichung 2.\ Ordnung. Unter 
+vorgabe von Randbedingungen kann man auch ohne die Ladungsverteilung zu 
+kennen das Potential und daraus das Elekrtische Feld berechnen. Das Lösen
+der Poisson-Gleichung ist ein Thema für ein eigenes Kapitel. 
+
+\textbf{Die Hauptaufgabe der Elektrostatik} ist also das Berechnen von 
+elektrostatische Potentiale und Felder unter vorgabe von 
+Ladungsverteilungen oder Randbedingungen. 
+Für Hochsymmetrische Probleme sind im Allgemeinen analytische 
+Lösungen möglich, für schwierigere Probleme können meistens nur numerische 
+Lösungen gefunden werden. Für uns ist erstmal das Finden von analytische
+Lösungen interessant um ein Grundverständnis aufzubauen. Dazu werden auch
+Methoden besprochen die uns analytische Näherungen geben können, wie die
+Multipolentwicklung.

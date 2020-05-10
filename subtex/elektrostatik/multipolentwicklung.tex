@@ -1,0 +1,282 @@
+Zunächst besprechen wir wie man analytische Näherungen finden kann
+unter angabe von komplexere Ladungsverteilungen. 
+Das Problem ist meistens das Integrieren der
+\begin{equation*}
+  \frac{1}{\abs{\vb*r-\vb*r'}}
+\end{equation*}
+Term (in Kombination mit die Ladungsdichte $\rho(\vb*r')$). 
+Deswegen möchten wir in der \textbf{karthesische Multipolentwicklung} 
+diesen  Term Taylor-entwickln, damit wir es in eine 
+Reihe von Polinomiale Terme umwandeln können, 
+weil diese Einfach(er) zu integrieren ist. 
+Daneben gibt es noch die \textbf{Kugelfächen-Entwicklung} die sich 
+insbesondere für Radial- bzw. Rotationssymmetrische Probleme eignet, 
+die wir Später besprechen werden. 
+
+\subsubsection{Karthesische Multipolentwicklung}%
+\label{ssub:Karthesische-Multipolentwicklung}
+Die karthesische Multipolentwicklung wird mittels eine Taylor-Entwicklung
+hergeleitet. Man muss dabei eine Multidimensionale Taylor-Entwicklung 
+durchführen.
+
+Eine allgemeine mehrdimensionale Taylorentwicklung wird gegeben durch:
+\begin{equation*}
+  f(\vb*\alpha, \vb*\beta)
+  =\qty(\exp(\vb*\beta\cdot\nabla_{\vb*\beta'})
+  f(\vb*\alpha, \vb*\beta'))
+  \bigg|_{\vb*\beta=\vb*\beta_0}
+  =\qty(\sum_{n=0}^\infty
+  \frac{(\vb*\beta\cdot\nabla_{\vb*\beta'})^n}{n!}
+  f(\vb*\alpha, \vb*\beta'))
+  \bigg|_{\vb*\beta'=\vb*\beta_0}
+\end{equation*}
+Man bemerke dass $\nabla$ einen Operator ist! Die exponential Funktion
+dient hier nur zur vereinfachung der Darstellung! Man Taylore nun um $\vb*r'=0$ (dies heißt, daß $\vb*r\gg\vb*r'$ sodass 
+$\vb*r-\vb*r'\approx\vb*r$, dafür muss $\vb*r$ natürlich weit
+von der Quelle entfernt sein). Die Multipolentwicklung ist also ein 
+\textbf{Fernfeldnäherung}.
+
+Man definiere nun $f(\vb*r,\vb*r')=f(r_1,r_2,r_3,r_1',r_2',r_3')
+\equiv\frac{1}{\abs{\vb*r-\vb*r'}}$ sodass bis zur 2. Ordnung die Taylorentwicklung für unsere Funktion
+wie folgt aussieht:
+
+\begin{equation*}
+  \frac{1}{\abs{\vb*r-\vb*r'}}=f(\vb*r, 0)
+  + (\vb*r'\cdot \nabla_{\vb*{\bar{r}'}}) f(\vb*r, \vb*{\bar{r}}')\bigg|_{\vb*{\bar{r}}'=0}
+  + \frac{1}{2}(\vb*r'\cdot\nabla_{\vb*{\bar r'}})^2
+  f(\vb*r,\vb*{\bar r}')
+  \bigg|_{\vb*{\bar r'}=0}
+  + \ldots
+\end{equation*}
+
+\underline{0. Ordnung:}
+\begin{equation*}
+  \frac{1}{\abs{\vb*r-\vb*{\bar r'}}}\bigg|_{\vb*{\bar r'}=0} 
+  = \frac{1}{\abs{\vb*r}}= \frac{1}{r} 
+\end{equation*}
+
+\underline{1. Ordnung:}
+\begin{equation*}
+  \vb*{r'}\cdot
+  \nabla_{\vb*{\bar{r}'}}\frac{1}{\abs{\vb*r-\vb*{\bar{r}'}}}
+  \bigg|_{\vb*{\bar r'}=0}
+  = \frac{\vb*{ r'}\cdot\vb*r}{r^3} 
+\end{equation*}
+
+\underline{2. Ordnung:}
+\begin{equation*}
+  \begin{split}
+  \frac{1}{2}(\vb*{\bar r'}\cdot\nabla_{\vb*{\bar{r}'}})^2
+  \frac{1}{\abs{\vb*r-\vb*{\bar r'}}}\bigg|_{\vb*{\bar r'}=0}
+  &=
+  \frac{1}{2}\qty[r_i'\pdv {\bar r_i'}]\qty[r_j'\pdv{\bar r_j'}]
+  \frac{1}{\abs{\vb*r-\vb*{\bar r'}}}
+  \bigg|_{\vb*{\bar r'}=0}\\
+  &=
+  \frac{r'_ir'_j}{2} 
+  \frac{\partial^2}{\partial_{\bar r_i'}\partial_{\bar r_j'}} 
+  \frac{1}{\abs{\vb*r-\vb*{\bar r'}}}\bigg|_{\vb*{\bar r'}=0}\\
+  &=
+  \frac{r'_ir'_j}{2} \frac{\partial}{\partial_{\bar r_i'}} 
+  \frac{x_j}{\abs{\vb*r-\vb*{\bar r'}}^3}\bigg|_{\vb*{\bar r'}=0}
+  \qquad x_j\equiv (r_j-\bar r_j')\\
+  &=
+  \frac{r'_ir'_j}{2} \frac{\partial}{\partial_{\bar r_i'}} 
+  \frac{x_j}{\abs{\vb*r-\vb*{\bar r'}}^3}\bigg|_{\vb*{\bar r'}=0}\\
+  &=
+  \frac{r'_ir'_j}{2} 
+  \qty(
+    \text{-}\frac{3}{2}
+    \frac{\text{-}2x_i x_j}{\abs{\vb*r-\vb*{\bar r'}}^5}
+    -\frac{\delta_{ij}}{\abs{\vb*r-\vb*{\bar r'}}^3} 
+  )\bigg|_{\vb*{\bar r'}=0}\quad\text{(Produktregel)}\\
+  &=
+  \frac{1}{2}\sum_{i,j=1}^3 \frac{3r_ir_j-\delta_{ij}\vb*r^2}{r^5}
+  r_i'r_j'
+  \end{split}
+\end{equation*}
+\textit{Eine wichtige Bemerkung:}
+Aus Symmetrie Grunden gilt
+\begin{equation*}
+  \frac{1}{2}\sum_{i,j=1}^3 \frac{3r_ir_j-\delta_{ij}\vb*r^2}{r^5}
+  r_i'r_j'
+  =
+  \frac{1}{2}\sum_{i,j=1}^3 \frac{3r'_ir'_j-\delta_{ij}\vb*r'^2}{r^5}
+  r_ir_j
+\end{equation*}
+Wir benutzen im allgemeinen die letzte Definition wenn wir die
+elektrische und magnetische Multipole berechnen. Man findet also bis zum
+2. Ordnung
+\begin{equation}
+  \frac{1}{\abs{\vb*r-\vb*r'}}
+  \approx 
+  \frac{1}{r} 
+  + \frac{\vb*r'\cdot\vb*r}{r^3} 
+  + \frac{1}{2}\sum_{i,j=1}^3 
+    \frac{3r'_ir'_j-\delta_{ij}\vb*r'^2}{r^5}r_ir_j
+\end{equation}
+Setzt man dies in die Definition für das Elektrische Potential ein, so 
+findet man
+\begin{equation*}
+  \begin{split}
+    \phi(\vb*r) 
+    &= k \int d^3 r' \frac{\rho(\vb*r')}{\abs{\vb*r - \vb*r'}} \\
+    & \approx k\int d^3 r' \rho(\vb*r')
+    \qty(
+    \frac{1}{r} 
+    + \frac{\vb*r'\cdot\vb*r}{r^3} 
+    + \frac{1}{2}\sum_{i,j=1}^3 
+    \frac{3r'_ir'_j-\delta_{ij}\vb*r'^2}{r^5}r_ir_j)\\
+    &\equiv 
+    k \frac{Q}{r} + k \frac{\vb*p\cdot\vb*r}{r^3} 
+    + \frac{k}{2} \sum_{i,j=1}^{3} \frac{r_ir_j}{r^5}Q_{ij}
+  \end{split}
+\end{equation*}
+
+\begin{center}
+\begin{tabular}{ll}
+  Monopol:    & $\ds Q=\int d^3r\rho(\vb* r)$ \quad\text(Gesammtladung)\\
+  Dipol:      & $\ds p_i=\int d^3r\rho(\vb* r)r_i
+                \quad\vb* p=p_i\vu{e}_i $\\
+  Quadrupol:  & $\ds Q_{ij}=\int d^3r\rho(\vb* r)
+  \qty(3r_ir_j - \delta_{ij}\abs{\vb* r}^2)$
+\end{tabular}
+\end{center}
+Dabei hat die Quadrupoltensor $Q_{ij}$ nur 5 Freiheitsgraden. 
+Mit nur 5 Rechnungen alle (9) Quadrupol Elemente berechnen. 
+Es gilt zwar $Q_{ij}=Q_{ji}$ (symmertrisch) und $\text{sp}(\bm Q)=\sum_i Q_{ii}=0$ (spurfrei).
+
+Im allgemeinen berechnet 
+man keine weitere Ordnungen analytisch im Bachelorstudium, 
+und zum Verständniss bringt dies auch nicht mehr (außer ärger), 
+sodass höhere Ordnungen berechnen 
+ein Problem ist das man lieber an Computer überlässt.
+
+\subsubsection{Sphärische Multipolentwicklung}%
+\label{ssub:sphaerische-Multipolentwicklung}
+Für Ladungsverteilungen die Radial- oder Rotationssymetrisch sind ist die 
+Sphärische Multipolentwicklung besonders geeignet, vor allem falls man die 
+Ladungsdichte als Linearkombination von Kugelfächen-Funktionen schreiben 
+kann. Um die Sphärische Multipolentwicklung zu motivieren machen wir 
+zunächst die Annahme (mit dem Seperationsansatz), dass das 
+Winkelanteil des Potentials unabhähngig vom Radialanteil ist, also
+\begin{equation*}
+  \phi(\vb*r) = \phi_r(r)\phi_\Omega(\theta,\varphi)
+\end{equation*}
+Weil man (wie wir später besprechen werden) die Poisson-Gleichung mit dem
+gleichen Ansatz lösen wird, und die Kugelflächen-Funktionen 
+$Y_{lm}(\theta,\varphi)$ eine Eigenfunktion der Laplace Operator ist, 
+ist es eine gute Idee um dies als Basis für eine Sphärische Entwicklung 
+zu benutzen. Dazu formen die Kugelflächen-Funktionen unter Integration über
+$d\Omega=\sin\theta d\theta d\varphi$ eine orthonormale Basis. Es gilt die untere Zusammenhang.
+\begin{equation*}
+  \int d\Omega Y_{lm}(\Omega)Y^*_{l'm'}(\Omega)=\delta_{ll'}\delta_{mm'}
+\end{equation*}
+
+Die Entwicklung in Kugelkoordinaten ist rechnerisch etwas aufwändig, und
+wird hier erstmal übersprungen, aber sie wird in gute Literatur über
+die Elektrodynamik oft gegeben, wie z.B. in Kapitel 2.3.8 von Noltings
+``Grundkurs Theoretische Physik 3, Elektrodynamik''. 
+Man findet 
+\begin{equation}
+  \frac{1}{\abs{\vb*r-\vb*r'}}
+  =
+  \sum_{lm} \frac{4\pi}{2l+1} \frac{r_<^l}{r_>^{l+1}}
+  Y^*_{lm}(\Omega')Y_{lm}(\Omega)
+\end{equation}
+\begin{center}
+mit $l=0,1,2,\ldots$ und $m=-l,\ldots,l$\\
+$r_<=\min(r,r')$, $r_>=\max(r,r')$.
+\end{center}
+Setzt man dies in der Definition für das Elektrische Potential ein, 
+so findet man
+\begin{equation}
+  \begin{split}
+    \phi(\vb*r) 
+    &= k\int d^3r' \rho(\vb*r') \frac{1}{\abs{\vb*r-\vb*r'}} \\
+    &= k\sum_{lm} \frac{4\pi}{2l+1} 
+    \int_0^\infty dr'{r'}^2 \frac{r_<^l}{r_>^{l+1}} 
+    \int_\Omega d\Omega' Y^*_{lm}(\Omega')Y_{lm}(\Omega) \rho(\vb*r')\\
+    &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega) 
+    \qty(
+    \int_0^{r} dr'{r'}^2 \frac{{r'}^l}{r^{l+1}} +
+    \int_{r}^{\infty} dr'{r'}^2 \frac{r^l}{{r'}^{l+1}} 
+    )
+    \int_\Omega d\Omega' Y^*_{lm}(\Omega')\rho(\vb*r')\\
+  \end{split}
+\end{equation}
+Sei nun die Ladungsdichte 
+$\rho(\vb*r')=\sum_{l'm'}f_{f'm'}(r')Y_{l'm'}(\Omega')$
+für beliebige $l'$ und $m'$ (also einfach irgendeine Linearkombination von
+beliebige Kugelflächenfunktionen) so vereinfacht sich das Problem weiter,
+und kann man für eine Endliche Summe sogar exakte Lösungen finden.
+(Es ist nicht notwendig dass man die Ladungsdichte als Linearkombination
+von Kugelflächenfunktionen schreibt, nur einfacher).
+\begin{equation}
+  \begin{split}
+    \phi(\vb*r) 
+    &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega) \sum_{l'm'}
+    \qty(
+    \int_0^{r} dr'\frac{{r'}^(l+2)}{r^{l+1}}f_{l'm'}(r) +
+    \int_{r}^{\infty} dr'\frac{r^l}{{r'}^{l-1}}f_{l'm'}(r) 
+    )
+    \int_\Omega d\Omega' Y^*_{lm}(\Omega')Y_{l'm'}(\Omega')\\
+    &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega) \sum_{l'm'}
+    \qty(
+    \int_0^{r} dr'\frac{{r'}^{l+2}}{r^{l+1}}f_{l'm'}(r) +
+    \int_{r}^{\infty} dr'\frac{r^l}{{r'}^{l-1}}f_{l'm'}(r) 
+    )
+    \delta_{ll'}\delta_{mm'}\\
+    &= k\sum_{l'm'} \frac{4\pi}{2l+1} Y_{l'm'}(\Omega)
+    \qty(
+    \int_0^{r} dr'\frac{{r'}^{l+2}}{r^{l+1}}f_{l'm'}(r) +
+    \int_{r}^{\infty} dr'\frac{r^l}{{r'}^{l-1}}f_{l'm'}(r) 
+    )
+  \end{split}
+\end{equation}
+d.h.\ alle Terme wo $l\neq l'$ oder $m\neq m'$ fallen wegen dem Kronecker-delta weg. Wir werden aber weiter wieder von eine allgemeine Ladungsdichte 
+ausgehen.
+
+Ist die Ladungsdichte nun nach Innen oder Nach außen beschränkt, dann kann
+man $r_>$ und $r_<$ eindeutig als $r$ oder $r'$ festlegen in bestimmte 
+Raumbereiche. Hat man z.B. eine geladene Kugelschale wobei die 
+Ladungsdichte, noch von $\theta$ und $\varphi$ abhängen darf, so kann man
+das Potential im Inneren mit nur dem $\int_r^\infty dr$ Integral beschreiben, und
+dem Außenraum mit durch das $\int_0^r dr$ Integral. Es macht manchmal 
+sogar kein Sinn die Lösungen der beide Raumbereiche gleichzeitig zu 
+berechnen weil die Lösung für das Innere Raumbereich im äußeren Raumbereich
+divergiren kann oder umgekehrt. Wir Teilen hier also zunächst die 
+Raumgebiete auf und finden Multipolmomente für dem innen und außen Räume 
+$q_<^{lm}$ und $q_>^{lm}$\\
+
+\noindent
+Im Innenraum ($r\approx 0$):
+\begin{equation}
+  \begin{split}
+    \phi(\vb*r) 
+    &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega)
+    \int_0^{r} dr'\frac{{r}^{l}}{{r'}^{l-1}}
+    \int_\Omega d\Omega'\rho(\vb*r)\\
+    &= k\sum_{lm} \frac{4\pi}{2l+1}r^l q_<^{lm} Y_{lm}(\Omega) 
+  \end{split}
+\end{equation}
+\begin{center}
+  mit $\ds q_<^{lm}=\int_0^\infty dr' {r'}^{1-l}
+  \int_\Omega d\Omega' Y_{lm}(\Omega')\rho(\vb*r)$
+\end{center}
+\noindent
+Im Außenraum ($r\gg0$):
+\begin{equation}
+  \begin{split}
+    \phi(\vb*r) 
+    &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega)
+    \int_0^{r} dr'\frac{{r'}^{l+2}}{r^{l+1}}
+    \int_\Omega d\Omega'\rho(\vb*r)\\
+    &= k\sum_{lm} \frac{4\pi}{2l+1} 
+    \frac{q_>^{lm}}{r^{l+1}} Y_{lm}(\Omega) 
+  \end{split}
+\end{equation}
+\begin{center}
+  mit $\ds q_>^{lm}=\int_0^\infty dr' {r'}^{l+2}
+  \int_\Omega d\Omega' Y_{lm}(\Omega')\rho(\vb*r)$
+\end{center}
