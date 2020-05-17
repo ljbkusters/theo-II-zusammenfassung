@@ -1,0 +1,127 @@
+In diesem Kapitel besprechen wir wie man die Poisson gleichung lösen kann.
+
+\subsection{die Poissongleichung}%
+\label{ssub:poissongleichung}
+
+Wie wir schon in Kapitel~\ref{ssub:Die-Feldgleichungen} hergeleitet haben
+gilt in der Elektrostatik die \textbf{Poissongleichung}
+\begin{equation*}
+  \Delta \varphi (\vb*r) = -4\pi k \rho(\vb*r)
+\end{equation*}
+Die aufgabe besteht nun darein, $\varphi$ zu finden. Die Poissongleichung 
+stellt eine partielle Differentialgleichung 2. Ordnung dar, die gelößt
+werden kann unter vorgabe von Randbedingungen (analog zu Anfangsbedingungen
+in der Mechanik). 
+
+Praktische Lösungsmethoden sind meistens abhänging von die Geometrie
+des zu lösenden Problems. Zunächst besprechen wir aber die Allgemeinste 
+Lösung (jedoch meistens nicht schnellste oder einfachste Lösungsweg) der
+Poissongleichung, die \textbf{Greensche Funktion}.
+
+\subsection{Die Greensche Identitäte und die Greensche Funktion}%
+\label{sub:green}
+
+Für das Poissonproblem gibt es 3 wichtige Identitäten, die 3 Green'sche 
+woraus man die allgemeine Lösung der Poissongleichung finden kann 
+mittels die Greensche funktion. Zunächst betrachten wir die allgemeine
+mathematische Identitäten und wenden sie danach Spezifisch für das Poisson
+Problem an.
+
+\subsubsection{1. Green'sche Identität}%
+\label{ssub:green-id-1}
+Gäbe es ein das Vektorfeld $\vb F = \psi \grad \varphi \equiv \psi \vb \Gamma$ 
+mit $\psi$ und $\varphi$ beliebige Skalarfelder mit $\psi\in C^1$ und
+$\varphi\in C^2$ (d.h. 1 bzw.\ 2 mal stetig diffbar) so folgt aus dem 
+Satz von Gauß
+\begin{equation}
+  \int_V \underbrace{\qty(\psi\Delta\varphi + 
+  \grad\psi\grad\varphi)}_{\div\vb F}dV =
+  \oint_{\partial V} \qty(\psi\grad\varphi) \cdot d\vb A
+\end{equation}
+wobei man beachtet daß
+\begin{equation*}
+  \div \vb F =\div (\psi \vb \Gamma) = 
+  \grad \psi \vb \Gamma + \psi\div\vb \Gamma = \grad \psi \grad \varphi + 
+  \psi \Delta \varphi
+\end{equation*}
+Die erste Greensche Identität ist also einen Spezialfall des Gauß Gesetzes
+
+\subsubsection{2. Green'sche Identität}%
+\label{ssub:green-id-2}
+Sei nun auch noch $\psi\in C^2$, und gäbe es ein weiteres $\epsilon\in C^1$
+sodass man das Vektorfeld 
+$\vb F=\psi(\epsilon\grad\psi) - \varphi(\epsilon\grad\psi)$ 
+definiert folgt wieder
+unter Anwendung der Satz von Gauß.
+
+\begin{equation}
+  \int_V \underbrace{\psi\div(\epsilon\grad\varphi) - \varphi\div(\epsilon\grad\psi)}_{\div \vb F} dV
+  = \oint_{\partial V} \epsilon (\psi \grad \varphi - \varphi \grad \psi) 
+  \cdot d\vb A
+\end{equation}
+
+wobei man beachtet daß
+\begin{equation*}
+  \div \vb F = \div (\psi (\epsilon\grad\varphi) - \varphi(\epsilon\grad\psi))
+  = \cancel{(\grad\psi)(\epsilon\grad\varphi)} 
+  + \psi\div(\epsilon\grad\varphi)
+  - \cancel{(\grad\varphi)(\epsilon\grad\psi)}
+  - \varphi\div(\epsilon\grad\psi)
+\end{equation*}
+
+Wir sind erstmal interessiert an dem Spezialfall wo $\epsilon=1$ ist, sodass
+folgt
+\begin{equation}
+  \int_V \psi\Delta\varphi - \varphi\Delta\psi dV= 
+  \oint_{\partial V} \psi\grad\varphi - \varphi\grad\psi d\vb A
+\end{equation}
+
+\subsubsection{3. Green'sche Identität}%
+\label{ssub:green-id-3}
+
+Man definiere nun die \textbf{Greensche Funktion} sodass gilt
+\begin{equation}
+  \Delta \green= \delta(\vb*r - \vb*r')
+\end{equation}
+Für den Laplace Operator $\Delta$ erfüllt die Funktion 
+$\green=-\frac{1}{4\pi}\frac{1}{\abs{\vb*r-\vb*r'}}$ 
+diese Bedingung. Die 
+Green'sche Funktion ist aber nicht eindeutich definiert, denn die Funktion 
+$\green
+=-\frac{1}{4\pi}\frac{1}{\abs{\vb*r-\vb*r'}} + F(\vb*r,\vb*r')$ erfüllt die
+Bedingung auch, falls $\Delta F(\vb*r, \vb*r')=0$
+
+Setzt man nun $\psi=\green$ und $\varphi=\phi(\vr')$ in die die 2.
+Greensche Identität ein, so folgt die 3. Greensche Identität (hier schon
+als Spezialfal für das elektrische Potenzial)
+\begin{equation}
+  \begin{split}
+    \int_V G(\vb*r,\vb*r')\underbrace{\Delta\phi(\vb*r')}_{%
+    -4\pi k\rho(\vb*r')} 
+    - \phi(\vb*r')\underbrace{\Delta \green}_{\delta(\vb*r - \vb*r')}
+    dV'
+    &= -4\pi k\int_V \rho(\vb*r') \green dV' -\phi(\vb*r)\\
+    &= \oint_{\partial V} (\green\grad\phi(\vr')-\phi(\vr')\grad\green)\ddA'\\
+  \end{split}
+\end{equation}
+Es folgt die Allgemeine Lösung für das Potenzial
+\begin{equation*}
+  \Leftrightarrow \phi(\vr) = -4\pi k\int_V \rho(\vr')\green dV' 
+  - \oint_{\partial V} (\green\grad\phi(\vr')-\phi(\vr')\grad\green)\ddA
+\end{equation*}
+
+Bemerke, dass falls $\phi$ und $\green$ im Unendlichen nach null abfallen,
+mit $\green=-\frac{1}{4\pi} \frr $ einfach Funktion~\ref{eq:potential} folgt.
+Dies ist also ein Spezialfall der allgemeine Lösung von $\phi(\vr)$, wo
+keine Randbedingungen vorgegeben sind, bzw.\ wo die Randbedingungen im
+Unendlichen liegen und deswegen verschwinden.
+
+Ist nun auf die Randfläche $\phi$ vorgegeben (Dirichlet Randbedingungen), 
+so kann man $G$ so wählen, 
+sodass $\green[D]\equiv\green\big|_{\vr'\in\partial V}= 0$ gilt, und vereinfacht sich 
+die 3. Greensche Identität sich zu
+\begin{equation}
+  \phi(\vb*r') = -4\pi k\int_V \rho(\vr')\green[D] dV' 
+  + \oint_{\partial V} \phi(\vr')\grad\green[D] \ddA
+\end{equation}
+vereinfacht

@@ -13,7 +13,7 @@ Daneben gibt es noch die \textbf{Kugelfächen-Entwicklung} die sich
 insbesondere für Radial- bzw. Rotationssymmetrische Probleme eignet, 
 die wir Später besprechen werden. 
 
-\subsubsection{Karthesische Multipolentwicklung}%
+\subsection{Karthesische Multipolentwicklung}%
 \label{ssub:Karthesische-Multipolentwicklung}
 Die karthesische Multipolentwicklung wird mittels eine Taylor-Entwicklung
 hergeleitet. Man muss dabei eine Multidimensionale Taylor-Entwicklung 
@@ -152,7 +152,7 @@ und zum Verständniss bringt dies auch nicht mehr (außer ärger),
 sodass höhere Ordnungen berechnen 
 ein Problem ist das man lieber an Computer überlässt.
 
-\subsubsection{Sphärische Multipolentwicklung}%
+\subsection{Sphärische Multipolentwicklung}%
 \label{ssub:sphaerische-Multipolentwicklung}
 Für Ladungsverteilungen die Radial- oder Rotationssymetrisch sind ist die 
 Sphärische Multipolentwicklung besonders geeignet, vor allem falls man die 
@@ -256,13 +256,13 @@ Im Innenraum ($r\approx 0$):
     \phi(\vb*r) 
     &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega)
     \int_0^{r} dr'\frac{{r}^{l}}{{r'}^{l-1}}
-    \int_\Omega d\Omega'\rho(\vb*r)\\
+    \int_\Omega d\Omega'Y^*_{lm}(\Omega')\rho(\vb*r')\\
     &= k\sum_{lm} \frac{4\pi}{2l+1}r^l q_<^{lm} Y_{lm}(\Omega) 
   \end{split}
 \end{equation}
 \begin{center}
   mit $\ds q_<^{lm}=\int_0^\infty dr' {r'}^{1-l}
-  \int_\Omega d\Omega' Y_{lm}(\Omega')\rho(\vb*r)$
+  \int_\Omega d\Omega' Y^*_{lm}(\Omega')\rho(\vb*r)$
 \end{center}
 \noindent
 Im Außenraum ($r\gg0$):
@@ -271,12 +271,12 @@ Im Außenraum ($r\gg0$):
     \phi(\vb*r) 
     &= k\sum_{lm} \frac{4\pi}{2l+1} Y_{lm}(\Omega)
     \int_0^{r} dr'\frac{{r'}^{l+2}}{r^{l+1}}
-    \int_\Omega d\Omega'\rho(\vb*r)\\
+    \int_\Omega d\Omega'Y^*_{lm}(\Omega')\rho(\vb*r')\\
     &= k\sum_{lm} \frac{4\pi}{2l+1} 
     \frac{q_>^{lm}}{r^{l+1}} Y_{lm}(\Omega) 
   \end{split}
 \end{equation}
 \begin{center}
   mit $\ds q_>^{lm}=\int_0^\infty dr' {r'}^{l+2}
-  \int_\Omega d\Omega' Y_{lm}(\Omega')\rho(\vb*r)$
+  \int_\Omega d\Omega' Y^*_{lm}(\Omega')\rho(\vb*r)$
 \end{center}

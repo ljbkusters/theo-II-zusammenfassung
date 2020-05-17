@@ -1,0 +1,113 @@
+In diesem Kapitel überlegen wir uns, wie Elektrische Felder sich an 
+\textbf{Randflächen} verhalten. Dabei ist es wichtig dass wir die aus den
+Vektorkalkulus folgenden \textbf{Satz von Gauß} und \textbf{Satz von Stokes}
+näher betrachten.
+
+\subsubsection{Randflächen und Randkurven}%
+
+Eine \textbf{Randfläche} ist ganz allgemein eine Fläche im Raum die Zwei 
+Raumgebiete trennt, z.B. trennt die Randfläche einer Kugel das innere der
+Kugel von dem Außenraum. 
+Man kann das Vakuum unendlich viele triviale Randflächen
+zuordnen. Was interessanter ist, sind Randflächen zwischen z.B. 
+unterschiedliche Medien wie Vakuum, metallische Leiter, (un)geladene 
+Dielektrika oder Ränder von Ladungsverteilungen. 
+
+Eine \textbf{Randkurve} ist eine Kurve die eine Oberfläche abschließt. 
+
+\subsubsection{Bedeutung der Sätze von Gauß und Stokes für Elektrostatische 
+Felder}%
+Zunächst wiederholen wir wie die Sätze mathematisch ganz 
+allgemein aussehen.\\
+
+\noindent
+Sei $V\subset \mathbb{R}^n$ eine Kompakte Menge mit glattem Rand 
+$\partial V$ mit ein nach äußeren orientierten Normaleneinheitsvektor 
+$\vb*n$ bzw. Flächen Element $d\vb A =  \vb*n dA$. Sei ferner das Vektorfeld
+$\vb F$ stetig differenzierbar auf einer offenen Menge $U$ 
+mit $V\subseteq U$ so gilt
+\begin{equation}
+  \int_V \div \vb FdV  = \oint_{\partial V} \vb F \cdot d\vb A 
+  \qquad \textrm{\textbf{Satz von Gauß}}
+\end{equation}
+Der Satz von Gauß besagt daß die Quellendichte (Divergenz) eines 
+Vektorfeldes $\div \vb F$
+integriert über ein Volumen $V$ proportional zur Flußintegrals 
+des Feldes durch der Randfläche des Volumen $\partial V$.\\
+
+\noindent
+Sei $A\subset \mathbb{R}^n$ eine einfach zusammenhängende Fläche mit
+glattem Randkurve $\partial A$ (die gegen dem Urzeigersinn durchlaufen 
+wird beim Integrieren). Sei ferner das Vektorfeld
+$\vb F$ stetig differenzierbar auf einer offenen Menge $U$ 
+mit $A\subseteq U$ so gilt
+\begin{equation}
+  \int_A (\curl \vb F) \cdot d\vb A= \oint_{\partial A} \vb F \cdot d\vb*l 
+  \qquad \textrm{\textbf{Satz von Stokes}}
+\end{equation}
+Der Satz von Stokes besagt daß das Flußintegral über die Wirbeldichte 
+(Rotation) eines
+Vektorfeldes $\curl \vb F$ über eine Fläche A proportional zur 
+Kurvenintegral entlang die Randkurve der Fläche $\partial A$
+
+In der Regel verhalten physikalische Felder sich immer sehr schön, sodass
+wir uns über die Stetige Differentationsbedingung erstmal keine gedanken
+machen müssen. Die Sätze von Gauß und Stokes schränken unsere zu betrachten
+Volumina und Flächen zwar ein, aber nur sehr exotische Objekte erfüllen
+die Bedingungen nicht, sodaß wir uns in der Regel auch keine Gedanken
+machen müßen ob die mathematische Bedingungen erfüllt sind.
+
+Zusammen mit die Feldgleichungen der Elektrostatik und die obere Sätze
+Folgen direkt die Folgende Aussagen
+\begin{equation}
+  \begin{split}
+    \oint_{\partial V} \vb E \cdot d\vb A 
+    &
+    =\int_V \underbrace{(\div \vb E)}_{4\pi k \rho(\vb*r)} dV
+    =4\pi k Q_{V,\text{ges}}\\
+    \oint_{\partial A} \vb E \cdot d\vb*l 
+    &
+    =\int_A \underbrace{(\curl \vb E)}_{0} \cdot d \vb A
+    = 0
+  \end{split}
+\end{equation}
+
+\subsubsection{Anwendung auf Randflächen}%
+\label{ssub:anwendungen-auf-randflaechen}
+Man kann nun eine allgemeine Randfläche im Raum betrachten. Legt man ein
+kleines Kästchen (Volumen) auf der Rand, zentriert um dem Rand --- also ein
+teil des Kästchens liegt an eine Seite der Randfläche, und ein Teil an 
+der andere Seite --- und läßt man dieses Kästchen nun immer kleiner werden,
+so betrachtet man annäherend zu die Randfläche selbst. Im limes von $V\to0$
+findet man sogar lokale Punkte auf der Oberfläche und gilt
+\begin{equation*}
+  \lim_{V \to 0} \oint_{\partial V} \vb E \cdot 
+  d\vb A 
+  = \vb E \cdot \vb*n= 4\pi k \sigma(\vb*r)
+\end{equation*}
+Wobei $\sigma(\vb*r)$ die lokale Flächenladungsdichte auf der Randfläche 
+ist.
+
+Analog kann man eine infinitisimale Flächenstückchen 
+--- die orthogonal auf der 
+Randfläche steht, mit ein Teil an einer Seite der Randfläche und ein Teil
+auf der andere Seite --- um die Randfläche zentrieren. Im limes von 
+$A\to0$ findet man
+\begin{equation*}
+    \lim_{A \to 0} \oint_{\partial A} \vb E \cdot d\vb*l 
+    = \vb E \times \vb*n
+    = 0
+\end{equation*}
+
+Es folgen die \textbf{Randflächenbedingungen}
+\begin{equation}
+  \begin{split}
+    \vb E \cdot \vb*n &= 4\pi k \sigma(\vb*r) \\
+    \vb E \times \vb*n &= 0
+  \end{split}
+\end{equation}
+Dies bedeutet weiter, daß die orthogonalkomponente 
+$\vb E_{\perp}= \vb E\cdot \vb*n$ (in der Anwesendheit einer 
+Flächenladungsdichte) einen Sprung um $4\pi k \sigma(\vb*r)$ macht, während
+die tangentialkomponente $\vb E_{\parallel}=\vb E \times \vb*n$ immer
+stetig ist.

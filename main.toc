@@ -2,32 +2,50 @@
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {0.1}Einleitung}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Elektrostatik}{4}
+\contentsline {chapter}{\numberline {1}Elektrostatik}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Ladungen und Ladungsverteilungen}{4}
+\contentsline {section}{\numberline {1.1}Ladungen und Ladungsverteilungen}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{5}
+\contentsline {section}{\numberline {1.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Coulombkraft}{5}
+\contentsline {subsection}{\numberline {1.2.1}Coulombkraft}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Das Elekrtische Feld}{5}
+\contentsline {subsection}{\numberline {1.2.2}Das Elekrtische Feld}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3}Das Elekrtische Potential}{5}
+\contentsline {subsection}{\numberline {1.2.3}Das Elekrtische Potential}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.4}Die Feldgleichungen der Elektrostatik}{6}
+\contentsline {subsection}{\numberline {1.2.4}Die Feldgleichungen der Elektrostatik}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Multipolentwicklung}{7}
+\contentsline {section}{\numberline {1.3}Multipolentwicklung}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}Karthesische Multipolentwicklung}{7}
+\contentsline {subsection}{\numberline {1.3.1}Karthesische Multipolentwicklung}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}Sph\IeC {\"a}rische Multipolentwicklung}{8}
+\contentsline {subsection}{\numberline {1.3.2}Sph\IeC {\"a}rische Multipolentwicklung}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Verhalten von Elektrostatische Felder an Randfl\IeC {\"a}chen}{11}
+\contentsline {section}{\numberline {1.4}Verhalten von Elektrostatische Felder an Randfl\IeC {\"a}chen}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}L\IeC {\"o}sung der Poisson Gleichung und Greensche Funktion}{12}
+\contentsline {subsubsection}{Randfl\IeC {\"a}chen und Randkurven}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}Spiegelladungsmethode}{13}
+\contentsline {subsubsection}{Bedeutung der S\IeC {\"a}tze von Gau\IeC {\ss } und Stokes f\IeC {\"u}r Elektrostatische Felder}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7}Elektrostatik in Materie}{14}
+\contentsline {subsubsection}{Anwendung auf Randfl\IeC {\"a}chen}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}L\IeC {\"o}sung der Poisson Gleichung und Greensche Funktion}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.1}die Poissongleichung}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.2}Die Greensche Identit\IeC {\"a}te und die Greensche Funktion}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{1. Green'sche Identit\IeC {\"a}t}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2. Green'sche Identit\IeC {\"a}t}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3. Green'sche Identit\IeC {\"a}t}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Spiegelladungsmethode}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}Elektrostatik in Materie}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.8}Energie von Elektrostatische Felder}{18}

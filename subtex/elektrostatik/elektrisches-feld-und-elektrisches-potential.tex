@@ -1,4 +1,4 @@
-\subsubsection{Coulombkraft}%
+\subsection{Coulombkraft}%
 \label{ssub:Coulombkraft}
 Schon in 1785 gelang Charles Augustin de Coulomb eine Beschreibung der
 Elektrische Kraft, welche man heutzutage dann auch die 
@@ -34,7 +34,7 @@ Die Elektrische Kraft ist eine Zentralkraft und deswegen
 Dies heißt auch, dass die Coulombkraft ein skalares Potential $V(\vb*r)$ besitzt, mit
 $\vb F(\vb*r)=-\grad V(\vb*r)$
 
-\subsubsection{Das Elekrtische Feld}%
+\subsection{Das Elekrtische Feld}%
 \label{ssub:E-feld}
 Neben die Kraft, die nur über die Wechselwirkung zweier Teilchen definiert
 ist, ist es Sinnvoll das \textbf{Elektrische Feld} zu definieren. Man 
@@ -62,7 +62,7 @@ Das Elektrische Feld einer Ladungsverteilung $\rho_1$ ist dann ein
 maß für die Kraft, die eine andere, äußere Ladungsverteilung $\rho_2$ 
 wegen der Anwesendheid von $\rho_1$ spüren würde. 
 
-\subsubsection{Das Elekrtische Potential}%
+\subsection{Das Elekrtische Potential}%
 \label{ssub:E-pot}
 Weil die Coulombkraft ein
 Skalares Potential $V(\vb*r)$ besitzt, 
@@ -98,10 +98,14 @@ Potenziale der einzelnen Teilchen.
   \phi(\vb*r) = \sum_i \phi_i(\vb*r) = k\sum_i \frac{q_i}{\abs{\vb*r-\vb*r_i}}
 \end{equation*}
 Daraus lässt sich dann über das Limesprozeß einer Riemannsche Summe das 
-Potential einer kontinuierliche Ladungsverteilung $\rho(\vb*r)$ definieren
+Potential einer kontinuierliche Ladungsverteilung $\rho(\vb*r)$ definieren.
 \begin{equation}
+  \label{eq:potential}
   \phi(\vb*r) = k \int d^3 r' \frac{\rho(\vb*r')}{\abs{\vb*r-\vb*r'}} 
 \end{equation}
+Wir werden Später sehen, das dies nur ein Spezialfall ist, und diese
+Zusammenhang formaler aus der Poissong-Gleichung herleiten.
+
 Man kann auch direkt das E-Feld aus die Ladungsverteilung berechnen, falls 
 man den Gradient (nach $\vb*r$, nicht $\vb*r'$) von der obere Formel nimmt, 
 und findet
@@ -110,7 +114,7 @@ und findet
   \rho(\vb*r')\frac{(\vb*r-\vb*r')}{\abs{\vb*r-\vb*r'}^3} 
 \end{equation}
 
-\subsubsection{Die Feldgleichungen der Elektrostatik}%
+\subsection{Die Feldgleichungen der Elektrostatik}%
 \label{ssub:Die-Feldgleichungen}
 Die Divergenz des elektrischen Feldes gibt nun die Quellendichte des Feldes.
 Wir wissen schon aus Erfahrung, dass die elektrische Ladung die Quelle der 
