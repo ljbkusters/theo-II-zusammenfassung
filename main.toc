@@ -44,8 +44,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{3. Green'sche Identit\IeC {\"a}t}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Spiegelladungsmethode}{16}
+\contentsline {subsection}{\numberline {1.5.3}Praktische L\IeC {\"o}sungswege}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Elektrostatik in Materie}{17}
+\contentsline {subsubsection}{Spiegelladungsmethode}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Energie von Elektrostatische Felder}{18}
+\contentsline {subsubsection}{Seperationsansatz}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Allgemeine Seperationsansatz in Kugelkoordinaten}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Elektrostatische Energie}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.1}Energie von Ladungen im Externen Feld}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.2}Feldenergie und Selbstinteraction}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}Elektrostatik in Materie}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.1}Materialarten}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.2}Polarisation und dielektrische Verschiebung}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.3}Randbedingungen an Dielektrika}{19}

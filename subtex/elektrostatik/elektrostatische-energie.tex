@@ -1,0 +1,86 @@
+In diesem Kapitel besprechen wir wie die Energie von Ladungsverteilungen 
+in externe Felder aussieht, sowie die Wechselwirkungsenergie zweier
+Ladungsverteilungen.
+
+\subsection{Energie von Ladungen im Externen Feld}%
+Bewegt sich eine Ladung $q$ 
+durch ein äußeres Elektrisches Feld $\vb E_{\mathrm{a}}(\vr)$ mit
+Potential $\phi_{\mathrm{a}}(\vr)$, so spürt es die Kraft $\vb F(\vr)=q\vb E(\vr)$ und wird
+die Arbeit
+\begin{equation*}
+  W 
+  = -\int_C \vb F(\vr) \cdot d\vb l 
+  = -q\int_C \vb E_{\mathrm{a}}(\vr) \cdot d\vb l 
+  = q\int_{C} \grad\phi_{\mathrm{a}}(\vr) \cdot d\vb l 
+  = q(\phi_{\mathrm{a}}(\vr_1)-\phi_{\mathrm{a}}(\vr_0))
+  = qU_{\vr_0\to\vr_1}
+\end{equation*}
+verrichtet, wobei $C$ eine beliebige Raumkurve von $\vr_0$ nach $\vr_1$ ist.
+Betrachtet man statt eine Punktladung eine Ladungsdichte $\rho(\vr)$ im
+äußeren E-Feld, so muss man den oberen Zusammenhang über dem Volumen
+integrieren. Setzt man $\phi_{\mathrm a}(\vr_0)=0$ (Potential
+wird immer relativ definiert), so findet man für
+die Potentielle Energie den untere Zusammenhang
+\begin{equation}
+  \label{eq:Epot}
+  E_{\mathrm{pot}}=\int d^3r \rho(\vr)\phi_{\mathrm{a}}(\vr)
+\end{equation}
+
+Sei die Ladungsverteilungen auf einem kleinen Raumbereich um $\vr_0=0$ 
+beschränkt, so kann man das äußere Potential Taylorentwickeln um eine
+gute näherung für die Potentielle Energie zu finden.
+\begin{equation*}
+  T(\phi_{\mathrm{a}}(\vr); \vr_0=0) = 
+  \phi_{\mathrm{a}}(0) 
+  - \vb E_{\mathrm{a}}(0)\cdot\vr 
+  - \frac{1}{2} \sum_{ij} \del j {E_{\mathrm{a},i}}(0)r_ir_j
+  + \ldots
+\end{equation*}
+Setzt man dies in Gleichung~\ref{eq:Epot} ein, so findet man
+\begin{equation}
+  E_{\mathrm{pot}}\approx 
+  \phi_{a}(0)Q 
+  - \vb E_{a}(0) \cdot \vb*p
+  - \frac{1}{6} \sum_{ij} \del j E_i(0)Q_{ij}
+\end{equation}
+Wobei $Q$, $\vb*p$ und $Q_{ij}$ die Multipolmomente sind. Man bemerke also,
+dass (näherungsweise für ausgedehnte Ladungsverteilungen) die 
+elektrostatische potentielle Energie verursacht wird durch die Kopplung
+(d.h. ``mathematische interaktion'') von die Gesammtladung mit dem äußeren 
+Potential und den Dipol mit dem E-Feld usw.
+
+\subsection{Feldenergie und Selbstinteraction}%
+\label{sub:feldenergie}
+Bis jetzt wurden die Effekte die die Ladungsverteilungen selbst verursacht
+vernachlässigt. Jetzt möchten wir uns aber anschauen wie wir die gesammte
+energie eines Systems berechnen können, wenn wir nicht ausgehen von äußere
+felder. Sei nun $\rho(\vr)$ die Ladungsverteilungen des gesammten Raumes,
+mit das zugehörige Elektrische Potential $\phi_\rho(\vr)$.
+
+Es gilt noch immer die Zusammenhang aus Gleichung~\ref{eq:Epot}, stellt 
+nun jedoch keine potentielle Energie in einem äußeren Feld mehr dar 
+sondern eine Wechselwirkungsenergie und es gilt,
+\begin{equation}
+  E_{\mathrm{WW}}=\int d^3r\rho(\vr)\phi_\rho(\vr)
+  =\int d^3r\rho(\vr)\int d^3 r' \frac{\rho(\vr')}{\rr}
+  =\int d^3r\int d^3 r' \frac{\rho(\vr)\rho(\vr')}{\rr}
+\end{equation}
+Über die Poissongleichung $\Delta\phi(\vr)=-4\pi k \rho(\vr)$ 
+kann man dies weiter umformen nach
+\begin{equation}
+   \begin{split}
+      E_{\mathrm{WW}}
+      &=\int_{\mathbb{R}^3} d^3r\rho(\vr)\phi(\vr)
+      =-\frac{1}{8\pi k} \int_{\mathbb{R}^3} 
+      d^3r\phi(\vr)\Delta\phi(\vr) \\
+      &\stackrel*= 
+      \frac{1}{8\pi k} \int_{\mathbb{R}^3} d^3r
+      \underbrace{\grad\phi(\vr)\grad\phi(\vr)}_{\vb E^2(\vr)}
+      -\frac{1}{8\pi k}\underbrace{\oint_{\partial\mathbb{R}^3}
+        \phi(\vr)\grad\phi(\vr) \ddA}_{=0\ (\phi(\vr\to\infty)\to0)} \\
+      &=\frac{1}{8\pi k} \int d^3r \vb E^2(\vr) 
+   \end{split}
+\end{equation}
+\begin{center}
+  (* 1. Greensche Identität)
+\end{center}

@@ -1,3 +1,4 @@
+% reference in mathmode
 \newcommand{\mrm}[1]{\mathrm{#1}}
 \newcommand{\unit}[1]{\,\mathrm{#1}}
 \newcommand{\unitp}[1]{\,(\mathrm{#1})}
@@ -7,9 +8,18 @@
 %\newcommand{\EXP}[1]{\langle#1\rangle} 
 %\newcommand{\x}{\cdot} 
 
+
+% MATH
+% math formatting
+\newcommand{\del}[1]{\partial_{#1}}
+\newcommand{\const}{\mathrm{const.}}
 \newcommand{\green}[1][]{G_{#1}(\vb*r,\vb*r')}
-\newcommand{\dA}{d\vb A}
-\newcommand{\ddA}{\cdot d\vb A}
-\newcommand{\vr}{\vb*r}
+\newcommand{\dA}{d\vb A}          % dA surface differential (vector)
+\newcommand{\ddA}{\cdot d\vb A}   % *dA surface differential (vector)
+\newcommand{\vr}{\vb*r}           % r vector
+% |r-r'|
 \newcommand{\rr}{\abs{\vb*r-\vb*r'}}
+% 1/|r-r'| with option to replace 1/... with x/...
 \newcommand{\frr}[1][1]{\frac{#1}{\abs{\vb*r-\vb*r'}}}
+\newcommand{\Y}{Y_{lm}(\Omega)}
+\newcommand{\Ya}{Y_{lm}(\Omega')}

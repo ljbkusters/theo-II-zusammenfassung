@@ -1,0 +1,145 @@
+Die bisherige hergeleitete Formeln sind alle Gülltig im Vakuum. In Medien
+sowie Dielektrika oder Leiter können jedoch mikroskopische Interaktionen
+entstehen, weil Atome und Moleküle aus geladenen Teilchen bestehen, die
+Elektrische Felder verändern können. 
+Eine Mikroskopische Beschreibung von Vielteilchen Systeme ist aber nicht
+das Ziel der makroskopische Elektrodynamik. 
+Deswegen werden zunächst auf Makroskopische Skala
+vereinfachungen eingeführt, woraus man ein sehr 
+praktisches und verständliches Bild der Elektrodynamik herleiten kann.
+
+\subsection{Materialarten}%
+Man unterscheided zunächst zwischen zwei Arten von Medien, zwar 
+(Metallische) 
+\textbf{Leiter} und \textbf{Dielektrika} (auch Isolatoren genannt). 
+
+\begin{enumerate}
+  \item In Leiter gibt es, 
+neben gebundenen Ladungen (Valenzelektronen, Protonen), 
+\textbf{freie Ladungen} (Leitungselektronen) die 
+frei durch dem Medium bewegen können. Die freie Ladungen können angelegte
+elektrische Felde entgegenwirken und deswegen aufheben.
+  \item In Dielektrika sind alle Ladungen gebunden. Die einzige Gegenreaktion 
+    die die gebundene Ladungen auf äußere Felder haben können, 
+sind \textbf{Polarisationseffekte} (denke z.B. an Verformung/Verschiebung der 
+Elektronenwolke um dem Atom). Gitterstrukturen von Atomen können weiter
+dafür sorgen das diese Polarisationseffekte richtungsabängig sind. Neben
+induzierte Dipole können auch spontane (das heißt nich von äußere felder
+ausgelöste) Dipole in Dielektrika auftreten (z.B. inherentes 
+Dipolmoment vom Wassermolekül).
+\end{enumerate}
+(In Leiter können auch Polarisationseffekte auftreten, jedoch sind diese
+meistens einige größenordungen schwacher als die Effekte der freien Ladungen)
+
+Um die aufspaltung von freie und gebundene Ladungen mathematisch zu 
+beschreiben
+führen wir die zunächst die freie bzw. die gebundene Ladungsdichte 
+$\rho_\text{f}(\vr)$ und $\rho_\text{geb}(\vr)$ ein 
+wobei natürlich gilt, dass
+\begin{equation}
+  \label{eq:ladungsdiche-geb-frei}
+  \rho(\vr) = \rho_\text{f}(\vr) + \rho_\text{geb}(\vr)
+\end{equation}
+
+
+\subsection{Polarisation und dielektrische Verschiebung}%
+\label{sub:Polarisation}
+Mikroskopisch gibt es in einem Polarisierten Medium einen Satz von Dipole,
+die als Punktdipole $\vb*p_i$ betrachtet werden können. Wir füren jetzt die
+Größe $\vb P$ ein, die \textbf{Polarisation}, die ein Maß ist für die 
+Polarisationsdichte in einem Raumbereich und definieren es formal als 
+Raummittelung von Punktdipole (analog zu Punktladung und Ladungsdichte) 
+\begin{equation}
+  \vb P(\vr) = \frac{1}{V(\vr)}\sum_{\vb*p_i\in V(\vr)} \vb*p_i
+\end{equation}
+
+Die Polarisation kann aufgeteilt werden in die spontane Polarisation 
+$\vb P_\text{sp}$ und eine induzierte Polarisation $\vb P_\text{ind}$ sodass
+\begin{equation}
+  \vb P(\vr) = \vb P_\text{sp}(\vr) + \vb P_\text{ind}(\vr)
+\end{equation}
+Dabei wird die induzierte Polarisation durch äußere elektrische Felder erzeugt
+und es gilt ganz allgeimen
+\begin{equation}
+  \vb P_\text{ind} = 4\pi k \vu*\chi\qty(\vr, \vb E(\vr))\cdot \vb E(\vr)
+\end{equation}
+Wobei $\vu*\chi$ eine $3\times3$-Matrix ist die Richtungsabhängigkeit der
+Polarisation zulässt. $\vu*\chi$ ist weiter ganz allgemein eine Funktion
+von $\vr$ und $\vb E(\vr)$. Obwohl in viele Medien tatsächlich eine Orts-
+und elektrisches Feldabhängigkeit anwesend sein kann, werden in diese in
+der Regel nicht in Einführungskurse der Elektrodynamik behandelt. Man 
+betrachtet stattdessen meistens \textbf{lineare}, \textbf{homogene} und 
+\textbf{isotrope} Medien (LHI-Medien). Das heißt,
+\begin{enumerate}
+  \item isotropie: Raumrichtungsunabhängigkeit $\rightarrow$ 
+    $\vu*\chi=\mathbb{1}\chi$ bzw.\ die $3\times3$-Matrix 
+    durch eine skalare Funktion ersetzt werden.
+  \item homogenität: Ortsunabhängigkeit $\rightarrow$ 
+    $\vu*\chi$ unabängig von $\vr$
+  \item liniarität: Elektrische Feldstärke unabhängig $\rightarrow$
+    $\vu*\chi$ unabhänging (oder sehr sehr schwach abhänging) 
+    von $\vb*E(\vr)$ sodaß $\abs{\vb P} 
+    \propto \abs{\vb E}$ eine lineare Zusammenhang erfüllt
+\end{enumerate}
+Als Spezialfall für LHI-Medien gilt deswegen
+\begin{equation}
+  \vb P_\text{ind} = \frac{\chi}{4\pi k} \vb E(\vr)
+\end{equation}
+wobei $\chi$ eine Materialabähnige Konstante ist.
+
+Die Polarisation hat als Quelle die gebundene Ladungsdichte und es gilt
+\begin{equation}
+  \div \vb P(\vr) = -\rho_\text{geb}(\vr)
+\end{equation}
+wobei das Vorzeichen eine mathematische Formalität ist, um anzudeuten dass
+die Polarisation das Elektrische Feld entgegenwirkt.
+
+Die freie Ladungsdichte $\rho_\text{f}$ verursacht nun noch ein Zusätzliches
+Feld das sich sehr ähnlich zum Elektrischen Feld verhält. Dieses Feld
+wird die \textbf{dielektrische Verschiebung} $\vb D$ genannt und es gilt
+\begin{equation}
+  \div \vb D(\vr) = \rho_f(\vr)
+\end{equation}
+
+Mit Gleichung~\ref{eq:ladungsdiche-geb-frei} und $\div\vb E=4\pi k \rho$
+folgt nun
+\begin{equation*}
+  \div \vb E(\vr) = 4\pi k \rho(\vr)=4\pi k(\div\vb D(\vr)-\div P(\vr))
+\end{equation*}
+sodass folgt
+\begin{equation}
+  \vb E(\vr) = 4\pi k (\vb D(\vr) - \vb P(\vr))
+\end{equation}
+Vernachlässigen wir zunächst die spontane Polarisation (d.h.\ wir setzen  
+$\vb P_\text{sp}(\vr)=0$) und betrachten wir LHI-Medien so folgt
+\begin{equation}
+  \begin{split}
+    \vb E(\vr) 
+    &= 4\pi k \vb D(\vr) - \chi E(\vr)\\
+    \Leftrightarrow \frac{(1+\chi)}{4\pi k} \vb E(\vr) 
+    &= \vb D(\vr)\\
+    \stackrel{\text{SI}}{\Leftrightarrow} 
+    \vb \epsilon_0\epsilon_r \vb E(\vr) 
+    &\equiv 
+    \epsilon \vb E(\vr)
+    = \vb D(\vr) \quad \text{mit}\quad \epsilon_r = (1+\chi) \\
+  \end{split}
+\end{equation}
+Für LHI-Medien ohne spontane Polarisation gilt also (in SI einheiten)
+\begin{equation*}
+  \epsilon \vb E(\vr) = \vb D(\vr) 
+\end{equation*}
+
+\subsection{Randbedingungen an Dielektrika}%
+\label{sub:randbedingungen-an-dielektrika}
+Es gelten an Dielektrika die Feldgleichungen
+\begin{equation}
+  \begin{split}
+    \div \vb D(\vr) &= \rho_\text{f}(\vb r)\\
+    \curl \vb E(\vr) &= 0\\
+  \end{split}
+\end{equation}
+Das heißt dann, dass an eine Randfläche die 
+Tangentialkomponente von $\vb E$ stetig ist, und
+die Orthogonalkomponente von $\vb D$ einen Sprung um $\rho_\text{f}$ 
+machen kann.

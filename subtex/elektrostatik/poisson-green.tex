@@ -6,30 +6,31 @@ In diesem Kapitel besprechen wir wie man die Poisson gleichung lösen kann.
 Wie wir schon in Kapitel~\ref{ssub:Die-Feldgleichungen} hergeleitet haben
 gilt in der Elektrostatik die \textbf{Poissongleichung}
 \begin{equation*}
-  \Delta \varphi (\vb*r) = -4\pi k \rho(\vb*r)
+  \Delta \phi (\vb*r) = -4\pi k \rho(\vb*r)
 \end{equation*}
-Die aufgabe besteht nun darein, $\varphi$ zu finden. Die Poissongleichung 
+Die aufgabe besteht nun darein, $\phi$ zu finden. Die Poissongleichung 
 stellt eine partielle Differentialgleichung 2. Ordnung dar, die gelößt
 werden kann unter vorgabe von Randbedingungen (analog zu Anfangsbedingungen
 in der Mechanik). 
 
 Praktische Lösungsmethoden sind meistens abhänging von die Geometrie
-des zu lösenden Problems. Zunächst besprechen wir aber die Allgemeinste 
-Lösung (jedoch meistens nicht schnellste oder einfachste Lösungsweg) der
-Poissongleichung, die \textbf{Greensche Funktion}.
+des zu lösenden Problems und die vorgegebene Randbedingungen. 
+Zunächst besprechen wir aber die Allgemeinste 
+Lösung (jedoch oft nicht schnellste oder einfachste Lösungsweg) der
+Poissongleichung, über die \textbf{Greensche Funktion} (der Poissongleichung).
 
 \subsection{Die Greensche Identitäte und die Greensche Funktion}%
 \label{sub:green}
 
-Für das Poissonproblem gibt es 3 wichtige Identitäten, die 3 Green'sche 
+Für das Poissonproblem gibt es 3 wichtige Identitäten, 
 woraus man die allgemeine Lösung der Poissongleichung finden kann 
-mittels die Greensche funktion. Zunächst betrachten wir die allgemeine
+mittels die Green'sche funktion. Zunächst betrachten wir die allgemeine
 mathematische Identitäten und wenden sie danach Spezifisch für das Poisson
 Problem an.
 
 \subsubsection{1. Green'sche Identität}%
 \label{ssub:green-id-1}
-Gäbe es ein das Vektorfeld $\vb F = \psi \grad \varphi \equiv \psi \vb \Gamma$ 
+Gäbe es ein Vektorfeld $\vb F = \psi \grad \varphi \equiv \psi \vb \Gamma$ 
 mit $\psi$ und $\varphi$ beliebige Skalarfelder mit $\psi\in C^1$ und
 $\varphi\in C^2$ (d.h. 1 bzw.\ 2 mal stetig diffbar) so folgt aus dem 
 Satz von Gauß
@@ -105,10 +106,11 @@ als Spezialfal für das elektrische Potenzial)
   \end{split}
 \end{equation}
 Es folgt die Allgemeine Lösung für das Potenzial
-\begin{equation*}
+\begin{equation}
+  \label{eq:allgemeine-potential}
   \Leftrightarrow \phi(\vr) = -4\pi k\int_V \rho(\vr')\green dV' 
   - \oint_{\partial V} (\green\grad\phi(\vr')-\phi(\vr')\grad\green)\ddA
-\end{equation*}
+\end{equation}
 
 Bemerke, dass falls $\phi$ und $\green$ im Unendlichen nach null abfallen,
 mit $\green=-\frac{1}{4\pi} \frr $ einfach Funktion~\ref{eq:potential} folgt.
@@ -117,11 +119,107 @@ keine Randbedingungen vorgegeben sind, bzw.\ wo die Randbedingungen im
 Unendlichen liegen und deswegen verschwinden.
 
 Ist nun auf die Randfläche $\phi$ vorgegeben (Dirichlet Randbedingungen), 
-so kann man $G$ so wählen, 
-sodass $\green[D]\equiv\green\big|_{\vr'\in\partial V}= 0$ gilt, und vereinfacht sich 
-die 3. Greensche Identität sich zu
+so wählt man $\green$ meistens so,
+sodass $\green\big|_{\vr'\in\partial V}= 0$ gilt, also auf dem Rand 
+verschwindet, und vereinfacht sich Funktion~\ref{eq:allgemeine-potential} zu
 \begin{equation}
+  \label{eq:dirichlet-green-potential}
   \phi(\vb*r') = -4\pi k\int_V \rho(\vr')\green[D] dV' 
   + \oint_{\partial V} \phi(\vr')\grad\green[D] \ddA
 \end{equation}
-vereinfacht
+wobei $\green[D]$ dann die obere Bedingung erfüllt, und manchmal
+auch die Dirichlet-Green'sche Funktion genannt wird.
+
+Ist statt dem Potential das E-Feld oder eine Ladungsdichte vorgegeben 
+(von Neumann Randbedingungen, man beachte dass $\sigma_F=\vb*n\cdot\vb E$,
+sodass vorgabe von Flächenladungsdichte und E-feld auf dem Rand equivalent 
+sind), so wählt man meistens dass $\grad\green\big|_{\vr\in\partial V}=0$,
+sodass Funktion~\ref{eq:allgemeine-potential} sich veireinfacht zu
+\begin{equation}
+  \phi(\vb*r') = -4\pi k\int_V \rho(\vr')\green[N] dV' 
+  + \oint_{\partial V} \green[N]\grad\phi(\vr') \ddA
+\end{equation}
+wobei $\green[N]$ dann die obere Bedingung erfüllt, und manchmal
+auch die Von-Neumann-Green'sche Funktion genannt wird.
+
+\subsection{Praktische Lösungswege}%
+\label{sub:spiegelladungsmethode}
+In diesen Abschnitt werden wir uns mit Praktische Lösungsmethoden der
+Poisson-Gleichung auseinandersetzen.
+
+\subsubsection{Spiegelladungsmethode}%
+Das Problem welches betrachtet wird, ist eine Ladung auf einen abstand a, z.B.
+auf der z-Achse, vor eine Unendlich ausgedehnte Leiterschicht, z.B. in der 
+x-y-Ebene. Allgemein gilt für Leiter, wo keinen strom durch fließt (was
+in der Elektrostatik der Fall ist) dass das Potential überall in dem Leiter
+konstant ist. Man muss also jetzt eine Lösung finden für dem die freie 
+Ladungsdichte $\rho(\vb*r)=q\delta(\vr-\vr_0)$ und die Randbedingung 
+$\phi(x,y,z=0)=\phi_0=\const$. 
+
+Eine konstantes Potential in der x-y-Ebene
+ist einfach zu realisieren, falls man eine 2. Ladung bei $\bar{\vr}_0=
+(x_0,y_0,-z_0)$ und mit Ladung $-q$ legt. Das Potential oberhalb der 
+Leiterebene erfüllt dann die Randbedingungen, jedoch ist aufzumerken, dass
+es diese negative Ladung in der Wirklichkeit gar nicht gibt, sodass diese 
+Lösung nur für eine Hälfte des Raumgebietes richtig ist. Die Green'sche
+Funktion zu diesem Problem ist $\green=-\frac{1}{4\pi} \qty[\frr-\frac{1}{\abs{\vr-\bar{\vr}}}]$, sodass man dieses Problem auch formeller mit 
+Formel~\ref{eq:dirichlet-green-potential} lösen könnte.
+
+Die Spiegelladungsmethode ist auch fur andere Geometrieen geignet, sowie
+eine Punktladung vor eine metallische Kugel oder Zylinder, und die
+Spiegelladung und ort der Spiegelladung sind immer entsprechend für das
+Problem zu wählen.
+
+\subsubsection{Seperationsansatz}%
+Die Seperationsansatz ist einen Ansatz, wo man annimt, dass das Koordinaten
+im Potential produktmäßich unabhänging sind, d.h.
+\begin{equation*}
+  \phi(u,v,w)=\phi_u(u)\phi_v(v)\phi_w(w)
+\end{equation*}
+Mit diesem Ansatz gelingt es in manche Fälle, die Multidimensionale 
+Poissongleichung in 2 oder 3 unabhängige DGLs 2. Ordnung zu entkoppeln.
+
+\subsubsection{Allgemeine Seperationsansatz in Kugelkoordinaten}%
+Für Rotations- oder Kugelsymmetrische Probleme eignet es sich, eine 
+Separationsansatz zu machen, wo 
+$\phi(\vr)=\phi_r(r)\phi_\Omega(\theta,\varphi)$.
+Der Laplace Operator muss dan auch entsprechend in Kugelkoordinaten definiert
+werden. Es gilt 
+\begin{equation}
+  \Delta=\Delta_r + \frac{1}{r^2}\Delta_\Omega=
+  \frac{1}{r^2}\del r \qty(r^2\del r) + 
+  \frac{1}{r^2}\qty[\frac{1}{\sin\theta}\del\theta\qty(\sin\theta\del\theta)+
+  \frac{1}{\sin^2\theta}\del\varphi^2] 
+\end{equation}
+
+Dabei sind die Kugelflächenfunktionen $\Y$ eine eigenfunktion der
+Raumwinkel-Laplace-Operator $\Delta_\Omega$ wobei gilt dass
+$\Delta_\Omega\Y=l(l+1)\Y$. Deswegen sind die Kugelflächenfunktionen einen
+guten Wahl für unseren Ansatz. Weil die Kugelflächenfunktionen für alle
+$l$ un $m$ Eigenfunktion sind, muss man die Superposition aller Lösungen
+nehmen. Zu jeden $l$ und $m$ könnte nun aber eine unterschiedliche Funktion
+$\phi_r(r)$ gehören, sodass die allgemeine Lösung gegeben wird durch
+\begin{equation*}
+  \phi(r,\theta,\varphi) = \sum_{lm} f_{lm}(r)\Y \qquad
+  \l\in\mathbb{N}_0, m\in\{-l,-l+1,\ldots,l-1,l\}
+\end{equation*}
+Die Herleitung von $f_{lm}(r)$ wird hier zunächst übersprungen, ist aber
+in viele Skripte und gute Literatur zu finden. Man findet am Ende die
+allgemeine Lösung
+\begin{equation}
+  \phi(r,\theta,\varphi)=\sum_{l=0}^\infty\sum_{m=-l}^{m=l}
+  \qty(a_{lm}r^l + b_{lm}r^{-l-1})\Y
+\end{equation}
+
+Sei das Problem nicht unabhängig von $\varphi$, so kann man auch stattdessen
+die Lösung über die Legendre Polynome $P_l(\cos\theta)$ definieren 
+(man beachte das $\Y\propto P_{lm}(\cos\theta)e^{im\phi}$, sodass die
+$\varphi$ abhängigkeit für m=0 wegfällt) und findet für rotationssymetrische
+Probleme den vereinfachten Ansatz
+\begin{equation}
+  \phi(r,\theta,\varphi)=\sum_{l=0}^\infty
+  \qty(a_{l}r^l + b_{l}r^{-l-1})P_l(\cos\theta)
+\end{equation}
+
+Das lösen dieser Ansatze wird dan meistens durch Koeffizientenvergleich
+mit den vorgegebenen Randbedingungen gemacht.
