@@ -14,6 +14,8 @@
 % use mathrm as standard math font
 % \DeclareSymbolFont{letters}{OT1}{cmr}{m}{n}
 \begin{document}
+  \pagenumbering{roman}
+  \thispagestyle{empty}
   \begin{titlepage}
      \begin{center}
         \vspace*{1cm}
@@ -34,29 +36,39 @@
   % back titlepage
   \vfill
   \textbf{\author}\\
-  
   \normalsize
+  \thispagestyle{empty}
+
+  \newpage
+  \section{Einleitung}\label{cha:Einleitung}
+    \input{\subtexdir/einleitung.tex}
 
   \tableofcontents
   
   \newpage
-  \section{Einleitung}\label{cha:Einleitung}
-    \input{\subtexdir/einleitung.tex}
-  
-  \newpage
+  \pagenumbering{arabic}
+  \setcounter{page}{1}
   \chapter{Elektrostatik}\label{cha:Elektrostatik}
     \input{\subtexdir/elektrostatik.tex}
   
-  %\newpage
-  %\section{Magnetostatik}\label{sec:Magnetostatic}
+  \newpage
+  \chapter{Magnetostatik}\label{cha:Magnetostatic}
   %  \input{\subtexdir/magnetostatik.tex}
   
-  %\newpage
-  %\section{Elektrodynamik}\label{sec:Elektrodynamik}
+  \newpage
+  \chapter{Elektrodynamik}\label{cha:elektrodynamik}
   %  \input{\subtexdir/elektrodynamik.tex}
   
-  %\newpage
-  %\section{Relativisitische Elektrodynamik}\label{sec:Elektrodynamik}
+  \newpage
+  \chapter{Relativisitische Elektrodynamik}\label{cha:elektrodynamik}
   %  \input{\subtexdir/elektrodynamik.tex}
+  
+  \newpage
+  \chapter{Mathematische Grundlagen}\label{cha:mathematische-grundlagen}
+    \input{\subtexdir/mathematische-grundlagen.tex}
+  
+  \newpage
+  \chapter{Ausgewählte Herleitungen}\label{cha:ausgewaehlte-herleitungen}
+  %  \input{\subtexdir/elektrostatik.tex}
 
 \end{document}

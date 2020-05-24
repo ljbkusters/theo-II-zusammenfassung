@@ -1,0 +1,100 @@
+Die Dirac $\delta$-Distribution (manchmal auch $\delta$-Funktion genannt) ist
+eine normierte Distribution, die es erschafft, mittels der Kalkulus 
+infinitisimale Punkte oder ininitisimal dünne Flächen im Raum zu beschreiben.
+Für die Elektrodynamik ist dies wichtig, denn die Ladung ist eine eigenschaft
+von Punktteilchen. Auch ist die Delta distribution sehr nützlich um 
+Flächenladungen zu beschreiben.
+
+\subsection{Definierende Eigenschaft}%
+\label{sub:definierende-eigenschaft}
+Die $\delta$-Distribution muss die folgende Bedingungen erfüllen
+\begin{equation}
+  \begin{split}
+    \int_{\mathbb{R}^3}d^3r\delta(\vr-\vr_0) &= 1 \\
+    \delta(\vr - \vr_0) &= 
+    \begin{cases}
+      \infty & \vr=\vr_0\\
+      0 & \mathrm{sonst}
+    \end{cases}
+  \end{split}
+\end{equation}
+Wobei die untere Zusammenhang vor allem andeutet dass die 
+$\delta$-Distribution um $\vr_0$ zentriert ist und unendlich spitz ist.
+Es folgt für diese Distribution mit eine beliebige Testfunktion $f(\vr)$.
+\begin{equation}
+    \int_V d^3r \delta(\vr -\vr_0)f(\vr) = 
+    \begin{cases}
+      f(\vr_0) & \vr_0\in V\\
+      0 & \mathrm{sonst}
+    \end{cases}
+\end{equation}
+
+\subsection{Herleitung $\delta$-Distribution aus Bekannte Kurven}%
+\label{sub:herleitung-delta-distribution}
+Die Dirac $\delta$-Funktion kann aus mehrere normierbare Kurven hergeleitet
+werden. Wichtig ist die Eigenschaft, dass die Funktion im limes einer
+Parameter stehts spitzer wird, aber trotzdem normiert bleit, sodass sich
+die Distribution immer mehr auf einem Punkt anhäuft. 
+Einige Beispiele solcher Funktionen sind
+\begin{enumerate}
+  \item \textbf{Kleine Stufe}
+    \begin{equation}
+      \delta(x - x_0) = \lim_{b \to 0} 
+      \begin{cases}
+        \frac{1}{b} &x\in[x_0 - \frac{b}{2}, x_0 + \frac{b}{2}] \\
+        0 & \textrm{sonst}
+      \end{cases}
+    \end{equation}
+  \item \textbf{Gauß Kurve} 
+    \begin{equation}
+      \delta(x - x_0) = \lim_{\sigma \to 0} 
+      \frac{1}{\sqrt{2\pi}\sigma} e^{\frac{(x-x_0)^2}{2\sigma^2}}
+    \end{equation}
+  \item \textbf{Lorentz Kurve}
+    \begin{equation}
+      \delta(x - x_0) = \lim_{\eta \to 0} \frac{1}{\pi} 
+      \frac{\eta}{\eta^2 + (x-x_0)^2} 
+    \end{equation}
+\end{enumerate}
+Diese Funktionen werden in der Praxis aber nie direkt angewandt, sind
+also nur für die Vorstellung gedacht.
+
+\subsection{Einige Wichtige Identitäten}%
+\begin{enumerate}
+  \item Fundamentaler Eigenschaft
+  \begin{equation*}
+    \int d^3 f(\vr)\delta(\vr-\vr_0)=f(\vr_0)
+  \end{equation*}
+
+  \item Ableitung der $\delta$-Funktion
+    \begin{equation*}
+      \delta'(\vr-\vr_0)f(\vr) = \delta(\vr-\vr_0)f'(\vr)
+    \end{equation*}
+
+  \item Integration der $\delta$-Funktion (Stufenfunktion)
+    \begin{equation*}
+      \int_{-\infty}^xdx'\delta(x'-x_0) \equiv \Theta(x-x_0) =
+      \begin{cases}
+        1 & x > x_0 \\
+        0 & x < x_0
+      \end{cases}
+      \quad \Leftrightarrow\quad \dv{x} \Theta(x-x_0) = \delta(x-x_0)
+    \end{equation*}
+
+  \item $\delta$-Funktion einer andere Funktion
+    \begin{equation*}
+      \delta(g(\vr)) = \sum_{\vr_i} \frac{1}{\abs{g(\vr_i)}}
+      \delta(\vr-\vr_i) 
+      \quad \text{mit}\ \vr_i\ \text{ Nullstellen von } g(x)
+    \end{equation*}
+
+  \item Multidimensionale $\delta$-Funktion Zerlegung in 1-D 
+    $\delta$-Funktionen (Karthesisch und Krummlienig)
+     \begin{equation*}
+       \delta(\vr(x,y,z)) 
+       = \delta(x)\delta(y)\delta(z) 
+       \quad \delta(\vr(u,v,w)) 
+       = \frac{1}{\gamma(u,v,w)}\delta(u)\delta(v)\delta(w) 
+     \end{equation*}
+     Wobei $\gamma$ die Funktionaldeterminante ist
+\end{enumerate}

@@ -1,0 +1,50 @@
+Die Taylorentwicklung ist eine Näherungsmethode wobei man Funktionen in 
+Polynome zerlegt.
+
+Allgeimeine Taylorentwicklung (Kompakte Darstellung):
+\begin{equation}
+  f(x) = e^{(x - x_0)\cdot D_{x'}}f(x')\big|_{x'=x_0}
+\end{equation}
+Wobei $D_{x'}$ eine allgemeine Ableitungsoperator ist. In eine Dimension
+folgt für $D_{x'}=\dv{x'}$ die bekannte Zusammenhang.
+\begin{equation}
+  f(x) = e^{(x-x_0)\dv{x'}}f(x')\big|_{x'=x_0} = 
+  \sum_{i=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}{(x-x_0)}^n
+\end{equation}
+
+Eine Mehrdimensionale Taylorentwicklung wird analog gegeben wobei 
+$D_{x'}=\nabla_{x'}$ und $x\to\vb*x = \vb*x(x_1, x_2, \ldots, x_n)$ und
+$\vb*x_0\to\vb*x_0(x_{01},\ldots,x_{0n})$ 
+\begin{equation}
+  f(x) = e^{(\vb*x-\vb*x_0)\nabla_{\vb*x'}}f(\vb*x')\big|_{x'=x_0} = 
+  \sum_{i=0}^{\infty} \frac{\nabla_{\vb*x'}^nf(\vb*x')}{n!}
+  {(\vb*x-\vb*x_0)}^n\bigg|_{\vb*x'=\vb*x_0}
+\end{equation}
+
+Man kann gegebenenfalls auch um nur ein Teil der Variabelen 
+$\{x_i,\ldots,x_j\}\subset\{x_1, \ldots, x_n\}$ entwickeln. Dabei teilen
+wir die Variabele  auf in $\vb*y$ und $\vb*z$ und entwickeln dann
+um $\vb*z=\vb*z_0$
+\begin{equation*}
+  \vb*x=\vb*x(\underbrace{x_1, x_2,\ldots, x_i}_{\vb*y}, 
+  \underbrace{x_{i+1},\ldots, x_{n}}_{\vb*z})=\vb*x(\vb*y, \vb*z) = \vb*y +
+  \vb*z
+  \Rightarrow f(\vb*x) = f(\vb*y, \vb*z)
+\end{equation*}
+Wir finden die Entwicklung
+\begin{equation}
+  f(\vb*y, \vb*z) = e^{\qty((\vb*y + \vb*z) - \vb*z_0)\nabla_{\vb*z'}}
+  f(\vb*y, \vb*z')\big|_{\vb*z'=\vb*z_0} = 
+  \sum_{n=0}^{\infty} \frac{\nabla^n_{\vb*z'}f(\vb*y,\vb*z')}{n!}
+  (\vb*x-\vb*z_0)^n\bigg|_{\vb*z'=\vb*z_0}
+\end{equation}
+
+Schneidet man eine Taylorfunktion ab eine bestimmte Ordnung ab, so erhält
+man eine gute Näherung für kleine Gebiete um $x_0$. Die Mehrdimensionale
+Taylorentwicklung wird in der Elektrodynamik unter anderem für die
+Multipolentwicklung benutzt.
+
+Es ist wichtig aufzumerken, dass nicht alle Funktionen eine 
+Taylorentwicklung besitzen, sondern nur analytische (holomorphe) 
+Funktionen, aber dies ist in der Regel ein Thema für die 
+Mathematikvorlesung.
