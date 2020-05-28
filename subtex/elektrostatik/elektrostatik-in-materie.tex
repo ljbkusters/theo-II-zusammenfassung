@@ -61,7 +61,7 @@ $\vb P_\text{sp}$ und eine induzierte Polarisation $\vb P_\text{ind}$ sodass
 Dabei wird die induzierte Polarisation durch äußere elektrische Felder erzeugt
 und es gilt ganz allgeimen
 \begin{equation}
-  \vb P_\text{ind} = 4\pi k \vu*\chi\qty(\vr, \vb E(\vr))\cdot \vb E(\vr)
+  \vb P_\text{ind} = \frac{\vu*\chi\qty(\vr, \vb E(\vr))}{4\pi k} \cdot \vb E(\vr)
 \end{equation}
 Wobei $\vu*\chi$ eine $3\times3$-Matrix ist die Richtungsabhängigkeit der
 Polarisation zulässt. $\vu*\chi$ ist weiter ganz allgemein eine Funktion
@@ -115,7 +115,7 @@ $\vb P_\text{sp}(\vr)=0$) und betrachten wir LHI-Medien so folgt
 \begin{equation}
   \begin{split}
     \vb E(\vr) 
-    &= 4\pi k \vb D(\vr) - \chi E(\vr)\\
+    &= 4\pi k \qty(\vb D(\vr) - \frac{\chi}{4\pi k} \vb E(\vr))\\
     \Leftrightarrow \frac{(1+\chi)}{4\pi k} \vb E(\vr) 
     &= \vb D(\vr)\\
     \stackrel{\text{SI}}{\Leftrightarrow} 
