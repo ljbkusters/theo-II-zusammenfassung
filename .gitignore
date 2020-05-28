@@ -1,4 +1,7 @@
 *.swp
+*.swo
+*.swi
 *.log
 *.run.xml
 *.bcf
+

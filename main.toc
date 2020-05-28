@@ -84,6 +84,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Magnetostatik}{19}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Stromdichten und Kontinuit\IeC {\"a}tsgleichung}{19}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Elektrodynamik}{21}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Relativisitische Elektrodynamik}{23}
