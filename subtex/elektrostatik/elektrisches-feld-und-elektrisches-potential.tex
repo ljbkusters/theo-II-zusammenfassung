@@ -22,8 +22,9 @@ wobei $\vb F_{1\to2}$ die Kraft ist, die Teilchen 1 auf Teilchen 2 ausübt.
 Sei $q_1q_2>0$ so wirkt die Kraft abstoßend, 
 und sei $q_1q_2<0$, so wirkt sie anziehend. Diese Gleichung wird auch das
 \textbf{Coulomb-Gesetz} genannt. 
+Dabei ist $k$ eine Konstante die vom Einheitensystem abhängt. In SI gilt z.B. 
+$k=\frac{1}{4\pi\epsilon_0}$ mit $\epsilon_0$ die \textit{elekrische Permitivität} des Vakuums. In Gauß-Einheiten gilt $k=1$.
 
-\noindent
 Die Elektrische Kraft ist eine Zentralkraft und deswegen 
 \textbf{konservativ}, d.h. 
 \begin{equation}
@@ -49,16 +50,14 @@ definiert das Elektrische Feld aus ersten Prinzipien aus der Coulombkraft.
   = q_1 \vb E_2(\vb*r_1)
 \end{equation*}
 Man verstehe dies so, dass Teilchen 1 mit Ladung $q_1$ 
-sich am Ort $\vb*r_1$ im äußeren Elektrisches Feld $\vb E_2$, 
-erzeugt von Teilchen 2 mit 
-Ladung $q_2$ das am ort $r_2$ liegt, befindet und daher eine Kraft spürt.
+sich am Ort $\vb*r_1$ im äußeren elektrisches Feld $\vb E_2$, 
+erzeugt von Teilchen 2 mit Ladung $q_2$ welches am Ort $r_2$ liegt, befindet und daher eine Kraft spürt.
 
 Eine Probeladung $q$ im externen elektrischen Feld $\vb E$ spürt also die Kraft
 
 \begin{equation}
   \vb F(\vb*r) = q \vb E(\vb*r)
 \end{equation}
-
 Das Elektrische Feld einer Ladungsverteilung $\rho_1$ ist dann ein 
 maß für die Kraft, die eine andere, äußere Ladungsverteilung $\rho_2$ 
 wegen der Anwesendheid von $\rho_1$ spüren würde. 
@@ -73,10 +72,6 @@ $\phi(\vb*r)$ mit
   \vb E(\vb*r)=-\grad \phi(\vb*r)
 \end{equation}
 
-Dabei ist $k$ die gleiche Konstante die auch im Coulombkraft auftauchte. Diese
-konstate ist abhängig vom gewählten Einheitssystem. In SI gilt z.B. 
-$k=\frac{1}{4\pi\epsilon_0}$ mit $\epsilon_0$ die elekrische Permitivität des
-Vakuums, und in Gauß-Einheiten gilt $k=1$
 
 Nun wollen wir wissen, wie man aus eine beliebige 
 Ladungsverteilung $\rho(\vb*r)$ das zugehörige
@@ -104,13 +99,12 @@ Potential einer kontinuierliche Ladungsverteilung $\rho(\vb*r)$ definieren.
   \label{eq:potential}
   \phi(\vb*r) = k \int d^3 r' \frac{\rho(\vb*r')}{\abs{\vb*r-\vb*r'}} 
 \end{equation}
-Wir werden Später sehen, das dies nur ein Spezialfall ist, und diese
-Zusammenhang formaler aus der Poissong-Gleichung herleiten.
 
 Man kann auch direkt das E-Feld aus die Ladungsverteilung berechnen, falls 
 man den Gradient (nach $\vb*r$, nicht $\vb*r'$) von der obere Formel nimmt, 
 und findet
-\begin{equation}
+\begin{equation}%
+  \label{eq:E-feld}
   \vb E(\vb*r) = k \int d^3r' 
   \rho(\vb*r')\frac{(\vb*r-\vb*r')}{\abs{\vb*r-\vb*r'}^3} 
 \end{equation}
@@ -130,19 +124,22 @@ E-Feldes folgen die beiden \textbf{Feldgleichungen der Elektrostatik}.
 \end{equation}
 Diese Feldgleichungen sind allgemeingültig für alle elektrostatische Felder.
 
+\subsection{Poisson Gleichung}%
 Weiter folgt aus den Zusammenhänge $\vb E = -\grad \phi$ und 
-$\div E = 4\pi k \rho(\vb*r)$ die \textbf{Poisson-Gleichung} 
+$\div E = 4\pi k \rho(\vb*r)$ die \textbf{Poisson Gleichung} 
 \begin{equation}
   \Delta \phi(\vb*r) = - 4\pi k \rho(\vb*r)
 \end{equation}
 Die Poisson-Gleichung ist eine Differentialgleichung 2.\ Ordnung. Unter 
-vorgabe von Randbedingungen kann man auch ohne die Ladungsverteilung zu 
-kennen das Potential und daraus das Elekrtische Feld berechnen. Das Lösen
-der Poisson-Gleichung ist ein Thema für ein eigenes Kapitel. 
+vorgabe von \textbf{Randbedingungen} (das geometrische Analogon zu Anfangsbedinungen von DGLS in der Mechanik) sind die Gleichungen~\ref{eq:potential} und~\ref{eq:E-feld} meistens nicht mehr ausreichend, um korrekte Lösungen zu finden. 
+Wir werden Später sehen, das sie nur in dem Spezialfall von verschwindenden
+Randbedingungen gültig sind, und die allgemeine Zusammenhänge formaler aus der Poisson-Gleichung herleiten.
+Das Lösen der Poisson-Gleichung ist aber ein Thema für ein eigenes Kapitel. 
 
-\textbf{Die Hauptaufgabe der Elektrostatik} ist also das Berechnen von 
+\subsection{Die Hauptaufgabe der Elektrostatik} 
+Die Hauptaufgabe der Elektrostatik ist also das Berechnen von 
 elektrostatische Potentiale und Felder unter vorgabe von 
-Ladungsverteilungen oder Randbedingungen. 
+Ladungsverteilungen und Randbedingungen. 
 Für Hochsymmetrische Probleme sind im Allgemeinen analytische 
 Lösungen möglich, für schwierigere Probleme können meistens nur numerische 
 Lösungen gefunden werden. Für uns ist erstmal das Finden von analytische

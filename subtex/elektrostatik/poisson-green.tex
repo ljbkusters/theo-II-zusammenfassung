@@ -10,25 +10,23 @@ gilt in der Elektrostatik die \textbf{Poissongleichung}
 \end{equation*}
 Die aufgabe besteht nun darein, $\phi$ zu finden. Die Poissongleichung 
 stellt eine partielle Differentialgleichung 2. Ordnung dar, die gelößt
-werden kann unter vorgabe von Randbedingungen (analog zu Anfangsbedingungen
-in der Mechanik). 
+werden kann unter vorgabe von \textbf{Randbedingungen}.
 
 Praktische Lösungsmethoden sind meistens abhänging von die Geometrie
 des zu lösenden Problems und die vorgegebene Randbedingungen. 
 Zunächst besprechen wir aber die Allgemeinste 
-Lösung (jedoch oft nicht schnellste oder einfachste Lösungsweg) der
-Poissongleichung, über die \textbf{Greensche Funktion} (der Poissongleichung).
+Lösung der Poissongleichung, über die \textbf{Greensche Funktion} der Poissongleichung.
 
 \subsection{Die Greensche Identitäte und die Greensche Funktion}%
 \label{sub:green}
 
 Für das Poissonproblem gibt es 3 wichtige Identitäten, 
 woraus man die allgemeine Lösung der Poissongleichung finden kann 
-mittels die Green'sche funktion. Zunächst betrachten wir die allgemeine
+mittels die Greensche funktion. Zunächst betrachten wir die allgemeine
 mathematische Identitäten und wenden sie danach Spezifisch für das Poisson
 Problem an.
 
-\subsubsection{1. Green'sche Identität}%
+\subsubsection{1. Greensche Identität}%
 \label{ssub:green-id-1}
 Gäbe es ein Vektorfeld $\vb F = \psi \grad \varphi \equiv \psi \vb \Gamma$ 
 mit $\psi$ und $\varphi$ beliebige Skalarfelder mit $\psi\in C^1$ und
@@ -47,7 +45,7 @@ wobei man beachtet daß
 \end{equation*}
 Die erste Greensche Identität ist also einen Spezialfall des Gauß Gesetzes
 
-\subsubsection{2. Green'sche Identität}%
+\subsubsection{2. Greensche Identität}%
 \label{ssub:green-id-2}
 Sei nun auch noch $\psi\in C^2$, und gäbe es ein weiteres $\epsilon\in C^1$
 sodass man das Vektorfeld 
@@ -77,17 +75,22 @@ folgt
   \oint_{\partial V} \psi\grad\varphi - \varphi\grad\psi d\vb A
 \end{equation}
 
-\subsubsection{3. Green'sche Identität}%
+\subsubsection{3. Greensche Identität}%
 \label{ssub:green-id-3}
 
-Man definiere nun die \textbf{Greensche Funktion} sodass gilt
+Die Greensche Funktion $G$ ist eine Allgemeine Name für Funktionen, worauf unter Anwendung eines lineares differentieles Operators $L$ auf diesen Funktion, sich die Dirac'sche $\delta$-Distribution ergibt. Es gilt also
+\begin{equation}
+  LG = \delta 
+\end{equation}
+
+Man definiere nun die \textbf{Poisson-Greensche Funktion} (weiter erstmal einfach Greensche Funktion genannt) zum Laplace Operator $\Delta$ sodass gilt
 \begin{equation}
   \Delta \green= \delta(\vb*r - \vb*r')
 \end{equation}
-Für den Laplace Operator $\Delta$ erfüllt die Funktion 
+Für den Laplace Operator erfüllt die Funktion 
 $\green=-\frac{1}{4\pi}\frac{1}{\abs{\vb*r-\vb*r'}}$ 
-diese Bedingung. Die 
-Green'sche Funktion ist aber nicht eindeutich definiert, denn die Funktion 
+diese Bedingung. Diese 
+Greensche Funktion ist aber nicht eindeutich definiert, denn die Funktion 
 $\green
 =-\frac{1}{4\pi}\frac{1}{\abs{\vb*r-\vb*r'}} + F(\vb*r,\vb*r')$ erfüllt die
 Bedingung auch, falls $\Delta F(\vb*r, \vb*r')=0$
@@ -128,7 +131,7 @@ verschwindet, und vereinfacht sich Funktion~\ref{eq:allgemeine-potential} zu
   + \oint_{\partial V} \phi(\vr')\grad\green[D] \ddA
 \end{equation}
 wobei $\green[D]$ dann die obere Bedingung erfüllt, und manchmal
-auch die Dirichlet-Green'sche Funktion genannt wird.
+auch die Dirichlet-Greensche Funktion genannt wird.
 
 Ist statt dem Potential das E-Feld oder eine Ladungsdichte vorgegeben 
 (von Neumann Randbedingungen, man beachte dass $\sigma_F=\vb*n\cdot\vb E$,
@@ -140,7 +143,7 @@ sodass Funktion~\ref{eq:allgemeine-potential} sich veireinfacht zu
   + \oint_{\partial V} \green[N]\grad\phi(\vr') \ddA
 \end{equation}
 wobei $\green[N]$ dann die obere Bedingung erfüllt, und manchmal
-auch die Von-Neumann-Green'sche Funktion genannt wird.
+auch die Von-Neumann-Greensche Funktion genannt wird.
 
 \subsection{Praktische Lösungswege}%
 \label{sub:spiegelladungsmethode}
@@ -161,7 +164,7 @@ ist einfach zu realisieren, falls man eine 2. Ladung bei $\bar{\vr}_0=
 (x_0,y_0,-z_0)$ und mit Ladung $-q$ legt. Das Potential oberhalb der 
 Leiterebene erfüllt dann die Randbedingungen, jedoch ist aufzumerken, dass
 es diese negative Ladung in der Wirklichkeit gar nicht gibt, sodass diese 
-Lösung nur für eine Hälfte des Raumgebietes richtig ist. Die Green'sche
+Lösung nur für eine Hälfte des Raumgebietes richtig ist. Die Greensche
 Funktion zu diesem Problem ist $\green=-\frac{1}{4\pi} \qty[\frr-\frac{1}{\abs{\vr-\bar{\vr}}}]$, sodass man dieses Problem auch formeller mit 
 Formel~\ref{eq:dirichlet-green-potential} lösen könnte.
 
@@ -221,5 +224,5 @@ Probleme den vereinfachten Ansatz
   \qty(a_{l}r^l + b_{l}r^{-l-1})P_l(\cos\theta)
 \end{equation}
 
-Das lösen dieser Ansatze wird dan meistens durch Koeffizientenvergleich
+Das lösen dieser Ansatze wird dann meistens durch Koeffizientenvergleich
 mit den vorgegebenen Randbedingungen gemacht.
