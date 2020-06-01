@@ -78,12 +78,12 @@ folgt
 \subsubsection{3. Greensche Identität}%
 \label{ssub:green-id-3}
 
-Die Greensche Funktion $G$ ist eine Allgemeine Name für Funktionen, worauf unter Anwendung eines lineares differentieles Operators $L$ auf diesen Funktion, sich die Dirac'sche $\delta$-Distribution ergibt. Es gilt also
+Die Greensche Funktion $G$ ist eine Allgemeine Name für Funktionen, worauf unter Anwendung eines linearen Differentialoperators $L$ auf diesen Funktion, sich die Diracsche $\delta$-Distribution ergibt. Es gilt also
 \begin{equation}
   LG = \delta 
 \end{equation}
 
-Man definiere nun die \textbf{Poisson-Greensche Funktion} (weiter erstmal einfach Greensche Funktion genannt) zum Laplace Operator $\Delta$ sodass gilt
+Man definiere nun die \textbf{Laplace-Greensche Funktion} (weiter erstmal einfach Greensche Funktion genannt) zum Laplace Operator $\Delta$ sodass gilt
 \begin{equation}
   \Delta \green= \delta(\vb*r - \vb*r')
 \end{equation}
@@ -104,7 +104,7 @@ als Spezialfal für das elektrische Potenzial)
     -4\pi k\rho(\vb*r')} 
     - \phi(\vb*r')\underbrace{\Delta \green}_{\delta(\vb*r - \vb*r')}
     dV'
-    &= -4\pi k\int_V \rho(\vb*r') \green dV' -\phi(\vb*r)\\
+    &= -4\pi k\qty(\int_V \rho(\vb*r') \green dV') -\phi(\vb*r)\\
     &= \oint_{\partial V} (\green\grad\phi(\vr')-\phi(\vr')\grad\green)\ddA'\\
   \end{split}
 \end{equation}
@@ -114,12 +114,10 @@ Es folgt die Allgemeine Lösung für das Potenzial
   \Leftrightarrow \phi(\vr) = -4\pi k\int_V \rho(\vr')\green dV' 
   - \oint_{\partial V} (\green\grad\phi(\vr')-\phi(\vr')\grad\green)\ddA
 \end{equation}
-
 Bemerke, dass falls $\phi$ und $\green$ im Unendlichen nach null abfallen,
-mit $\green=-\frac{1}{4\pi} \frr $ einfach Funktion~\ref{eq:potential} folgt.
-Dies ist also ein Spezialfall der allgemeine Lösung von $\phi(\vr)$, wo
-keine Randbedingungen vorgegeben sind, bzw.\ wo die Randbedingungen im
-Unendlichen liegen und deswegen verschwinden.
+mit $\green=-\frac{1}{4\pi} \frr $ einfach Gleichung~\ref{eq:potential} folgt.
+Gleichung~\ref{eq:potential} ist also ein Spezialfall der allgemeine Lösung von $\phi(\vr)$, wo
+verschwindende Randbedingungen vorgegeben sind bzw.\ wo die Randbedingungen im Unendlichen liegen und deswegen verschwinden.
 
 Ist nun auf die Randfläche $\phi$ vorgegeben (Dirichlet Randbedingungen), 
 so wählt man $\green$ meistens so,
@@ -136,7 +134,7 @@ auch die Dirichlet-Greensche Funktion genannt wird.
 Ist statt dem Potential das E-Feld oder eine Ladungsdichte vorgegeben 
 (von Neumann Randbedingungen, man beachte dass $\sigma_F=\vb*n\cdot\vb E$,
 sodass vorgabe von Flächenladungsdichte und E-feld auf dem Rand equivalent 
-sind), so wählt man meistens dass $\grad\green\big|_{\vr\in\partial V}=0$,
+sind), so wählt man meistens $\grad\green\big|_{\vr\in\partial V}=0$,
 sodass Funktion~\ref{eq:allgemeine-potential} sich veireinfacht zu
 \begin{equation}
   \phi(\vb*r') = -4\pi k\int_V \rho(\vr')\green[N] dV' 
@@ -144,12 +142,9 @@ sodass Funktion~\ref{eq:allgemeine-potential} sich veireinfacht zu
 \end{equation}
 wobei $\green[N]$ dann die obere Bedingung erfüllt, und manchmal
 auch die Von-Neumann-Greensche Funktion genannt wird.
-
-\subsection{Praktische Lösungswege}%
+\clearpage
+\subsection{Einige Praktische Lösungswege}%
 \label{sub:spiegelladungsmethode}
-In diesen Abschnitt werden wir uns mit Praktische Lösungsmethoden der
-Poisson-Gleichung auseinandersetzen.
-
 \subsubsection{Spiegelladungsmethode}%
 Das Problem welches betrachtet wird, ist eine Ladung auf einen abstand a, z.B.
 auf der z-Achse, vor eine Unendlich ausgedehnte Leiterschicht, z.B. in der 
@@ -224,5 +219,5 @@ Probleme den vereinfachten Ansatz
   \qty(a_{l}r^l + b_{l}r^{-l-1})P_l(\cos\theta)
 \end{equation}
 
-Das lösen dieser Ansatze wird dann meistens durch Koeffizientenvergleich
+Das lösen dieser Ansatz wird dann meistens durch Koeffizientenvergleich
 mit den vorgegebenen Randbedingungen gemacht.

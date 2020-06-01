@@ -1,0 +1,72 @@
+Wie in der Elektrostatik möchten wir den Term $\frac{1}{\rr}$ entwickeln. Weil
+die Multipolmomente wegen die Kreuzprodukte schnell mathematisch kompliziert werden. Dazu gibt es wegen $\div \vb B(\vr)=0$ keine Magnetische Monopole. Deswegen wird in Einführungskurse für das Magnetfeld meistens nur die Magnetische Dipol besprochen.
+Zunächst wiederholen wir die Aussage die man erhält wenn man den $\frac{1}{\rr}$ entwickelt
+\begin{equation}
+  \frac{1}{\rr}\bigg|_{\vr\gg\vr'} = \frac{1}{r} + \frac{\vr'\cdot\vr}{r^3}
+  + O\qty(\frac{1}{r^3})\approx \frac{1}{r} + \frac{\vr'\cdot\vr}{r^3} 
+\end{equation}
+Setzt man dies in Gleichung~\ref{eq:vektorpotential} ein, so findet man für
+das Vektorpotential die näherung
+\begin{equation}
+  \label{eq:mag-multipol}
+  \vb A(\vr) \approx \frac{k'}{r}\int d^3r'\vb*j(\vr') +
+  k' \frac{1}{r^3}\int d^3r' (\vr\cdot\vr') \vb*j(\vr')
+\end{equation}
+
+\subsection{Monopolmoment}%
+\label{sub:Monopolmoment}
+Es gilt nun aber
+\begin{equation*}
+  \int d^3r'\vb*j(\vr')=0
+\end{equation*}
+falls $\vb*j(\vr\to\infty)\to0$ (was für die Multipolentwicklung sowieso schon vorausgesetzt wird, denn es wird gefordert, dass die Ladungsverteilung beschränkt ist, sodass $\vr\gg\vr'$ gelten kann) sodass der magnetische Monopol wegfällt.
+Diese läßt sich beweisen, falls man ein beliebiges Vektorfeld $g(\vr)$ mit
+dem Strom multipliziert und die Randfläche im Unendlichen betrachtet
+\begin{equation}
+  \label{eq:stromintegral-identitaet}
+  \begin{split}
+    0=\int_{\partial\mathbb{R}^3} \underbrace{\vb*j(\vr)}_{\to0}g(\vr)\dA 
+    =\int_{\mathbb{R}^3}d^3r\div(\vb*j(\vr)g(\vr))
+    &=\int_{\mathbb{R}^3}d^3r\big(g(\vr)\underbrace{\div\vb*j(\vr)}_{=0} + \vb*j(\vr)\cdot\grad g(\vr)\big)\\
+    &=\int_{\mathbb{R}^3}d^3r \vb*j(\vr)\cdot\grad g(\vr)
+  \end{split}
+\end{equation}
+Wählt man nun $g(\vr)=x$, $y$ oder $z$, so ist $\grad g(r)=\vu e_i$ mit $i\in\{x,y,z\}$
+woraus folgt dass
+\begin{equation}
+  \int d^3r \vb*j(\vr)\cdot\vu e_i =\int d^3r j_i(\vr)= 0 \quad i\in\{x,y,z\}
+\end{equation}
+daraus folgt 
+\begin{equation}
+  \int d^3r\vb*j(\vr) 
+  \stackrel{*}{=} \int d^3r\big(j_i(\vr)\vu e_i\big)
+  = \vu e_i \underbrace{\int d^3rj_i(\vr)}_{=0}
+  =0
+  \quad
+  \text{* (Summenkonvention)}
+\end{equation}
+\subsection{Dipolmoment}%
+\label{sub:Dipolmoment}
+Setzen wir nun $g(\vr)=r_ir_j$ mit $r_i,r_j\in\{x,y,z\}$ und $r_i\neq r_j$ in Gleichung~\ref{eq:stromintegral-identitaet} ein, so folgt mit
+$\grad r_ir_j = r_j \vu e_i + r_i \vu e_j$
+\begin{equation}
+  0=\vint (r_i j_j + r_j j_i) \Leftrightarrow \vint (r_i j_j) = 
+  - \vint (r_j j_i)
+\end{equation}
+Es folgt für das Vektorpotential zusammen mit die Aussage des Monopolmomentes
+\begin{equation}
+  \vb A(\vr)\approx k'\frac{r_i}{r^3}\vu e_j \vint' 
+  \frac{1}{2} \bigg[r_i' j_j(\vr') - r_j'j_i(\vr')\bigg]
+\end{equation}
+Wir definieren nun das \textbf{magnetische Dipolmoment} 
+\begin{equation}
+  \vb*m = \frac{1}{2} \vint' [\vr'\times\vb*j(\vr')]
+  \quad\text{mit}\quad
+  \epsilon_{ijk}m_k = 
+  \frac{1}{2} \vint' \bigg[r_i' j_j(\vr') - r_j'j_i(\vr')\bigg]
+\end{equation}
+Daraus folgt nun 
+\begin{equation}
+  \vb A(\vr) = k' \frac{\vb*m\times\vr}{r^3} + O\qty(\frac{1}{r^3})
+  \Rightarrow \vb B(\vr) \approx \frac{(\vr\cdot\vb*m)\vr - \vb*mr^2}{r^5} 
+\end{equation}

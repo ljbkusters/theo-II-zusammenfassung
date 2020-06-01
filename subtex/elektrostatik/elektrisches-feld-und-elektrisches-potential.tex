@@ -72,7 +72,6 @@ $\phi(\vb*r)$ mit
   \vb E(\vb*r)=-\grad \phi(\vb*r)
 \end{equation}
 
-
 Nun wollen wir wissen, wie man aus eine beliebige 
 Ladungsverteilung $\rho(\vb*r)$ das zugehörige
 elekrische Potential $\phi(\vb*r)$ bzw.\ elektrische Feld $\vb E(\vb*r)$ 
@@ -109,17 +108,29 @@ und findet
   \rho(\vb*r')\frac{(\vb*r-\vb*r')}{\abs{\vb*r-\vb*r'}^3} 
 \end{equation}
 
+Das elektrische Potential ist aber nicht eindeutig fetgelegt, denn die
+\textbf{Eichtransformation}
+\begin{equation}
+  \phi'(\vr) = \phi(\vr) + \phi_0 \quad \phi_0=\const
+\end{equation}
+läßt das Elektrische Feld invariant (denn $\grad\phi_0=0$). Hierdurch wird im
+Allgeimeinen das Potential nur als hilfreiches mathematisches Hilfsmittel
+gesehen, obwohl quantenmechanische Effekte wie das Aharanov-Bohm-Effekt auch
+darauf weisen können, dass das Potential auch ein physikalisches Feld ist. Dies ist aber erstmal nicht wichtig für die Einführung in der Elektrodynamik.
+Meistens wird $\phi_0$ so gewählt, sodass $\phi(\vr\to\infty)\to0$,
+dies ist aber nicht notwendig.
+
 \subsection{Die Feldgleichungen der Elektrostatik}%
 \label{ssub:Die-Feldgleichungen}
 Die Divergenz des elektrischen Feldes gibt nun die Quellendichte des Feldes.
 Wir wissen schon aus Erfahrung, dass die elektrische Ladung die Quelle der 
-Coulombkraft ist und deswegen auch des elektrischen Feldes. Zusammen mit die
+Coulombkraft ist und deswegen auch des elektrischen Feldes. Die genaue Zusammenfang zwischen die Divergenz und die Ladungsdichte folgt aus dem Zerlegungssatz. Zusammen mit die
 Rotationsfreiheit der Coulombkraft, und somit auch die Rotationsfreiheit des
 E-Feldes folgen die beiden \textbf{Feldgleichungen der Elektrostatik}.
 \begin{equation}
   \begin{aligned}
-    \div \vb E &= 4\pi k \rho(\vb*r)\\
-    \curl \vb E &= 0
+    \div \vb E &= 4\pi k \rho(\vb*r) & \text{(inhomogen)}\\
+    \curl \vb E &= 0 & \text{(homogen)}
   \end{aligned}
 \end{equation}
 Diese Feldgleichungen sind allgemeingültig für alle elektrostatische Felder.

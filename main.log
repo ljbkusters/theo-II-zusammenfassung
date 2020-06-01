@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.1)  28 MAY 2020 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.1)  1 JUN 2020 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2020,7 +2020,7 @@ Kapitel 1.
 
 ]
 (./subtex/elektrostatik/elektrisches-feld-und-elektrisches-potential.tex
-[2]) [3] (./subtex/elektrostatik/multipolentwicklung.tex [4]
+[2]) [3] [4] (./subtex/elektrostatik/multipolentwicklung.tex [5]
 Overfull \hbox (17.13737pt too wide) in paragraph at lines 149--154
 []\OT1/cmr/m/n/10 Im all-ge-mei-nen be-rech-net man kei-ne wei-te-re Ord-nun-ge
 n ana-ly-tisch im Ba-che-lor-stu-di-um, und zum Verst[]andniss
@@ -2032,12 +2032,12 @@ Overfull \hbox (2.08179pt too wide) in paragraph at lines 176--181
  et-was aufw[]andig, und wird hier erst-mal []ubersprungen,
  []
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
-) [6] [7] (./subtex/elektrostatik/randflaechen.tex
+) [7] [8] (./subtex/elektrostatik/randflaechen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
@@ -2048,7 +2048,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--37
 
  []
 
-[8])
+[9])
 Overfull \hbox (16.40561pt too wide) in paragraph at lines 108--19
 \OT1/cmr/m/n/10 Dies be-deu-tet wei-ter, da^^Y die or-tho-go-nal-kom-po-nen-te 
 $\OT1/cmr/bx/n/10 E[] \OT1/cmr/m/n/10 = \OT1/cmr/bx/n/10 E \OMS/cmsy/m/n/10 ^^A
@@ -2056,12 +2056,16 @@ $\OT1/cmr/bx/n/10 E[] \OT1/cmr/m/n/10 = \OT1/cmr/bx/n/10 E \OMS/cmsy/m/n/10 ^^A
 dungsdichte)
  []
 
-[9] (./subtex/elektrostatik/poisson-green.tex [10] [11]
+[10] (./subtex/elektrostatik/poisson-green.tex [11] [12]
 
-LaTeX Warning: Command \l invalid in math mode on input line 204.
+LaTeX Warning: Command \l invalid in math mode on input line 202.
 
-) [12] (./subtex/elektrostatik/elektrostatische-energie.tex) [13]
-(./subtex/elektrostatik/elektrostatik-in-materie.tex [14]) [15]
+) [13
+
+] (./subtex/elektrostatik/elektrostatische-energie.tex) [14]
+(./subtex/elektrostatik/elektrostatik-in-materie.tex [15]) [16
+
+]
 (./subtex/elektrostatik/formelzettel.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 []|\OT1/cmr/m/n/10 Coulombkraft Punkt-la-dung
@@ -2112,29 +2116,33 @@ Overfull \hbox (21.43922pt too wide) in paragraph at lines 66--119
 [] 
  []
 
-)) [16] [17] [18
-
-]
+)) [17] [18]
 Kapitel 2.
 (./subtex/magnetostatik.tex
+(./subtex/magnetostatik/stromdichten-und-kontinuitaetsgleichung.tex
 
-LaTeX Warning: Reference `eq:' on page 19 undefined on input line 33.
+LaTeX Warning: Reference `eq:' on page 19 undefined on input line 25.
 
-) [19] [20
+) [19
+
+] (./subtex/magnetostatik/magnetfeld-biot-savart.tex [20]) [21]
+(./subtex/magnetostatik/multipolentwicklung.tex) [22]
+(./subtex/magnetostatik/magnetostatik-in-medien.tex) [23]
+(./subtex/magnetostatik/randwertprobleme.tex) [24]) [25] [26
 
 ]
 Kapitel 3.
-[21] [22
+[27] [28
 
 ]
 Kapitel 4.
-[23] [24
+[29] [30
 
 ]
 Kapitel 5.
 (./subtex/mathematische-grundlagen.tex
-(./subtex/mathematische-grundlagen/dirac-delta-distribution.tex [25]) [26]
-(./subtex/mathematische-grundlagen/mehr-dim-abl.tex) [27]
+(./subtex/mathematische-grundlagen/dirac-delta-distribution.tex [31]) [32]
+(./subtex/mathematische-grundlagen/mehr-dim-abl.tex) [33]
 (./subtex/mathematische-grundlagen/taylor-entwicklung.tex
 Overfull \hbox (24.96222pt too wide) in paragraph at lines 15--18
 []\OT1/cmr/m/n/10 Eine Mehr-di-men-sio-na-le Tay-lor-ent-wick-lung wird ana-log
@@ -2144,9 +2152,9 @@ Overfull \hbox (24.96222pt too wide) in paragraph at lines 15--18
  [] ; x[]\OT1/cmr/m/n/10 )$
  []
 
-) [28] (./subtex/mathematische-grundlagen/fourier.tex) [29] [30] [31]) [32]
+) [34] (./subtex/mathematische-grundlagen/fourier.tex) [35] [36] [37]) [38]
 Kapitel 6.
-[33
+[39
 
 ] (./main.aux)
 
@@ -2160,13 +2168,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18365 strings out of 493029
- 325005 string characters out of 6136234
- 732535 words of memory out of 5000000
- 21625 multiletter control sequences out of 15000+600000
+ 18398 strings out of 493029
+ 325919 string characters out of 6136234
+ 732738 words of memory out of 5000000
+ 21643 multiletter control sequences out of 15000+600000
  18592 words of font info for 67 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 46i,23n,52p,10433b,1498s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,23n,52p,10433b,1453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/te
@@ -2192,10 +2200,10 @@ type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/latxfont/line10.pfb>
-Output written on main.pdf (38 pages, 343363 bytes).
+Output written on main.pdf (44 pages, 365001 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 252 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

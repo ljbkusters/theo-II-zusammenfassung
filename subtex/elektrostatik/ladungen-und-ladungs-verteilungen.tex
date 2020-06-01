@@ -14,16 +14,16 @@ makroskopische Skala ist diese Beschreibung jedoch sehr unhandlich, und ist
 eine Mittelung der Ladungsdichte eine wesentlich einfachere Beschreibung.
 Eine mögliche Definition für eine kontinuierliche Ladungsverteilung aus einer
 diskreten Ladungsverteilung sieht wie folgt aus
-
 \begin{equation}
   \rho_{\textrm{knt.}}(\vb*r, t) 
   = 
-  \lim_{\Delta V \to 0} 
   \frac{1}{\Delta V(\vb*r)} 
-  \int_{\Delta V(\vb*r)} \rho_{\textrm{dskr.}}(\vb*r, t)d^3r 
-  =
-  \lim_{\Delta V \to 0} \frac{Q_{\Delta V, \textrm{ges}}(t)}{\Delta V(\vb*r)} 
+  \int_{\Delta V(\vr)}d^3r'\rho_{\text{dskr}}(\vr')
+  = 
+  \frac{1}{\Delta V(\vb*r)} 
+  \sum_{q_i\in\Delta V(\vr)}q_i
 \end{equation}
+wobei man das Volumenkästchen $\Delta V$ um $\vr$ zentriert kontinuierlich verschieben kann, und annimt, daß es viele Ladungen gibt, sodaß die Kontinuierliche Ladungsverteilung praktisch glatt wird.
 
 Für Physikalische Systeme betrachtet man in der Regel immer nur beschränkte 
 Ladungsverteilungen, das will sagen, die Ladungsdichte soll nur auf 

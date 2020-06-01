@@ -1,0 +1,57 @@
+
+\subsection{Magnetische Felstärke und Magnetische Polarisation}%
+\label{sub:H-und-M}
+
+Analog wie bei der Elektrostatik teilen wir nun in Medien den Gesammtstrom auf makroskopische ebene auf in eine freie und eine gebundene Stromdichte
+\begin{equation}
+  \vb*j(\vr) = \vb*j_f(\vr) + \vb*j_b(\vr)
+\end{equation}
+Dabei sind die Gebundene Ströme im Medium zum Beispiel die Elektronen die um
+das Atom kreisen, sowie induzierte Ströme durch die Anwesendheit eines äußeren magnet Feldes, die jedoch auf kleine Raumgebiete beschränkt bleiben.
+
+Nun führen die freie Ströme wieder zu einem Feld, die magnetische Feldstärke $\vb H(\vr)$, dass das magnetische Feld sehr ähnelt. Die gebundene Ströme führen zu eine Dipoldichte oder Magnetisierung $\vb M(\vr)$. Dabei läßt die Dipoldichte sich wieder verstehen als Volumenmittelung von Punktdipolen $\vb*m_i$ und gilt
+\begin{equation}
+  \vb M(\vr) = \frac{1}{\Delta V(\vr)} \sum_{\vb*m_i\in\Delta V(\vr)}\vb*m_i
+\end{equation}
+Nun wird die Magnetisierung wieder aufgeteilt in eine Spontane Magnetisierung $\vb M_{\text{sp}}$ und eine induzierte
+Magnetisierung $\vb M_{\text{ind}}$ mit
+\begin{equation}
+  \vb M(\vr) = \vb M_\text{sp}(\vr) + \vb M_\text{ind}(\vr)
+\end{equation}
+Die Spontane Magnetisierung ist verantwortlich für Permanentmagneten, und ist viel bekannter als die spontane elektrische Polarisation. Obwohl in der klassiche Magnetostatik angenommen wird, dass die Dipoldichte durch Ströme verursacht wird, ist es in der Realität so, daß die Kreisströme von Elektronen
+nicht ausreichend sind um Magnetismus zu beschreiben. Dafür ist tatsächlich die Spin des Elektrons zum größten Teil verantwortlich, ist also eine Quantenmechenische Beschreibung erforderlich, aber dies ist nicht Thema dieser Einführungskurs.
+
+Ziemlich analog wie bei der Elektrostatik wird $\vb M_\text{ind}$ von einer äußeren magnetische Feldstärke induziert und man definiere
+\begin{equation}
+  \vb M_\text{ind}(\vr) = \frac{1}{4\pi k'}\vu*\chi_{M}(\vr, \vb H(\vr)) \cdot \vb H(\vr)
+\end{equation}
+Für LHI-Medien folgt nun wieder
+\begin{equation}
+  \label{eq:Mind}
+  \vb M_\text{ind}(\vr) = \frac{\chi_M}{4\pi k'}\vb H(\vr) 
+\end{equation}
+Weiter gilt
+\begin{equation}
+  \curl \vb M(\vr) = \vb*j_b(\vr)
+  \quad\text{und}\quad
+  \curl \vb H(\vr) = \vb*j_f(\vr)
+\end{equation}
+sodass folgt
+\begin{equation}
+  \begin{split}
+    \curl\vb B(\vr) 
+    &= 4\pi k'\vb*j(\vr)\\ 
+    &= 4\pi k'(\vb*j_f(\vr) +  \vb*j_b(\vr))\\
+    &= 4\pi k'(\curl \vb H(\vr) + \curl \vb M(\vr))\\
+    \Leftrightarrow \vb B(\vr) &= 4\pi k' (\vb H(\vr) + \vb M(\vr)) 
+  \end{split}
+\end{equation}
+Setzt man $\vb M_\text{sp}=0$, und mit Gleichung~\ref{eq:Mind}
+folgt weiter
+\begin{equation}
+  \begin{split}
+    \vb B(\vr) &=  \frac{(1+\chi_M)}{4\pi k'} \vb H(\vr)\\
+               &\stackrel{\text{SI}}{=} \mu_r\mu_0 \vb H(\vr) \qquad \mu_r=(1+\chi_M)
+  \end{split}
+\end{equation}
+

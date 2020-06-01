@@ -6,39 +6,24 @@ kurz alle wichtige Themen besprechen ohne Herleitungen zu wiederholen.
 
 \section{Stromdichten und Kontinuitätsgleichung}%
 \label{sec:stromdichten}
-In der Magnetostatik dürfen sich Ladungen endlich bewegen. Dies führt zu
-\textbf{Ladungsströme}, die mathematisch durch die \textbf{Stromdichte}
-\(\vb*j(\vr, t)\) beschrieben werden. In der Magnetostatik betrachtet man
-zunächst Zeitunabhängige Stromdichten $\vb*j(\vr, t)=\vb*j(\vr)$. Weiter
-ist auch noch immer die Ladungsverteilung im Raum zeitunabhängig. Weil die
-Ladung eine physikalische Erhaltungsgröße ist (\textbf{Ladungserhaltung}),
-und Ladung sowohl die Ursprung der Ladungsdichte als die Stromdichte ist,
-sind die Größen $\rho$ und $\vb*j$ natürlich verknüpft. Die Ladungserhaltung
-wird Mathemathisch beschrieben durch die \textbf{Kontinuitätsgleichung}
-\begin{equation}
-  -\div\vb*j(\vr, t) = \partial_t \rho(\vr, t)
-\end{equation}
-Man kann dies So auffassen, dass die Fluß von Ladung in durch die Randfläche
-einer Raumbereich rein (\(-\div\vb*j(\vr, t)\)) gleich die Zeitliche Änderung
-(\(\partial_t\rho(\vr, t)\)) der Ladung im Raumbereich ist. Bemerke, dass das Minus da ist, weil für eine positive Ladungszuname die man für einen strom
-von positiven Ladungen, $\div\vb*j(\vr, t)$ eine Senke
-darstellen soll, und nicht eine Quelle!
+\input{\subtexdir/magnetostatik/stromdichten-und-kontinuitaetsgleichung.tex}
 
-Weil die Ladungsdichte zeitunabhängig sein muss in der Magnetostatik, folgt
-direkt dass $\div\vb*j(\vr)=0$. Dies bedeutet also, dass die Stromdichte
-in einem Raumbereich rein also immer gleich sein muss als die Stromdichte aus
-dem Raumbereich raus, sowie zum Beispiel in einem Leiterdraht oder Leiterschleife.
+\newpage
+\section{Magnetfeld und Biot-Savart-Gesetz}%
+\label{sec:magnetfeld}
+\input{\subtexdir/magnetostatik/magnetfeld-biot-savart.tex}
 
-Die Ladungsdichte die durch eine Punktladung erzeugt wird ist einfach die
-Ladungsdichte der Punktladung (Gleichung~\ref{eq:}) mal seine Momentane geschwindigkeit.
-\begin{equation*}
-  \vb*j(\vr) = q \dot{\vr}(t) \delta(\vr -\vr(t))
-\end{equation*}
-Für mehrere Ladungsverteilungen folgt natürlich
-\begin{equation}
-  \vb*j(\vr) = \sum_i q_i \dot{\vr}_i(t) \delta(\vr-\vr_i(t))
-\end{equation}
-Man kann dies dann wieder Räumlich mitteln um eine kontinuierliche Ladungsverteilung zu erhalten.
-\begin{equation}
-  \vb*j_{\text{kont}}(\vr) = \frac{1}{V(\vr)}\sum_{\vb*j_i\in V(\vr)}\vb*j_i 
-\end{equation}
+\newpage
+\section{Multipolentwicklung: Magnetischer Dipol}%
+\input{\subtexdir/magnetostatik/multipolentwicklung.tex}
+
+\newpage
+\section{Magnetostatik in Materie}%
+\input{\subtexdir/magnetostatik/magnetostatik-in-medien.tex}
+
+\newpage
+\section{Randwertprobleme in der Magnetostatik}%
+\input{\subtexdir/magnetostatik/randwertprobleme.tex}
+
+\newpage
+\section{Formelzettel}%

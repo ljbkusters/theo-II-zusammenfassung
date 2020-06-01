@@ -4,8 +4,8 @@ entstehen, weil Atome und Moleküle aus geladenen Teilchen bestehen, die
 Elektrische Felder verändern können. 
 Eine Mikroskopische Beschreibung von Vielteilchen Systeme ist aber nicht
 das Ziel der makroskopische Elektrodynamik. 
-Deswegen werden zunächst auf Makroskopische Skala
-vereinfachungen eingeführt, woraus man ein sehr 
+Deswegen werden zunächst auf makroskopische Skala
+Vereinfachungen eingeführt, woraus man ein sehr 
 praktisches und verständliches Bild der Elektrodynamik herleiten kann.
 
 \subsection{Materialarten}%
@@ -42,7 +42,7 @@ wobei natürlich gilt, dass
 \end{equation}
 
 
-\subsection{Polarisation und dielektrische Verschiebung}%
+\subsection{Polarisation und Dielektrische Verschiebung}%
 \label{sub:Polarisation}
 Mikroskopisch gibt es in einem Polarisierten Medium einen Satz von Dipole,
 die als Punktdipole $\vb*p_i$ betrachtet werden können. Wir füren jetzt die
@@ -65,21 +65,24 @@ und es gilt ganz allgeimen
 \end{equation}
 Wobei $\vu*\chi$ eine $3\times3$-Matrix ist die Richtungsabhängigkeit der
 Polarisation zulässt. $\vu*\chi$ ist weiter ganz allgemein eine Funktion
-von $\vr$ und $\vb E(\vr)$. Obwohl in viele Medien tatsächlich eine Orts-
-und elektrisches Feldabhängigkeit anwesend sein kann, werden in diese in
+von $\vr$ und $\vb E(\vr)$. 
+\clearpage
+
+Obwohl in viele Medien tatsächlich Orts-
+und elektrische Feldabhängigkeiten anwesend sein können, werden diese in
 der Regel nicht in Einführungskurse der Elektrodynamik behandelt. Man 
 betrachtet stattdessen meistens \textbf{lineare}, \textbf{homogene} und 
-\textbf{isotrope} Medien (LHI-Medien). Das heißt,
+\textbf{isotrope} Medien (hier weiter LHI-Medien genannt). Das heißt,
 \begin{enumerate}
+  \item liniarität: Elektrische Feldstärke unabhängig $\rightarrow$
+    $\vu*\chi$ unabhänging
+    von $\vb*E(\vr)$ sodaß $\abs{\vb P} 
+    \propto \abs{\vb E}$ eine lineare Zusammenhang erfüllt
+  \item homogenität: Ortsunabhängigkeit $\rightarrow$ 
+    $\vu*\chi$ unabängig von $\vr$
   \item isotropie: Raumrichtungsunabhängigkeit $\rightarrow$ 
     $\vu*\chi=\mathbb{1}\chi$ bzw.\ die $3\times3$-Matrix 
     durch eine skalare Funktion ersetzt werden.
-  \item homogenität: Ortsunabhängigkeit $\rightarrow$ 
-    $\vu*\chi$ unabängig von $\vr$
-  \item liniarität: Elektrische Feldstärke unabhängig $\rightarrow$
-    $\vu*\chi$ unabhänging (oder sehr sehr schwach abhänging) 
-    von $\vb*E(\vr)$ sodaß $\abs{\vb P} 
-    \propto \abs{\vb E}$ eine lineare Zusammenhang erfüllt
 \end{enumerate}
 Als Spezialfall für LHI-Medien gilt deswegen
 \begin{equation}
@@ -104,9 +107,9 @@ wird die \textbf{dielektrische Verschiebung} $\vb D$ genannt und es gilt
 Mit Gleichung~\ref{eq:ladungsdiche-geb-frei} und $\div\vb E=4\pi k \rho$
 folgt nun
 \begin{equation*}
-  \div \vb E(\vr) = 4\pi k \rho(\vr)=4\pi k(\div\vb D(\vr)-\div P(\vr))
+  \div \vb E(\vr) = 4\pi k \rho(\vr)=4\pi k(\div\vb D(\vr)-\div \vb P(\vr))
 \end{equation*}
-sodass folgt
+woraus weiterhin folgt dass
 \begin{equation}
   \vb E(\vr) = 4\pi k (\vb D(\vr) - \vb P(\vr))
 \end{equation}
@@ -134,12 +137,18 @@ Für LHI-Medien ohne spontane Polarisation gilt also (in SI einheiten)
 \label{sub:randbedingungen-an-dielektrika}
 Es gelten an Dielektrika die Feldgleichungen
 \begin{equation}
-  \begin{split}
-    \div \vb D(\vr) &= \rho_\text{f}(\vb r)\\
-    \curl \vb E(\vr) &= 0\\
-  \end{split}
+  \begin{aligned}
+    \div \vb D(\vr) &= \rho_\text{f}(\vb r) 
+                    & \Rightarrow \,
+                    & \vb*n\cdot\vb D(\vr)
+                    &=\,& \sigma^F_\text{f}(\vr)\\
+    \curl \vb E(\vr) &= 0
+                    & \Rightarrow \,
+                    & \vb*n\times\vb E(\vr)
+                    &=\,& 0
+  \end{aligned}
 \end{equation}
 Das heißt dann, dass an eine Randfläche die 
 Tangentialkomponente von $\vb E$ stetig ist, und
-die Orthogonalkomponente von $\vb D$ einen Sprung um $\rho_\text{f}$ 
+die Orthogonalkomponente von $\vb D$ einen Sprung um $\sigma^F_\text{f}$ 
 machen kann.

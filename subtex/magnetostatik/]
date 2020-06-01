@@ -1,0 +1,13 @@
+Analog zu wie die Ladungsdichte die Quelle für das Elektrostatische-Feld, ist
+die die Stromdichte die Quelle für das Magnetfeld. Im frühen 19. Jahrhundert wurde beobachtet dass Zwei stromdurchflossenen Leiter Kräfte auf einander ausübten. Die Kraft wirkt Anziehend falls die Ströme gleich ausgerichtet sind und vise versa. Auf ein infinitimales, durch $I$ stromdurchflossenes Leiterelement $d\vb l=dl\vb n$ wirkt in einem äußeren Magnetfeld die Kraft
+\begin{equation}
+  d\vb F = \gamma I d \vb l \times \vb B(\vr)
+\end{equation}
+
+Die Zusammenhang
+zwisschen Magnetfeld und die Stromdichte wird gegeben durch das 
+\textbf{Biot-Savart-Gesetz} und lautet
+\begin{equation}
+  \vb B(\vr) = k'\int d^3 r' \frac{\vb*j(\vr)\times(\vr-\vr')}{\rr} 
+\end{equation}
+

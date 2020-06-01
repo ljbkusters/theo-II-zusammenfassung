@@ -1,0 +1,97 @@
+\subsection{Ampèresche Kraft Gesetz}%
+\label{sub:amperesche-gesetz}
+Analog zu wie die Ladungsdichte die Quelle für das Elektrostatische-Feld, ist
+die die Stromdichte die Quelle für das Magnetfeld. Im frühen 19. Jahrhundert wurde beobachtet dass Zwei stromdurchflossenen Leiterschleifen Kräfte auf einander ausübten. Die Kraft wirkt Anziehend falls die Ströme gleich ausgerichtet sind und vise versa. Diese magnetische Kraft wurde in 1823 von André Marie Ampère zuerst mathematisch beschrieben, und ist gegeben durch das \textbf{Ampèresche Kraft Gesetz} (nicht zu verwechseln
+mit dem Ampèresche Durchfluttungsgesetz).
+
+Gäbe es zwei Leiterschleifen die durch die einfache, geschlossene und disjunkte Raumkurven $C_1$ bzw. $C_2$ beschrieben werden, die durch die ströme $I_1$ bzw. $I_2$ durchflossen werden.
+Sind $\vr_1$ und $\vr_2$ weiter zwei unabhängige Ortsvektoren die vom Ursprung
+aus auf Punkte der Kurven $C_1$ bzw. $C_2$ weisen, so gilt für die Kraft die
+Leiterschleife 1 auf Leiterschleife 2 ausübt. 
+\begin{equation} 
+  \vb F_{1\to2}=k'I_1I_2\oint_{C1}\oint_{C2} \frac{d\vr_1\times(d\vr_2
+  \times \vr_{12})}{r_{12}^3}=k'I_1I_2\oint_{C1}\oint_{C2} d\vr_1 \cdot d\vr_2 \frac{\vr_{12}}{r_{12}^3} \qquad \vr_{12}=\vr_1-\vr_2
+\end{equation}
+$k'$ Ist wieder eine
+Konstante die vom gewählten Einheitensystem abhängt. In SI gilt $k'=\frac{\mu_0}{4\pi}$. In Gausseinheiten gilt $k'=\frac{1}{c}$ mit $c$ die
+Lichtgeschwindigkeit. Wie wir in der Elektrodynamik sehen werden ist auch $\mu_0$ zusammen mit $\epsilon_0$ durch mit $c$ verknüpft ($c^2=\frac{1}{\mu_0\epsilon_0}$ in SI). Eine relativistische beschreibung der Elektrodynamik weißt eine Äquivalenz zwischen dem Coulomb Gesetz und
+das Ampèresche Gesetz auf. Ob eine Elektrische oder eine Magnetische Kraft
+wirkt, wird dann abhängig vom gewählten Bezugssystem sein.
+
+\subsection{Das Magnetfeld}%
+\label{sub:magnetfeld}
+Es ist nun wieder sinnvol, eine Beschreibung zu finden, analog zur Definition des Elektrischen Feldes, wobei die magnetische Kraft durch beschrieben wird durch ein äußeres (Magnet-)Feld das lokal auf eine Stromverteilung wirkt. Man definiere das Magnetfeld aus ersten Prinzipien
+aus die Ampèresche Kraft sodass
+\begin{equation}
+  \vb F_{12} = I_1\oint_{C_1} d\vr_1\times \vb B_2(\vr_1)
+  \quad\text{mit}\quad
+  \vb B_1(\vr_1) = k'I_2 \oint_{C_2} d\vr_2 \times \frac{\vr_{12}}{r^3_{12}} 
+\end{equation}
+Das Magnetfeld läßt sich dann zu beliebige Stromverteilungen veralgemeinern, und wird das \textbf{Biot-Savart-Gesetz} genannt
+\begin{equation}
+  \vb B(\vr) = k'\int d^3 r' \vb*j(\vr')\times\frac{(\vr-\vr')}{\rr^3}
+\end{equation}
+Dies entspricht, sowie in der Elektrostatik, wieder eine lösung für
+verschwindende Randbedingungen.
+Die gesammte magnetische Kraft auf eine beliebige Ladungsverteilung im außeren Magnetfeld wird zu
+\begin{equation}
+  \vb F = \int d^3r \vb*j(\vr) \times \vb B(\vr)
+\end{equation}
+Das Magnetfeld ist nun also ein Maß, für die Kraft die ein infinitisimales Leiterstück bzw.\ eine bewegte Ladung lokal spüren Würde, durch die
+Anwesendheit eines Äußeren Stroms.
+
+\subsection{Das Vektorpotential}%
+\label{sub:Vektorpotential}
+Es ist nun offensichtlich dass das Magnetfeld ein reines Rotationsfeld ist,
+indem man sieht dass
+\begin{equation}
+  \vb \nabla_r \times \frac{\vb*j(\vr')}{\rr} 
+  = \vb*j(\vr')\times\frac{(\vr-\vr')}{\rr^3} 
+\end{equation}
+Aus dem Biot-Savart-Gesetz folgt also nun
+\begin{equation}
+    \label{eq:vektorpotential}
+    \vb B(\vr) = \curl \vb A(\vr)\quad\text{mit}
+    \quad\vb A(\vr) = k'\int d^3r' \frac{\vb*j(\vr')}{\rr}
+\end{equation} 
+
+\subsection{Feldgleichungen der Magnetostatik}%
+\label{sub:feldgleichungen-magnetostatik}
+Sowie schon im letzten Abschnitt besprochen ist das Magnetfeld ein reines
+Rotationsfeld. Daraus folgt die homogene Feldgleichung der Magnetostatik.
+Aus dem Zerlegungssatz folgt zusammen mit die homogene Feldgleichung auch
+den Zusammenhang zwischen die Rotation des Magnetfeldes $\vb B(\vr)$ und die Stromdichte $\vb*j(\vr)$
+\begin{equation}
+  \begin{aligned}
+    \div \vb B(\vr) &= 0 & \text{(homogen)}\\
+    \curl \vb B(\vr) &= 4\pi k'\vb*j(\vr) & \text{(inhomogen)}\\
+  \end{aligned}
+\end{equation}
+
+\subsection{Eichtransformation und Inhomogene Poisson-Gleichung}%
+\label{sub:eichtransformation}
+Das Vektorpotential ist nicht eindeutig Festgelegt, denn
+\begin{equation}
+  \vb B(\vr) = \curl \vb A'(\vr)= \curl (\vb A(\vr) + \vb F(\vr)) 
+  \quad\text{falls}\quad\curl \vb F(\vr)=0
+  \Leftrightarrow \vb F(\vr) \equiv \grad \chi(\vr)
+\end{equation}
+Für ein beliebiges Skalarfeld $\chi$.
+
+Das heißt das für die Magnetostatik die \textbf{Eichtransformation}
+\begin{equation}
+  \vb A'(\vr) = \vb A(\vr) + \grad \chi(\vr)
+\end{equation}
+das Magnetfeld invariant läßt. In der Magnetostatik ist die \textbf{Coulomb-Eichung} üblich, wobei $\div \vb A=0$ gewählt wird, sodaß $\Delta \chi(\vr)=0$. In der Coulomb-Eichung folgt somit zusammen mit die magnetostatische Maxwellgleichungen die inhomogene Poisson-Gleichung
+\begin{equation}
+  \Delta \vb A(\vr) = -4\pi k' \vb*j(\vr)
+\end{equation}
+
+\subsection{Die Hauptaufgabe der Magnetostatik} 
+Die Hauptaufgabe der Magnetostatik ist also das Berechnen von 
+magnetostatische Potentiale und Felder unter vorgabe von 
+Stromverteilungen und Randbedingungen. 
+Sowie bei der Elektrostatik sind für Hochsymmetrische Probleme analytische 
+Lösungen möglich, für schwierigere Probleme können wieder meistens nur numerische 
+Lösungen gefunden werden. Für uns ist erstmal wieder das Finden von analytische
+Lösungen interessant um ein Grundverständnis aufzubauen. Dazu werden weiter auch wieder Methoden besprochen die uns analytische Näherungen geben können, wie die Multipolentwicklung.
