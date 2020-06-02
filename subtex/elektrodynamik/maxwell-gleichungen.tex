@@ -1,0 +1,128 @@
+Endlich sind wir angekommen an dem Punkt, wo wir bewegte Ladungen betrachten
+können, ohne zeitliche Einschränkungen. Wir versuchen zunächst aus die
+statische Maxwellgleichungen allgemein gültige dynamische Maxwellgleichungen
+herzuleiten. Hier unten noch kurz eine Wiederholung der Maxwellgleichungen bis jetzt.
+\begin{center}
+\begin{tabular}{rll}
+  &Elektrostatik&Magnetostatik\\
+  inhomogen &$\ds \div \vE=4\pi k\rho$
+            &$\ds \curl \vB=4\pi k'\vj$\\
+  homogen   &$\ds \curl \vE=0$
+            &$\ds \div \vB=0$\\
+\end{tabular}\\
+\vspace{.2cm}
+\begin{tabular}{rcc}
+  & $\ds k$ & $\ds k'$\\
+  SI    & $\ds1/4\pi\epsilon_0$ & $\ds\mu_0/4\pi$\\
+  Gauss & $\ds1$ & $\ds1/c$
+\end{tabular}
+($\ds \epsilon_0\mu_0 = 1/c^2$)
+\end{center}
+Wir werden sehen, dass die homogene elektrostatische Maxwellgleichung und
+die inhomogene magnetostatische Maxwellgleichung in der Elektrodynamik nicht
+mehr gültig sein werden.
+
+\subsection{Maxwellsche Ergängzung des Ampèresche Durchfluttungsgesetzes}%
+\label{sub:dyn-kontinuitaetsgleichung}
+Bis jetzt konnten wir Ströme als reine Quelle des Magnetfeldes auffassen,
+wofür die inhomogene magnetostatische Maxwellgleichung (\textit{Ampèresche Durchfluttungsgesetz}) allgemeingültig war.
+\begin{equation*}
+  \curl \vBr = 4\pi k'\vjr 
+\end{equation*}
+Betrachten wir nochmal die Kontinuitätsgleichung
+Jetzt ist Zeitabhängigkeit erlaubt, Ladungsdichten dürfen sich Zeitlich ändern
+und es gilt dadurch im allgemeinen nicht mehr $\div\vjrt=0$ sondern
+\begin{equation}
+  \div \vj(\vr, t) + \pt \rho(\vr, t) = 0
+\end{equation}
+Wenn wir diese Aussage kombinieren mit der inhomogene Maxwellgleichung aus der Elektrostatik finden wir nun
+\begin{equation}
+    \div \vj(\vr, t) + \frac{1}{4\pi k} \pt (\div\vE(\vr, t)) = 0
+\end{equation}
+Weil diese Ableitungsoperationen alle Partiell sind, darf $\pt$ mit $\nabla$
+vertauscht werden, und man findet
+\begin{equation}
+    \div \vj(\vr, t) = -\frac{1}{4\pi k} \div(\pt \vE(\vr, t)) 
+\end{equation}
+Dies führt aber zu einem Problem für die inhomogene Maxwellgleichung der Magnetostatik. Denn wenn wir die Divergenz der Roation des Magnetfeldes nehmen,
+sollte das Ergebnis Null sein, es gilt aber erstmal.
+\begin{equation}
+  \div(\curl \vBrt) = \div (4\pi k' \vjrt) \stackrel!=0
+\end{equation}
+In der magnetostatik war dies einfach erfüllt, denn $\div\vjr=0$ galt. Jetzt finden wir aber
+\begin{equation}
+  \div(\curl \vBrt) = -\frac{\cancel{4\pi} k'}{\cancel{4\pi} k} \pt\vErt \stackrel{\text{IA}}{\neq} 0
+\end{equation}
+was im Allgemeinen nicht gleich Null ist! Deswegen brauchen wir die
+dynamische Ergänzung der inhomogene Maxwellgleichung der Magnetostatik,
+und finden die erste Elektrodynamische Maxwellgleichung.
+\begin{equation}
+  \curl \vBrt = 4\pi k' \vjrt +  \frac{k'}{k}\pt\vErt 
+\end{equation}
+\begin{center}
+  \textbf{Maxwell-Ampèresche Durchfluttungsgesetz}
+\end{center}
+Diese ergänzung wurde von Maxwell in 1861 publiziert. Dabei wird heutzutage $\pt\vErt$ die \textbf{Maxwellsche Verschiebungsstrom} genannt.
+Man sieht hier natürlich, dass das \textit{Ampèresche Durchfluttungsgesetz} einen Spezialfall ist für stationäre elektrisches Felder.
+
+\clearpage
+\subsection{Faradaysche Induktionsgesetz}%
+\label{sub:faradaysche-induktionsgesetz}
+Im statischen fall galt bislang die homogene elektrostatische Maxwellgleichung
+\begin{equation*}
+  \curl \vEr = 0
+\end{equation*}
+Jedoch wurde in 1831 die elektrische Induktion durch Faraday entdeckt. Das Ströme Magnetfelder ezeugen konnten, war schon bekannt, aber die elektrische Induktion zeigte auch das umgekehrte, zwar das Magnetfelder auch Ströme erzeugen könnten. Obwohl Faraday selber nie die
+mathematische Formulierung festgelegt hat, er war zwar mathematisch nicht sehr gelehrt, wurden aus seine Experimente die folgenden Zusammenhänge hergeleitet.
+
+Faraday fand, dass falls man ein permanent Magnet nähe eine geschlossene
+Leiterschleife bewegte, sich einen Strom in der Leiterschleife entwickelte.
+Sei diese Leiterschleife nun die Randkurve $\partial A$ einer kompakte einfach zusammenhängende Oberfläche $A$, so ist der Magnetischen fluss $\Phi_B$ durch die Oberfläche
+\begin{equation}
+  \Phi_B = \int_A \vBrt \ddA
+\end{equation}
+Nun wurde entdeckt, dass die zeitliche Änderung von $\Phi_B$ verantwortlich war für die Induktionsströme. Statt der Strom betrachten wir nun jedoch die
+induzierte Spannung $U_\text{ind}$, die natürlich über das \textit{Ohmsche Gesetz} mit einander verknüpft sind. Es wurde beobachtet, dass
+\begin{equation}
+  U_\text{ind} = -k''\dv t \Phi_B(t)
+\end{equation}
+Dabei ist sowohl eine Änderung des Magnetfeldes als auch eine Änderung der durchfluteten Oberfläche für die Änderung von $\Phi_B$ verantwortlich.
+Die Spannung entlang einer Raumkurve wurde in der Elektrostatik gegeben durch
+\begin{equation}
+  U_{C} = \int_{C} d\vb*l \cdot \vErt
+\end{equation}
+sodass man für die Induzierte Spannung entlang $\partial A$ die untere Beziehung findet
+\begin{equation}
+  \oint_{\partial A} d\vb*l \cdot \vErt = -k''\dv{\Phi_B}{t} (t)
+\end{equation}
+Unter anwendung des Gesetzes von Stokes findet man nun
+\begin{equation}
+  \int_{A(t)} \dA(t) \cdot (\curl \vErt) = -k'' \dv t \int_{A(t)} \dA(t) \cdot \vBrt
+\end{equation}
+In diferentieller form findet man die homogene Maxwellgleichung für die Rotation von $\vE$
+\begin{equation}
+  \curl \vErt + k''\dv t \vBrt = 0
+\end{equation}
+\begin{center}
+  \textbf{Faradaysche Induktionsgesetz} 
+\end{center}
+Dabei ist $k''$ wieder eine Konstante, die vom Einheitensystem abhängt. In SI gilt $k''=1$, während in Gausseinheiten gilt $k''=1/c$
+
+\subsection{Maxwell Gleichungen im Vakuum}%
+\label{sub:maxwell-gleichungen}
+Mit die obere Ergänzungen sind wir jetzt zum Punkt gekommen, wo wir die allgemeingültige Maxwellgleichungen (im Vakuum) zusammenfassen können. Aus die Maxwellgleichungen können alle Elektrodynamische Zusammenhänge hergeleitet werden. Sie Lauten
+\begin{center}
+\begin{tabular}{rll}
+  inhomogen &$\ds \div \vE=4\pi k\rho$
+            &$\ds \curl \vB - \frac{k'}{k}\pt\vE=4\pi k'\vj$\\
+  homogen   &$\ds \curl \vE + k''\pt \vB =0$
+            &$\ds \div \vB=0$\\
+\end{tabular}\\
+\vspace{.2cm}
+\begin{tabular}{rccc}
+  & $\ds k$ & $\ds k'$ & $k''$\\
+  SI    & $\ds1/4\pi\epsilon_0$ & $\ds\mu_0/4\pi$ & $\ds 1$\\
+  Gauss & $\ds1$ & $\ds1/c$ & $\ds 1/c $
+\end{tabular}
+($\ds \epsilon_0\mu_0 = 1/c^2$)
+\end{center}

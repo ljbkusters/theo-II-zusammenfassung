@@ -1,0 +1,190 @@
+\subsection{Entkopplungsansatz der EM-Felder}%
+\label{sub:entkopplungs-ansatz}
+Im letzten Abschnitt wurden die Maxwellgleichungen ergänzt. Es fällt auf, dass die Differentialgleichungen der elektrische und magnetische Felder gekoppelt sind. Nun wollen wir die Maxwellgleichungen entkoppeln. Weil es sowohl für das $\vE$-Feld als das $\vB$-Feld eine gekoppelte, als eine freie Differentialgleichungen gibt, ist es sinnvol uns mal anzuschauen, was passiert, wenn wir die Rotation der Rotation der entsprechende Felder näher betrachten.
+\begin{equation}
+  \curl(\curl \vE) \qquad \curl(\curl\vB)
+\end{equation}
+Es gelten für 2-Mal stetig differenzierbare Skalar- $\varphi$ bzw. Vektorfelder $\vb F$ die folgende Gleichungen
+\begin{equation}
+  \begin{split}
+    \trot\trot\varphi &= \tdiv\tgrad\varphi - \Delta \varphi\\
+    \trot\trot\vb F &= \tgrad\tdiv \vb F - \Delta \vb F
+  \end{split}
+\end{equation}
+Betrachten wir zunächst Felder im ladungsfreien Vakuum, d.h.
+\begin{equation*}
+  \rho(\vr, t) = 0 \qquad \vjrt = 0
+\end{equation*}
+So kann man das $\vE$-Feld wie folgt vom $\vB$-Feld entkoppeln
+\begin{equation}
+  \begin{split}
+    \grad\underbrace{(\div \vE)}_{\propto\rho=0} - \Delta \vE
+    =
+    \curl (\curl \vE) 
+    &= -\curl k''\pt\vB 
+    =
+    -\pt\qty(\underbrace{4\pi k'\vj}_{=0} + \frac{k'}{k}\pt \vE)\\
+    \Leftrightarrow
+    \qty(\Delta - \frac{1}{c^2}\pt^2) \vE &=0 
+  \end{split}
+\end{equation}
+Analog geht dies für das $\vB$-Feld
+\begin{equation}
+  \begin{split}
+    \grad\underbrace{(\div \vB)}_{=0} - \Delta \vB
+    =
+    \curl (\curl \vB) 
+    &= \curl(\underbrace{4\pi k'\vj}_{=0} + \frac{k'}{k}\pt\vE)
+    = -k''\frac{k'}{k} \pt^2\vB\\
+    \Leftrightarrow
+    \qty(\Delta - \frac{1}{c^2}\pt^2) \vB &=0 
+  \end{split}
+\end{equation}
+Dabei findet man für sowohl SI als Gausseinheiten die $1/c^2$ Konstante vor
+die Zeitableitung. Diese Gleichung wird auch die \textbf{(homogene) Wellengleichung} genannt, denn ebene Wellen lösen diese Gleichung, was wir im nächsten Abschnitt zeigen werden. Weiter wird
+\begin{equation}
+  \qty(\Delta - \frac{1}{c^2}\pt^2)\equiv\Box
+\end{equation}
+die \textit{d'Alembertsche Operator} genannt. Kompakt schreibt man
+\begin{equation}
+  \Box \vE = 0 \qquad \Box \vB=0
+\end{equation}
+
+\subsection{Lösung der inhomogene Wellengleichung}%
+\label{sub:loesung-wellengleichung}
+Gesucht ist eine Lösung der inhomogene Wellengleichung für allgemeine Felder.
+\begin{equation}
+  \Box \psi(\vr, t) = f(\vr, t)
+\end{equation}
+Für die EM-Felder werden wir dann den Spezialfall betrachten, wo die Störfunktion $f(\vr, t)=0$ ist. Weil wir später auch inhomogene Wellengleichungen entgegenkommen werden, ist es aber Sinvoll, direkt den
+Zur Lösung der Wellengleichung schauen wir uns die \textbf{d'Alambert-Greensche Funktion} an. Dabei sind $G$ und $\delta$ nun Funktionen von $\vr, \vr', t, t'$ sodass
+\begin{equation}
+  \label{eq:dalambert-green}
+  \Box \greent \equiv \delta(\vr-\vr')\delta(t-t')
+\end{equation}
+Es folgt nun nach die 2.\ Greensche Identität
+\begin{equation}
+  \label{eq:psi-green}
+  \psi(\vr, t) = \int d^3r'\int dt' \greent f(\vr', t')
+\end{equation}
+Wobei man erstmal annimt, das die Randbedingungen verschwinden. Um die Lösung zu finden, möchten wir $\greent$ im Fourierraum betrachten, denn dies wird das Finden einer Lösung vereinfachen. Per Definition gilt
+\begin{equation}
+  \label{eq:fourier-dalembert-green}
+  \greent = \frac{1}{(2\pi)^2} \int d^3k\int d\omega \fgreent e^{i\vk\cdot(\vr-\vr')}
+  e^{-i\omega(t-t')}
+\end{equation}
+Und weiter ist für die Fouriertransformation der $\delta$-Distributionen
+\begin{equation}
+  \begin{split}
+    \delta(\vr-\vr')
+    &= 
+    \frac{1}{(2\pi)^{3/2}} 
+    \int d^3k e^{i\vk\cdot(\vr-\vr')}\\
+    \delta(t-t')
+    &= 
+    \frac{1}{(2\pi)^{1/2}} 
+    \int d\omega e^{i\omega(t-t')}\\
+  \end{split}
+\end{equation}
+sodass zusammen mit Gleichung~\ref{eq:dalambert-green}
+\begin{equation}
+  \label{eq:fourier-dalembert-green2}
+  \Box \greent =
+    \frac{1}{(2\pi)^2} 
+    \int d^3k e^{i\vk\cdot(\vr-\vr')}
+    \int d\omega e^{i\omega(t-t')}
+\end{equation}
+folgt, was dann zusammen mit Gleichung~\ref{eq:fourier-dalembert-green}
+\begin{equation}
+  \begin{split}
+    \Box \greent 
+    &= 
+    \frac{1}{(2\pi)^2} \int d^3k\int d\omega \fgreent\Box 
+    e^{i\vk\cdot(\vr-\vr')}
+    e^{-i\omega(t-t')}
+    \quad(\text{mit Gleichung~\ref{eq:fourier-dalembert-green}})\\
+    &=
+    \frac{1}{(2\pi)^2} \int d^3k\int d\omega \fgreent
+    \qty(\frac{\omega^2}{c^2}-\vk^2)
+    e^{i\vk\cdot(\vr-\vr')}
+    e^{-i\omega(t-t')}\\
+    &=
+    \frac{1}{(2\pi)^2} 
+    \int d^3k \int d\omega e^{i\vk\cdot(\vr-\vr')}
+    e^{i\omega(t-t')}
+    \quad(\text{mit Gleichung~\ref{eq:fourier-dalembert-green2}})
+  \end{split}
+\end{equation}
+Daraus folgt
+\begin{equation}
+  \label{eq:helmholtz-gleichung}
+  \fgreent \qty(\frac{\omega^2}{c^2}-\vk^2) = 1
+\end{equation}
+Eine naive Lösung dieser Gleichung ist nun einfach die algebraische Manipulation durchzuführen woraus man
+\begin{equation}
+  \fgreent = \frac{1}{\qty(\omega^2/c^2-\vk^2)} 
+\end{equation}
+findet. Diese Lösung entspricht auch tatsächlich die spezifische Lösung für die inhomogene Wellengleichung. Jedoch ist dies nicht die einzige Lösung, denn, mann kann Lösungen der Form
+\begin{equation}
+  g(\vk, \omega)\qty(\frac{\omega^2}{c^2} -\vk^2)=0
+\end{equation}
+auf Gleichung~\ref{eq:helmholtz-gleichung} drauf addieren ohne die rechte Seite zu andern. Hieraus folgen tatsächlich zwei weitere Lösungen, welche die Lösung der homogene Wellengleichung beschreiben. Um eine nicht triviale Lösung für 
+$g(\vk,\omega)$ zu finden machen wir den Ansatz
+\begin{equation}
+  g_{\pm}(\vk, \omega)=a_\pm(\vk)\delta(\omega\pm c\abs{\vk})
+\end{equation}
+Sodass $g(\vk, \omega)$ nur an die Nullstellen von $\qty(\omega^2/c^2-\vk^2)=0$ von null verschieden ist.
+Die allgemeineste Lösung dieser Gleichung wird dann gegeben durch die
+superposition aller mögliche Lösung
+\begin{equation}
+  \begin{split}
+  \fgreent 
+  &= \frac{1}{\qty(\omega^2/c^2-\vk^2)} 
+  + a_+(\vk)\delta(\omega+c\abs{\vk})
+  + a_-(\vk)\delta(\omega-c\abs{\vk})\\
+  &\equiv
+  G_\text{inh}(\vk, \omega) + g_-(\vk, \omega) + g_+(\vk, \omega)
+  \end{split}
+\end{equation}
+
+Nun fehlt uns nur die Rücktransformation nach Ortskoordinaten. Setzen wir die gefundene Greensche funktion in Gleichung~\ref{eq:fourier-dalembert-green} ein und setzt man dies weiter in Gleichung~\ref{eq:psi-green} ein. So findet man
+\begin{center}
+\begin{equation}
+  \begin{split}
+    \psi(\vr, t)
+    &=\frac{1}{4\pi^2} \vint'\int dt'
+    \int d^3k \int d\omega 
+    \fgreent
+    e^{i\vk\cdot(\vr-\vr')}
+    e^{-i\omega(t-t')}
+    f(\vr', t')\\
+    &=\psi_\text{inh}(\vr, t) + \psi_+(\vr, t) + \psi_-(\vr, t)\\
+  \end{split}
+\end{equation}
+  mit 
+\begin{equation}
+  \begin{split}
+    \psi_\text{inh}(\vr, t)
+    &=
+    \frac{1}{4\pi^2} \vint'\int dt'
+    \int d^3k \int d\omega 
+    G_\text{inh}(\vk, \omega)
+    e^{i\vk\cdot(\vr-\vr')}
+    e^{-i\omega(t-t')}
+    f(\vr', t')\\
+    \psi_\pm(\vr, t)
+    &=
+    \frac{1}{4\pi^2} \vint'\int dt'
+    \int d^3k \int d\omega 
+    g_\pm(\vk, \omega)
+    e^{i\vk\cdot(\vr-\vr')}
+    e^{-i\omega(t-t')}
+    f(\vr', t')\\
+  \end{split}
+\end{equation}
+\end{center} 
+Betrachten wir zunächst die Lösung der homogene Wellengleichung
+\begin{equation}
+  \psi_\text{hom}(\vr, t) = \psi_+(\vr, t) + \psi_-(\vr, t)
+\end{equation}
+Weil die Greensche Funktion nur für inhomogene Probleme geeignet ist, können wir die 

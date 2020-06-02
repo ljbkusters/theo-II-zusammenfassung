@@ -41,34 +41,48 @@
 
   \newpage
   \section{Einleitung}\label{cha:Einleitung}
-    \input{\subtexdir/einleitung.tex}
-
-  \tableofcontents
+  \input{\subtexdir/einleitung.tex}
+  \dominitoc[n]
+  \tableofcontents 
   
   \newpage
   \pagenumbering{arabic}
   \setcounter{page}{1}
+\setcounter{minitocdepth}{3}
+\nomtcrule%
   \chapter{Elektrostatik}\label{cha:Elektrostatik}
+    \minitoc%
+    \clearpage
     \input{\subtexdir/elektrostatik.tex}
   
   \newpage
   \chapter{Magnetostatik}\label{cha:Magnetostatic}
+    \minitoc%
+    \clearpage
     \input{\subtexdir/magnetostatik.tex}
   
   \newpage
   \chapter{Elektrodynamik}\label{cha:elektrodynamik}
-  %  \input{\subtexdir/elektrodynamik.tex}
+  \minitoc%
+  \clearpage
+    \input{\subtexdir/elektrodynamik.tex}
   
   \newpage
   \chapter{Relativisitische Elektrodynamik}\label{cha:elektrodynamik}
-  %  \input{\subtexdir/elektrodynamik.tex}
+  \minitoc%
+  \clearpage
+    \input{\subtexdir/relativistische-elektrodynamik.tex}
   
   \newpage
   \chapter{Mathematische Grundlagen}\label{cha:mathematische-grundlagen}
+  \minitoc%
+  \clearpage
     \input{\subtexdir/mathematische-grundlagen.tex}
   
   \newpage
   \chapter{Ausgewählte Herleitungen}\label{cha:ausgewaehlte-herleitungen}
+  \minitoc%
+  \clearpage
   %  \input{\subtexdir/elektrostatik.tex}
 
 \end{document}

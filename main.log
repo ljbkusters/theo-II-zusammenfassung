@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.1)  1 JUN 2020 09:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.1)  1 JUN 2020 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1785,6 +1785,16 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen181
 \l_MT_below_shortintertext_sep=\dimen182
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
@@ -1855,7 +1865,7 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \mult@nat@firstbox=\box70
 \colbreak@box=\box71
 \mc@col@check@num=\count338
-))
+)
 (/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 
@@ -1870,7 +1880,58 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \rotheadsize=\dimen196
 \c@nlinenum=\count339
 \TeXr@lab=\toks27
+))
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2015/07/13 v61 Package minitoc
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
 )
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 61 ***.
+\tf@mtc=\write4
+\mtcindent=\skip74
+\mtcskipamount=\skip75
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks28
+\mtc@strutbox=\box72
+\mtc@hstrutbox=\box73
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout4 = `main.mtc0'.
+
+\openout4 = `main.mtc'.
+
+ (./main.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout4 = `main.mtc'.
+
+\openout4 = `main.mtc0'.
+
+\c@mtc=\count340
+\c@minitocdepth=\count341
+\c@ptc=\count342
+\c@parttocdepth=\count343
+\ptcindent=\skip76
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4909.
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+))
 (./preamble/commands.tex) (./preamble/variables.tex)
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1887,8 +1948,8 @@ File: german.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count340
-\@quotereset=\count341
+\@quotelevel=\count344
+\@quotereset=\count345
 (./main.aux
 
 LaTeX Warning: Label `sub:Ladungen-und-Ladungsverteilungen' multiply defined.
@@ -1962,17 +2023,17 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count342
+\scratchcounter=\count346
 \scratchdimen=\dimen197
-\scratchbox=\box72
-\nofMPsegments=\count343
-\nofMParguments=\count344
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count345
+\scratchbox=\box74
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count349
 \MPscratchDim=\dimen198
-\MPnumerator=\count346
-\makeMPintoPDFobject=\count347
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1999,6 +2060,15 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+
+
+Package minitoc(hints) Warning: W0028
+(minitoc(hints))                --- The \chapter command is altered 
+(minitoc(hints))                after minitoc.
+
 [1
 
 
@@ -2007,20 +2077,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
 
-[2] (./subtex/einleitung.tex) [3] [4
+[2] (./subtex/einleitung.tex)
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 45.
 
-] (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \n
+umberline {0.1}Einleitung}{\reset@font\mtcSfont iii}}
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc1.
+\openout4 = `main.mtc1'.
 
- [5]
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc2.
+\openout4 = `main.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc3.
+\openout4 = `main.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout4 = `main.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc5.
+\openout4 = `main.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc6.
+\openout4 = `main.mtc6'.
+
+[3] [4
+
+] (./main.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [5])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [6]
 Kapitel 1.
-(./subtex/elektrostatik.tex
-(./subtex/elektrostatik/ladungen-und-ladungs-verteilungen.tex) [1
+\openout4 = `main.mtc'.
+
+\openout4 = `main.mtc'.
+
+(./main.mtc1 [1
+
+]) [2] (./subtex/elektrostatik.tex
+(./subtex/elektrostatik/ladungen-und-ladungs-verteilungen.tex) [3
 
 ]
 (./subtex/elektrostatik/elektrisches-feld-und-elektrisches-potential.tex
-[2]) [3] [4] (./subtex/elektrostatik/multipolentwicklung.tex [5]
+[4]) [5] [6] (./subtex/elektrostatik/multipolentwicklung.tex [7]
 Overfull \hbox (17.13737pt too wide) in paragraph at lines 149--154
 []\OT1/cmr/m/n/10 Im all-ge-mei-nen be-rech-net man kei-ne wei-te-re Ord-nun-ge
 n ana-ly-tisch im Ba-che-lor-stu-di-um, und zum Verst[]andniss
@@ -2032,12 +2147,12 @@ Overfull \hbox (2.08179pt too wide) in paragraph at lines 176--181
  et-was aufw[]andig, und wird hier erst-mal []ubersprungen,
  []
 
-[6]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
-) [7] [8] (./subtex/elektrostatik/randflaechen.tex
+) [9] [10] (./subtex/elektrostatik/randflaechen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
@@ -2048,7 +2163,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--37
 
  []
 
-[9])
+[11])
 Overfull \hbox (16.40561pt too wide) in paragraph at lines 108--19
 \OT1/cmr/m/n/10 Dies be-deu-tet wei-ter, da^^Y die or-tho-go-nal-kom-po-nen-te 
 $\OT1/cmr/bx/n/10 E[] \OT1/cmr/m/n/10 = \OT1/cmr/bx/n/10 E \OMS/cmsy/m/n/10 ^^A
@@ -2056,14 +2171,14 @@ $\OT1/cmr/bx/n/10 E[] \OT1/cmr/m/n/10 = \OT1/cmr/bx/n/10 E \OMS/cmsy/m/n/10 ^^A
 dungsdichte)
  []
 
-[10] (./subtex/elektrostatik/poisson-green.tex [11] [12]
+[12] (./subtex/elektrostatik/poisson-green.tex [13] [14]
 
 LaTeX Warning: Command \l invalid in math mode on input line 202.
 
-) [13
+) [15
 
-] (./subtex/elektrostatik/elektrostatische-energie.tex) [14]
-(./subtex/elektrostatik/elektrostatik-in-materie.tex [15]) [16
+] (./subtex/elektrostatik/elektrostatische-energie.tex) [16]
+(./subtex/elektrostatik/elektrostatik-in-materie.tex [17]) [18
 
 ]
 (./subtex/elektrostatik/formelzettel.tex
@@ -2116,33 +2231,63 @@ Overfull \hbox (21.43922pt too wide) in paragraph at lines 66--119
 [] 
  []
 
-)) [17] [18]
+)) [19] [20]
 Kapitel 2.
-(./subtex/magnetostatik.tex
+\openout4 = `main.mtc'.
+
+\openout4 = `main.mtc'.
+
+(./main.mtc2) [21
+
+] (./subtex/magnetostatik.tex
 (./subtex/magnetostatik/stromdichten-und-kontinuitaetsgleichung.tex
 
-LaTeX Warning: Reference `eq:' on page 19 undefined on input line 25.
+LaTeX Warning: Reference `eq:' on page 22 undefined on input line 25.
 
-) [19
+) [22
 
-] (./subtex/magnetostatik/magnetfeld-biot-savart.tex [20]) [21]
-(./subtex/magnetostatik/multipolentwicklung.tex) [22]
-(./subtex/magnetostatik/magnetostatik-in-medien.tex) [23]
-(./subtex/magnetostatik/randwertprobleme.tex) [24]) [25] [26
+] (./subtex/magnetostatik/magnetfeld-biot-savart.tex [23]) [24]
+(./subtex/magnetostatik/multipolentwicklung.tex) [25]
+(./subtex/magnetostatik/magnetostatik-in-medien.tex) [26]
+(./subtex/magnetostatik/randwertprobleme.tex) [27] [28]) [29] [30
 
 ]
 Kapitel 3.
-[27] [28
+\openout4 = `main.mtc'.
+
+\openout4 = `main.mtc'.
+
+(./main.mtc3) [31] (./subtex/elektrodynamik.tex
+(./subtex/elektrodynamik/maxwell-gleichungen.tex [32
+
+]) [33
 
 ]
+(./subtex/elektrodynamik/feld-wellengleichung.tex [34] [35]) [36] [37] [38]
+[39] [40] [41]) [42]
 Kapitel 4.
-[29] [30
+\openout4 = `main.mtc'.
+
+\openout4 = `main.mtc'.
+
+(./main.mtc4) [43
+
+] (./subtex/relativistische-elektrodynamik.tex [44
+
+] [45]
+[46]) [47] [48
 
 ]
 Kapitel 5.
-(./subtex/mathematische-grundlagen.tex
-(./subtex/mathematische-grundlagen/dirac-delta-distribution.tex [31]) [32]
-(./subtex/mathematische-grundlagen/mehr-dim-abl.tex) [33]
+\openout4 = `main.mtc'.
+
+\openout4 = `main.mtc'.
+
+(./main.mtc5) [49] (./subtex/mathematische-grundlagen.tex
+(./subtex/mathematische-grundlagen/dirac-delta-distribution.tex [50
+
+]) [51]
+(./subtex/mathematische-grundlagen/mehr-dim-abl.tex) [52]
 (./subtex/mathematische-grundlagen/taylor-entwicklung.tex
 Overfull \hbox (24.96222pt too wide) in paragraph at lines 15--18
 []\OT1/cmr/m/n/10 Eine Mehr-di-men-sio-na-le Tay-lor-ent-wick-lung wird ana-log
@@ -2152,9 +2297,31 @@ Overfull \hbox (24.96222pt too wide) in paragraph at lines 15--18
  [] ; x[]\OT1/cmr/m/n/10 )$
  []
 
-) [34] (./subtex/mathematische-grundlagen/fourier.tex) [35] [36] [37]) [38]
+) [53] (./subtex/mathematische-grundlagen/fourier.tex) [54] [55] [56]) [57]
+[58
+
+]
 Kapitel 6.
-[39
+Package minitoc Info: I0006
+(minitoc)             main.mtc6 is empty on input line 85.
+[59]
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the main.maf file.
+\openout4 = `main.maf'.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the main.log file.
+
+[60
 
 ] (./main.aux)
 
@@ -2168,13 +2335,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18398 strings out of 493029
- 325919 string characters out of 6136234
- 732738 words of memory out of 5000000
- 21643 multiletter control sequences out of 15000+600000
- 18592 words of font info for 67 fonts, out of 8000000 for 9000
+ 20286 strings out of 493029
+ 351056 string characters out of 6136234
+ 771560 words of memory out of 5000000
+ 23258 multiletter control sequences out of 15000+600000
+ 24130 words of font info for 91 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 46i,23n,52p,10433b,1453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,24n,52p,10433b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/te
@@ -2183,27 +2350,30 @@ live/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib
-5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/latxfont/line10.pfb>
-Output written on main.pdf (44 pages, 365001 bytes).
+s/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (66 pages, 449898 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
+ 338 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
