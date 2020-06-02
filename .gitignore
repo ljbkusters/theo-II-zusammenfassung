@@ -4,4 +4,9 @@
 *.log
 *.run.xml
 *.bcf
-
+*.mtc*
+*.aux
+*.toc
+*.maf
+*.log
+*.lof
