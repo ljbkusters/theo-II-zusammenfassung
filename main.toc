@@ -134,50 +134,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Entkopplungsansatz der EM-Felder}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}L\IeC {\"o}sung der inhomogene Wellengleichung}{34}
+\contentsline {subsection}{\numberline {3.2.2}Allegmeine L\IeC {\"o}sung der Wellengleichung}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Energie des Elektromagnetischen Feldes}{37}
+\contentsline {subsubsection}{L\IeC {\"o}sung der homogene Wellengleichung}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Wellengleichung der Potentiale}{38}
+\contentsline {subsubsection}{L\IeC {\"o}sung der inhomogene Wellengleichung}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Bewegte und Beschleunigte Ladungen}{39}
+\contentsline {section}{\numberline {3.3}Energie des Elektromagnetischen Feldes}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Wellenleiter}{40}
+\contentsline {section}{\numberline {3.4}Wellengleichung der Potentiale}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Wellenpaketen}{41}
+\contentsline {section}{\numberline {3.5}Bewegte und Beschleunigte Ladungen}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Elektrodynamik in Materie}{42}
+\contentsline {section}{\numberline {3.6}Wellenleiter}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Relativisitische Elektrodynamik}{43}
+\contentsline {section}{\numberline {3.7}Wellenpaketen}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Koordinaten Transformationen}{44}
+\contentsline {section}{\numberline {3.8}Elektrodynamik in Materie}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Spezielles Relativit\IeC {\"a}tsprinzip und Lorentz Transformation}{45}
+\contentsline {chapter}{\numberline {4}Relativisitische Elektrodynamik}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Relativistische Elektrodynamik}{46}
+\contentsline {section}{\numberline {4.1}Koordinaten Transformationen}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Relativistische Wirkung}{47}
+\contentsline {section}{\numberline {4.2}Spezielles Relativit\IeC {\"a}tsprinzip und Lorentz Transformation}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Mathematische Grundlagen}{49}
+\contentsline {section}{\numberline {4.3}Relativistische Elektrodynamik}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Dirac $\delta $-Distribution}{50}
+\contentsline {section}{\numberline {4.4}Relativistische Wirkung}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Definierende Eigenschaft}{50}
+\contentsline {chapter}{\numberline {5}Mathematische Grundlagen}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Herleitung $\delta $-Distribution aus Bekannte Kurven}{50}
+\contentsline {section}{\numberline {5.1}Dirac $\delta $-Distribution}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Einige Wichtige Identit\IeC {\"a}ten}{50}
+\contentsline {subsection}{\numberline {5.1.1}Definierende Eigenschaft}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Mehrdimensionale Ableitung: Der Nabla Operator}{52}
+\contentsline {subsection}{\numberline {5.1.2}Herleitung $\delta $-Distribution aus Bekannte Kurven}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Taylor Entwicklung}{53}
+\contentsline {subsection}{\numberline {5.1.3}Einige Wichtige Identit\IeC {\"a}ten}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Fourier Reihe und Transformation}{54}
+\contentsline {section}{\numberline {5.2}Mehrdimensionale Ableitung: Der Nabla Operator}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Integrale im Euklidischen Raum}{55}
+\contentsline {section}{\numberline {5.3}Taylor Entwicklung}{55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Integrals\IeC {\"a}tze und Zerlegungssatz}{56}
+\contentsline {section}{\numberline {5.4}Fourier Reihe und Transformation}{56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Zerlegundssatz}{57}
+\contentsline {section}{\numberline {5.5}Integrale im Euklidischen Raum}{57}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Ausgew\IeC {\"a}hlte Herleitungen}{59}
+\contentsline {section}{\numberline {5.6}Integrals\IeC {\"a}tze und Zerlegungssatz}{58}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Zerlegundssatz}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Ausgew\IeC {\"a}hlte Herleitungen}{61}

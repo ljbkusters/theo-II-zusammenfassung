@@ -50,9 +50,98 @@ die \textit{d'Alembertsche Operator} genannt. Kompakt schreibt man
   \Box \vE = 0 \qquad \Box \vB=0
 \end{equation}
 
-\subsection{Lösung der inhomogene Wellengleichung}%
+\subsection{Allegmeine Lösung der Wellengleichung}%
 \label{sub:loesung-wellengleichung}
-Gesucht ist eine Lösung der inhomogene Wellengleichung für allgemeine Felder.
+\subsubsection{Lösung der homogene Wellengleichung}%
+\label{ssub:homogene-wellengleichung}
+Zunächst betrachten wir die Lösung der homogene Wellengleichung für allgemeine Felder, denn die Lösung wird unahängig davon sein ob wir sie durchführen mit einem Skalaren Feld oder einem Vektorfeld. Wir betrachten das Problem
+\begin{equation}
+  \Box \psi(\vr, t) = 0
+\end{equation}
+Um dieses Problem zu Lösen wenden wir die Fouriertransformation an. Es gilt zwar
+\begin{equation}
+  \label{eq:fourier-psi}
+  \psi(\vr, t) = F^{-1}[\hat{\psi}(\vk, \omega)]
+  = \frac{1}{(2\pi)^2} \int d^3k \int d\omega \,
+  \hat{\psi}(\vk,\omega) e^{i\vk\cdot\vr} e^{-i\omega t}
+\end{equation}
+Wenden wir nun Links und rechts den d'Alambertschen Operator an, so folgt
+\begin{equation}
+  \Box \psi(\vr, t) = 0 
+  = \frac{1}{(2\pi)^2} \int d^3k \int d\omega \,
+  (\omega^2/c^2-\vk^2)\hat{\psi}(\vk,\omega) e^{i\vk\cdot\vr} e^{-i\omega t}
+\end{equation}
+daraus folgt dann
+\begin{equation}
+  \hat{\psi}(\vk, \omega)\qty(\omega^2/c^2-\vk^2)=0
+\end{equation}
+Um eine nicht triviale Lösung für 
+$\hat{\psi}(\vk,\omega)$ zu finden machen wir den Ansatz
+\begin{equation}
+  \hat{\psi}(\vk, \omega)=a_\pm(\vk)\delta(\omega\pm c\abs{\vk})
+\end{equation}
+Sodass $\hat{\psi}_\pm(\vk, \omega)$ nur an die Nullstellen von $\qty(\omega^2/c^2-\vk^2)=0$ von null verschieden ist. Setzt man dies in
+Gleichung~\ref{eq:fourier-psi} ein, so folgt
+\begin{equation}
+  \begin{split}
+    \psi(\vr, t) 
+    &=
+    \frac{1}{4\pi^2} 
+    \int d^3k \int d\omega \,
+    (\hat\psi_+(\vk, \omega) + \hat\psi_-(\vk, \omega) )
+    e^{i\vk\cdot\vr}
+    e^{-i\omega t}\\
+    &=
+    \frac{1}{4\pi^2} 
+    \int d^3k \int d\omega \,
+    (a_+(\vk)\delta(\omega+c\abs{\vk})+a_-(\vk)\delta(\omega-c\abs{\vk})) 
+    e^{i\vk\cdot\vr}
+    e^{-i\omega t}\\
+    &=
+    \frac{1}{4\pi^2} 
+    \int d^3k \,
+    \qty(a_+(\vk)e^{i(\vk\cdot\vr-c\abs{\vk}t)}+
+    a_-(\vk)e^{i(\vk\cdot\vr+c\abs{\vk}t)})
+  \end{split}
+\end{equation}
+Mit den Anfangsbedingungen $\psi(\vr, t=0)=\psi_0(\vr)$ und $\dv t \psi(\vr, t=0)=\nu_0(\vr)$ folgt
+\begin{equation}
+  \psi_0(\vr)
+  =
+  \frac{1}{4\pi^2} 
+  \int d^3k \,
+  \qty[a_+(\vk)+
+  a_-(\vk)]e^{i(\vk\cdot\vr)}
+\end{equation}
+und
+\begin{equation}
+  \nu_0(\vr)
+  =
+  \frac{ic\abs{\vk}}{4\pi^2} 
+  \int d^3k \,
+  \qty[a_+(\vk)-
+  a_-(\vk)]e^{i(\vk\cdot\vr)}
+\end{equation}
+Damit sind man $a_\pm(\vk)$ festgelegt, und folgt nach etwas umformen und
+eine Fourier-Rücktransformation
+\begin{equation}
+  a_\pm(\vk) =
+  \frac{1}{\sqrt{2\pi}} \int d^3r e^{-i\vk\cdot\vr}
+  \qty(
+  \psi_0(\vr) \mp \frac{i}{c\abs{\vk}} \nu_0(\vr)
+  )
+\end{equation}
+Damit ist die Lösung der Wellengleichung für beliebige Anfangsbedingungen festgelegt. Es ist nun leicht zu zeigen dass
+\begin{equation}
+  \psi(\vr, t) = A e^{i(\vk\cdot\vr-\omega t + \varphi)}
+  \quad
+  \text{\textbf{Ebene Welle}}
+\end{equation}
+mit $A\in \mathbb{C}$ und $\vk, \vr, t, \omega, \varphi\in \mathbb{R}$
+
+\subsubsection{Lösung der inhomogene Wellengleichung}%
+\label{ssub:inhomogene-wellengleichung}
+Gesucht ist nun eine Lösung der inhomogene Wellengleichung für allgemeine Felder.
 \begin{equation}
   \Box \psi(\vr, t) = f(\vr, t)
 \end{equation}
@@ -128,12 +217,8 @@ findet. Diese Lösung entspricht auch tatsächlich die spezifische Lösung für 
 \begin{equation}
   g(\vk, \omega)\qty(\frac{\omega^2}{c^2} -\vk^2)=0
 \end{equation}
-auf Gleichung~\ref{eq:helmholtz-gleichung} drauf addieren ohne die rechte Seite zu andern. Hieraus folgen tatsächlich zwei weitere Lösungen, welche die Lösung der homogene Wellengleichung beschreiben. Um eine nicht triviale Lösung für 
-$g(\vk,\omega)$ zu finden machen wir den Ansatz
-\begin{equation}
-  g_{\pm}(\vk, \omega)=a_\pm(\vk)\delta(\omega\pm c\abs{\vk})
-\end{equation}
-Sodass $g(\vk, \omega)$ nur an die Nullstellen von $\qty(\omega^2/c^2-\vk^2)=0$ von null verschieden ist.
+auf Gleichung~\ref{eq:helmholtz-gleichung} drauf addieren ohne die rechte Seite zu andern. Hieraus folgen tatsächlich zwei weitere Lösungen, welche die Lösung der homogene Wellengleichung beschreiben. 
+
 Die allgemeineste Lösung dieser Gleichung wird dann gegeben durch die
 superposition aller mögliche Lösung
 \begin{equation}
@@ -187,4 +272,3 @@ Betrachten wir zunächst die Lösung der homogene Wellengleichung
 \begin{equation}
   \psi_\text{hom}(\vr, t) = \psi_+(\vr, t) + \psi_-(\vr, t)
 \end{equation}
-Weil die Greensche Funktion nur für inhomogene Probleme geeignet ist, können wir die 
