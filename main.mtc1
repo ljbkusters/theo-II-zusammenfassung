@@ -8,33 +8,33 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.6}Die Hauptaufgabe der Elektrostatik}{\reset@font\mtcSSfont 6}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Multipolentwicklung}{\reset@font\mtcSfont 7}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Karthesische Multipolentwicklung}{\reset@font\mtcSSfont 7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Sph\IeC {\"a}rische Multipolentwicklung}{\reset@font\mtcSSfont 8}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Verhalten von Elektrostatische Felder an Randfl\IeC {\"a}chen}{\reset@font\mtcSfont 11}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Randfl\IeC {\"a}chen und Randkurven}{\reset@font\mtcSSfont 11}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Bedeutung der S\IeC {\"a}tze von Gau\IeC {\ss } und Stokes f\IeC {\"u}r Elektrostatische Felder}{\reset@font\mtcSSfont 11}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}Anwendung auf Randfl\IeC {\"a}chen}{\reset@font\mtcSSfont 11}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}L\IeC {\"o}sung der Poisson Gleichung und Greensche Funktion}{\reset@font\mtcSfont 13}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}die Poissongleichung}{\reset@font\mtcSSfont 13}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}Die Greensche Identit\IeC {\"a}te und die Greensche Funktion}{\reset@font\mtcSSfont 13}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 1. Greensche Identit\IeC {\"a}t}{\reset@font\mtcSSSfont 13}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 2. Greensche Identit\IeC {\"a}t}{\reset@font\mtcSSSfont 13}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 3. Greensche Identit\IeC {\"a}t}{\reset@font\mtcSSSfont 14}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}Einige Praktische L\IeC {\"o}sungswege}{\reset@font\mtcSSfont 15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Spiegelladungsmethode}{\reset@font\mtcSSSfont 15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Seperationsansatz}{\reset@font\mtcSSSfont 15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Allgemeine Seperationsansatz in Kugelkoordinaten}{\reset@font\mtcSSSfont 15}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Elektrostatische Energie}{\reset@font\mtcSfont 16}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Energie von Ladungen im Externen Feld}{\reset@font\mtcSSfont 16}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Feldenergie und Selbstinteraction}{\reset@font\mtcSSfont 16}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.7}Elektrostatik in Materie}{\reset@font\mtcSfont 17}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.1}Materialarten}{\reset@font\mtcSSfont 17}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.2}Polarisation und Dielektrische Verschiebung}{\reset@font\mtcSSfont 17}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.3}Randbedingungen an Dielektrika}{\reset@font\mtcSSfont 18}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.8}Formelzettel}{\reset@font\mtcSfont 19}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.1}Ladungen und Ladungsverteilungen}{\reset@font\mtcSSfont 19}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{\reset@font\mtcSSfont 19}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.3}Multipolentwicklung}{\reset@font\mtcSSfont 19}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.4}Verhalten von Elektrostatische Felder an Randfl\IeC {\"a}chen}{\reset@font\mtcSSfont 20}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.5}L\IeC {\"o}sung der Poisson Gleichung und Greensche Funktion}{\reset@font\mtcSSfont 20}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.6}Elektrostatische Energie}{\reset@font\mtcSSfont 20}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.7}Elektrostatik in Materie}{\reset@font\mtcSSfont 20}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Sphärische Multipolentwicklung}{\reset@font\mtcSSfont 8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Verhalten von Elektrostatische Felder an Randflächen}{\reset@font\mtcSfont 10}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Randflächen und Randkurven}{\reset@font\mtcSSfont 10}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Bedeutung der Sätze von Gauß und Stokes für Elektrostatische Felder}{\reset@font\mtcSSfont 10}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}Anwendung auf Randflächen}{\reset@font\mtcSSfont 10}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Lösung der Poisson Gleichung und Greensche Funktion}{\reset@font\mtcSfont 12}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}die Poissongleichung}{\reset@font\mtcSSfont 12}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}Die Greensche Identitäte und die Greensche Funktion}{\reset@font\mtcSSfont 12}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 1. Greensche Identität}{\reset@font\mtcSSSfont 12}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 2. Greensche Identität}{\reset@font\mtcSSSfont 12}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 3. Greensche Identität}{\reset@font\mtcSSSfont 13}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}Einige Praktische Lösungswege}{\reset@font\mtcSSfont 14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Spiegelladungsmethode}{\reset@font\mtcSSSfont 14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Seperationsansatz}{\reset@font\mtcSSSfont 14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Allgemeine Seperationsansatz in Kugelkoordinaten}{\reset@font\mtcSSSfont 14}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Elektrostatische Energie}{\reset@font\mtcSfont 15}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Energie von Ladungen im Externen Feld}{\reset@font\mtcSSfont 15}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Feldenergie und Selbstinteraction}{\reset@font\mtcSSfont 15}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.7}Elektrostatik in Materie}{\reset@font\mtcSfont 16}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.1}Materialarten}{\reset@font\mtcSSfont 16}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.2}Polarisation und Dielektrische Verschiebung}{\reset@font\mtcSSfont 16}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.3}Randbedingungen an Dielektrika}{\reset@font\mtcSSfont 17}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.8}Formelzettel}{\reset@font\mtcSfont 18}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.1}Ladungen und Ladungsverteilungen}{\reset@font\mtcSSfont 18}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{\reset@font\mtcSSfont 18}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.3}Multipolentwicklung}{\reset@font\mtcSSfont 18}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.4}Verhalten von Elektrostatische Felder an Randflächen}{\reset@font\mtcSSfont 19}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.5}Lösung der Poisson Gleichung und Greensche Funktion}{\reset@font\mtcSSfont 19}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.6}Elektrostatische Energie}{\reset@font\mtcSSfont 19}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.8.7}Elektrostatik in Materie}{\reset@font\mtcSSfont 19}}

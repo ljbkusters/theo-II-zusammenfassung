@@ -1,0 +1,69 @@
+Wie in der Elektrostatik wird die Feldenergie aus ersten Prinzipien aus der auf die Ladungen wirkende Kraft definiert. Eine Ladung in einem elektromagnetischen Feld spürt die Lortentz Kraft:
+\begin{equation}
+  \vb F_L = q \qty(\vE + \vv\times\vB)
+\end{equation}
+Die Arbeit die geleistet/aufgenommen wird, eine Ladung von $P_1$ zu $P_2$ zu bewegen ist also gegeben durch:
+\begin{equation}
+  W_{12} = q\int_{P_1}^{P_2} (\vE + \vv\times\vB)\dds
+\end{equation}
+parametrisieren wir die raumkurve von $P_1$ zu $P_2$ durch $\vb*x(t)$, mit $t\in[t_0, t_1]$, so finden wir:
+\begin{equation}\label{eq:arbeit-parametrisiert}
+  W_{12} = q\int_{t_0}^{t_1} \bigg(\vE\big(\vb*x(t)\big) + \dot{\vb*x}(t)\times\vB\big(\vb*x(t)\big)\bigg)\cdot\dot{\vb*x}(t)dt
+\end{equation}
+Man bemerke nun, dass für alle Vektorpaare $\vb a$, $\vb b$ gilt:
+\begin{equation*}
+  (\vb a\times \vb b)\cdot \vb a = 0
+\end{equation*}
+denn $\vb a \perp \vb (\vb a \times \vb b)\perp \vb b$,
+sodass in Gleichung~\ref{eq:arbeit-parametrisiert} den Beitrag des $\vB$-Feldes herausfällt und übrig bleibt:
+\begin{equation}
+  W_{12} = q\int_{t_0}^{t_1} \vE\big(\vb*x(t)\big)\cdot\dot{\vb*x}(t)dt
+  = q\int_{t_0}^{t_1} \vE\big(\vb*x(t)\big)\cdot{\vv}(t)dt
+\end{equation}
+Allgemeiner kann man dies auch für Stromverteilungen definieren:
+\begin{equation}
+  \dv{W}{t} = \int d^3r \vjrt\cdot\vErt
+\end{equation}
+Benutzt mann nun die inhomogene Maxwellgleichung des magnetischen Feldes, so kann man $\vj$ ersetzen und findet:
+\begin{equation}\label{eq:dwdt-umgeschrieben}
+  \dv{W}{t} = \frac{1}{4\pi k'} \int d^3r \qty[\curl \vBrt - \frac{k'}{k}\partial_t \vErt]\cdot\vErt
+\end{equation}
+Benutzt man weiter:
+\begin{equation*}
+  \div \qty[\vb A \cdot \vb B] = \vb B \cdot [\curl \vb A] - \vb A \cdot \qty[\curl \vb B]
+\end{equation*}
+So kann man $\qty[\curl \vBrt]\cdot \vE$ in Gleichung~\ref{eq:dwdt-umgeschrieben} umschreiben zu:
+\begin{equation}
+  \dv{W}{t} = \frac{1}{4\pi k'} \int d^3r \qty[-\div\qty(\vErt\times\vBrt)+\vBrt\cdot\qty[\curl\vE] - \frac{k'}{k}\partial_t \vErt\cdot\vErt]
+\end{equation}
+Benutzt man nun die Homogene Maxwellgleichung des elektrischen Feldes so findet man letztendlich:
+\begin{equation}\label{eq:dwdt-subfinal}
+  \dv{W}{t} 
+  = -\frac{1}{4\pi k'} \int d^3r \div\qty(\vE\times\vB)
+  +\frac{1}{4\pi k'} \int d^3r \qty[
+  \vB\cdot k''\partial_t \vB + \frac{k'}{k}\partial_t \vE\cdot\vE]
+\end{equation}
+Man definiere nun den Poyntingvektor $\vSrt$:
+\begin{equation}
+  \vSrt = \frac{1}{4\pi k'} \vErt \times \vBrt = \vErt \times \vHrt
+\end{equation}
+welche als Energiestromdichte aufgefasst werden kann
+und die elektromagnetische Feldenergiedichte $w(\vr, t)$:
+\begin{equation}
+  w(\vr, t)=\frac{1}{2} \qty[\frac{1}{4\pi k}\vE^2(\vr, t) + \frac{k''}{4\pi k'}\vB^2(\vr, t)]
+\end{equation}
+Zusammen mit dem Satz von Gauss lässt sich Gleichung~\ref{eq:dwdt-subfinal} zusammenfassen zu:
+\begin{equation}
+  \dv{W}{t} =
+  - \int_{\partial V} \vSrt\ddA + \dv t \int_V d^3 r\ w(\vr, t)
+\end{equation}
+Im ladungsfreien Raum und in infinitisimale raumgebiete gilt nun eine energetische Kontinuitätsgleichung:
+\begin{equation}
+  \pdv{w}{t}(\vr, t) = - \div \vSrt
+\end{equation}
+Dies ist allgemein gültig für \textit{reelle} elektromagnetische Felder, aber für komplexe elektromagnetische Felder ist es wichtig dass man weiter angibt dass:
+\begin{equation}
+  \vS= \frac{1}{4\pi k'}\qty(\mathrm{Re}\qty{\vE}\times \mathrm{Re}\qty{\vB})
+  \qquad
+  w = \frac{1}{2} \qty( \frac{1}{4\pi k} \abs{\vE}^2 +  \frac{k''}{4\pi k'}\abs{\vB}^2 )
+\end{equation}

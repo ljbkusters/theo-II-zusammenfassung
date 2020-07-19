@@ -1,187 +1,186 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\select@language {ngerman}
+\contentsline {section}{\numberline {0.1}Einleitung}{iii}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.1}Einleitung}{iii}
+\contentsline {chapter}{\numberline {1}Elektrostatik}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Elektrostatik}{1}
+\contentsline {section}{\numberline {1.1}Ladungen und Ladungsverteilungen}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Ladungen und Ladungsverteilungen}{3}
+\contentsline {section}{\numberline {1.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{4}
+\contentsline {subsection}{\numberline {1.2.1}Coulombkraft}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Coulombkraft}{4}
+\contentsline {subsection}{\numberline {1.2.2}Das Elekrtische Feld}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Das Elekrtische Feld}{4}
+\contentsline {subsection}{\numberline {1.2.3}Das Elekrtische Potential}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Das Elekrtische Potential}{4}
+\contentsline {subsection}{\numberline {1.2.4}Die Feldgleichungen der Elektrostatik}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Die Feldgleichungen der Elektrostatik}{5}
+\contentsline {subsection}{\numberline {1.2.5}Poisson Gleichung}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.5}Poisson Gleichung}{5}
+\contentsline {subsection}{\numberline {1.2.6}Die Hauptaufgabe der Elektrostatik}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.6}Die Hauptaufgabe der Elektrostatik}{6}
+\contentsline {section}{\numberline {1.3}Multipolentwicklung}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Multipolentwicklung}{7}
+\contentsline {subsection}{\numberline {1.3.1}Karthesische Multipolentwicklung}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Karthesische Multipolentwicklung}{7}
+\contentsline {subsection}{\numberline {1.3.2}Sphärische Multipolentwicklung}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Sph\IeC {\"a}rische Multipolentwicklung}{8}
+\contentsline {section}{\numberline {1.4}Verhalten von Elektrostatische Felder an Randflächen}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Verhalten von Elektrostatische Felder an Randfl\IeC {\"a}chen}{11}
+\contentsline {subsection}{\numberline {1.4.1}Randflächen und Randkurven}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Randfl\IeC {\"a}chen und Randkurven}{11}
+\contentsline {subsection}{\numberline {1.4.2}Bedeutung der Sätze von Gauß und Stokes für Elektrostatische Felder}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Bedeutung der S\IeC {\"a}tze von Gau\IeC {\ss } und Stokes f\IeC {\"u}r Elektrostatische Felder}{11}
+\contentsline {subsection}{\numberline {1.4.3}Anwendung auf Randflächen}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Anwendung auf Randfl\IeC {\"a}chen}{11}
+\contentsline {section}{\numberline {1.5}Lösung der Poisson Gleichung und Greensche Funktion}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}L\IeC {\"o}sung der Poisson Gleichung und Greensche Funktion}{13}
+\contentsline {subsection}{\numberline {1.5.1}die Poissongleichung}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.1}die Poissongleichung}{13}
+\contentsline {subsection}{\numberline {1.5.2}Die Greensche Identitäte und die Greensche Funktion}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.2}Die Greensche Identit\IeC {\"a}te und die Greensche Funktion}{13}
+\contentsline {subsubsection}{1. Greensche Identität}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{1. Greensche Identit\IeC {\"a}t}{13}
+\contentsline {subsubsection}{2. Greensche Identität}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{2. Greensche Identit\IeC {\"a}t}{13}
+\contentsline {subsubsection}{3. Greensche Identität}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{3. Greensche Identit\IeC {\"a}t}{14}
+\contentsline {subsection}{\numberline {1.5.3}Einige Praktische Lösungswege}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.3}Einige Praktische L\IeC {\"o}sungswege}{15}
+\contentsline {subsubsection}{Spiegelladungsmethode}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Spiegelladungsmethode}{15}
+\contentsline {subsubsection}{Seperationsansatz}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Seperationsansatz}{15}
+\contentsline {subsubsection}{Allgemeine Seperationsansatz in Kugelkoordinaten}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Allgemeine Seperationsansatz in Kugelkoordinaten}{15}
+\contentsline {section}{\numberline {1.6}Elektrostatische Energie}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Elektrostatische Energie}{16}
+\contentsline {subsection}{\numberline {1.6.1}Energie von Ladungen im Externen Feld}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.1}Energie von Ladungen im Externen Feld}{16}
+\contentsline {subsection}{\numberline {1.6.2}Feldenergie und Selbstinteraction}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.2}Feldenergie und Selbstinteraction}{16}
+\contentsline {section}{\numberline {1.7}Elektrostatik in Materie}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Elektrostatik in Materie}{17}
+\contentsline {subsection}{\numberline {1.7.1}Materialarten}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.1}Materialarten}{17}
+\contentsline {subsection}{\numberline {1.7.2}Polarisation und Dielektrische Verschiebung}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.2}Polarisation und Dielektrische Verschiebung}{17}
+\contentsline {subsection}{\numberline {1.7.3}Randbedingungen an Dielektrika}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.3}Randbedingungen an Dielektrika}{18}
+\contentsline {section}{\numberline {1.8}Formelzettel}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Formelzettel}{19}
+\contentsline {subsection}{\numberline {1.8.1}Ladungen und Ladungsverteilungen}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.1}Ladungen und Ladungsverteilungen}{19}
+\contentsline {subsection}{\numberline {1.8.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.2}Elektrische Kraft, Elektrisches Feld und Elektrisches Potential}{19}
+\contentsline {subsection}{\numberline {1.8.3}Multipolentwicklung}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.3}Multipolentwicklung}{19}
+\contentsline {subsection}{\numberline {1.8.4}Verhalten von Elektrostatische Felder an Randflächen}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.4}Verhalten von Elektrostatische Felder an Randfl\IeC {\"a}chen}{20}
+\contentsline {subsection}{\numberline {1.8.5}Lösung der Poisson Gleichung und Greensche Funktion}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.5}L\IeC {\"o}sung der Poisson Gleichung und Greensche Funktion}{20}
+\contentsline {subsection}{\numberline {1.8.6}Elektrostatische Energie}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.6}Elektrostatische Energie}{20}
+\contentsline {subsection}{\numberline {1.8.7}Elektrostatik in Materie}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.7}Elektrostatik in Materie}{20}
+\contentsline {chapter}{\numberline {2}Magnetostatik}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Magnetostatik}{21}
+\contentsline {section}{\numberline {2.1}Stromdichten und Kontinuitätsgleichung}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Stromdichten und Kontinuit\IeC {\"a}tsgleichung}{22}
+\contentsline {section}{\numberline {2.2}Magnetfeld und Biot-Savart-Gesetz}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Magnetfeld und Biot-Savart-Gesetz}{23}
+\contentsline {subsection}{\numberline {2.2.1}Ampèresche Kraft Gesetz}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Amp\IeC {\`e}resche Kraft Gesetz}{23}
+\contentsline {subsection}{\numberline {2.2.2}Das Magnetfeld}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Das Magnetfeld}{23}
+\contentsline {subsection}{\numberline {2.2.3}Das Vektorpotential}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Das Vektorpotential}{23}
+\contentsline {subsection}{\numberline {2.2.4}Feldgleichungen der Magnetostatik}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Feldgleichungen der Magnetostatik}{24}
+\contentsline {subsection}{\numberline {2.2.5}Eichtransformation und Inhomogene Poisson-Gleichung}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Eichtransformation und Inhomogene Poisson-Gleichung}{24}
+\contentsline {subsection}{\numberline {2.2.6}Die Hauptaufgabe der Magnetostatik}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.6}Die Hauptaufgabe der Magnetostatik}{24}
+\contentsline {section}{\numberline {2.3}Multipolentwicklung: Magnetischer Dipol}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Multipolentwicklung: Magnetischer Dipol}{25}
+\contentsline {subsection}{\numberline {2.3.1}Monopolmoment}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Monopolmoment}{25}
+\contentsline {subsection}{\numberline {2.3.2}Dipolmoment}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Dipolmoment}{25}
+\contentsline {section}{\numberline {2.4}Magnetostatik in Materie}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Magnetostatik in Materie}{26}
+\contentsline {subsection}{\numberline {2.4.1}Magnetische Felstärke und Magnetische Polarisation}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Magnetische Felst\IeC {\"a}rke und Magnetische Polarisation}{26}
+\contentsline {section}{\numberline {2.5}Randwertprobleme in der Magnetostatik}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Randwertprobleme in der Magnetostatik}{27}
+\contentsline {section}{\numberline {2.6}Ohmsches Gesetz}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Ohmsches Gesetz}{28}
+\contentsline {section}{\numberline {2.7}Formelzettel}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Formelzettel}{29}
+\contentsline {chapter}{\numberline {3}Elektrodynamik}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Elektrodynamik}{31}
+\contentsline {section}{\numberline {3.1}Dynamische Ergänzung der Maxwellgleichungen}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Dynamische Erg\IeC {\"a}nzung der Maxwellgleichungen}{32}
+\contentsline {subsection}{\numberline {3.1.1}Maxwellsche Ergängzung des Ampèresche Durchfluttungsgesetzes}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Maxwellsche Erg\IeC {\"a}ngzung des Amp\IeC {\`e}resche Durchfluttungsgesetzes}{32}
+\contentsline {subsection}{\numberline {3.1.2}Faradaysche Induktionsgesetz}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Faradaysche Induktionsgesetz}{33}
+\contentsline {subsection}{\numberline {3.1.3}Maxwell Gleichungen im Vakuum}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Maxwell Gleichungen im Vakuum}{33}
+\contentsline {section}{\numberline {3.2}Wellengleichung der Felder}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Wellengleichung der Felder}{34}
+\contentsline {subsection}{\numberline {3.2.1}Entkopplungsansatz der EM-Felder}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Entkopplungsansatz der EM-Felder}{34}
+\contentsline {subsection}{\numberline {3.2.2}Allegmeine Lösung der Wellengleichung}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Allegmeine L\IeC {\"o}sung der Wellengleichung}{34}
+\contentsline {subsubsection}{Lösung der homogene Wellengleichung}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{L\IeC {\"o}sung der homogene Wellengleichung}{34}
+\contentsline {subsubsection}{Lösung der inhomogene Wellengleichung}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{L\IeC {\"o}sung der inhomogene Wellengleichung}{35}
+\contentsline {section}{\numberline {3.3}Energie des Elektromagnetischen Feldes}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Energie des Elektromagnetischen Feldes}{38}
+\contentsline {section}{\numberline {3.4}Wellengleichung der Potentiale}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Wellengleichung der Potentiale}{39}
+\contentsline {section}{\numberline {3.5}Bewegte und Beschleunigte Ladungen}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Bewegte und Beschleunigte Ladungen}{40}
+\contentsline {section}{\numberline {3.6}Wellenleiter}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Wellenleiter}{41}
+\contentsline {section}{\numberline {3.7}Wellenpaketen}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Wellenpaketen}{42}
+\contentsline {section}{\numberline {3.8}Elektrodynamik in Materie}{44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Elektrodynamik in Materie}{43}
+\contentsline {chapter}{\numberline {4}Relativisitische Elektrodynamik}{45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Relativisitische Elektrodynamik}{45}
+\contentsline {section}{\numberline {4.1}Koordinaten Transformationen}{46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Koordinaten Transformationen}{46}
+\contentsline {section}{\numberline {4.2}Spezielles Relativitätsprinzip und Lorentz Transformation}{47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Spezielles Relativit\IeC {\"a}tsprinzip und Lorentz Transformation}{47}
+\contentsline {section}{\numberline {4.3}Relativistische Elektrodynamik}{48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Relativistische Elektrodynamik}{48}
+\contentsline {section}{\numberline {4.4}Relativistische Wirkung}{49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Relativistische Wirkung}{49}
+\contentsline {chapter}{\numberline {5}Mathematische Grundlagen}{51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Mathematische Grundlagen}{51}
+\contentsline {section}{\numberline {5.1}Dirac $\delta $-Distribution}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Dirac $\delta $-Distribution}{52}
+\contentsline {subsection}{\numberline {5.1.1}Definierende Eigenschaft}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Definierende Eigenschaft}{52}
+\contentsline {subsection}{\numberline {5.1.2}Herleitung $\delta $-Distribution aus Bekannte Kurven}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Herleitung $\delta $-Distribution aus Bekannte Kurven}{52}
+\contentsline {subsection}{\numberline {5.1.3}Einige Wichtige Identitäten}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Einige Wichtige Identit\IeC {\"a}ten}{52}
+\contentsline {section}{\numberline {5.2}Mehrdimensionale Ableitung: Der Nabla Operator}{54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Mehrdimensionale Ableitung: Der Nabla Operator}{54}
+\contentsline {section}{\numberline {5.3}Taylor Entwicklung}{55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Taylor Entwicklung}{55}
+\contentsline {section}{\numberline {5.4}Fourier Reihe und Transformation}{56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Fourier Reihe und Transformation}{56}
+\contentsline {section}{\numberline {5.5}Integrale im Euklidischen Raum}{57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Integrale im Euklidischen Raum}{57}
+\contentsline {section}{\numberline {5.6}Integralsätze und Zerlegungssatz}{58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Integrals\IeC {\"a}tze und Zerlegungssatz}{58}
+\contentsline {section}{\numberline {5.7}Zerlegundssatz}{59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Zerlegundssatz}{59}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Ausgew\IeC {\"a}hlte Herleitungen}{61}
+\contentsline {chapter}{\numberline {6}Ausgewählte Herleitungen}{61}%
